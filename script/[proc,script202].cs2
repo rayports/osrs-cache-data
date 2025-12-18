@@ -1,0 +1,6 @@
+// 202
+[proc,script202]
+if (~on_enhanced_mobile = false) {
+    return;
+}
+%popout_panel_mobile_enabled = calc(1 - %popout_panel_mobile_enabled);

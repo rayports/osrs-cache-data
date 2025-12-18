@@ -1,0 +1,75 @@
+// 474
+[clientscript,rareitems_diango_update](int $int0, int $int1, int $int2, int $int3, int $int4, int $int5, int $int6, int $int7)
+def_int $int8 = 0;
+def_obj $obj9 = null;
+def_int $int10 = 0;
+while ($int10 <= 222) {
+    if (cc_find(rareitems_diango:items, $int10) = true) {
+        if ($int10 < 32) {
+            if (testbit($int0, $int10) = ^true) {
+                $int8 = 1;
+            } else {
+                $int8 = 0;
+            }
+        } else if ($int10 < 64) {
+            if (testbit($int1, calc($int10 - 32)) = ^true) {
+                $int8 = 1;
+            } else {
+                $int8 = 0;
+            }
+        } else if ($int10 < 96) {
+            if (testbit($int2, calc($int10 - 64)) = ^true) {
+                $int8 = 1;
+            } else {
+                $int8 = 0;
+            }
+        } else if ($int10 < 128) {
+            if (testbit($int3, calc($int10 - 96)) = ^true) {
+                $int8 = 1;
+            } else {
+                $int8 = 0;
+            }
+        } else if ($int10 < 160) {
+            if (testbit($int4, calc($int10 - 128)) = ^true) {
+                $int8 = 1;
+            } else {
+                $int8 = 0;
+            }
+        } else if ($int10 < 192) {
+            if (testbit($int5, calc($int10 - 160)) = ^true) {
+                $int8 = 1;
+            } else {
+                $int8 = 0;
+            }
+        } else if ($int10 < 224) {
+            if (testbit($int6, calc($int10 - 192)) = ^true) {
+                $int8 = 1;
+            } else {
+                $int8 = 0;
+            }
+        } else if ($int10 < 256) {
+            if (testbit($int7, calc($int10 - 224)) = ^true) {
+                $int8 = 1;
+            } else {
+                $int8 = 0;
+            }
+        } else {
+            $int8 = 0;
+        }
+        if ($int8 = 1) {
+            $obj9 = enum(int, namedobj, enum_708, $int10);
+            if ($obj9 ! null) {
+                if (inv_total(inv, $obj9) = 0) {
+                    cc_sethide(false);
+                } else {
+                    cc_sethide(true);
+                }
+            } else {
+                cc_sethide(true);
+            }
+        } else {
+            cc_sethide(true);
+        }
+    }
+    $int10 = calc($int10 + 1);
+}

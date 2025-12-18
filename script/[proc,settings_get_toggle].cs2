@@ -1,0 +1,644 @@
+// 6716
+[proc,settings_get_toggle](int $int0)(int)
+switch_int ($int0) {
+    case 7 :
+        return(%option_hide_rooftops);
+    case 33 :
+        return(%music_unlock_text_toggle);
+    case 5 :
+        return(%hitsplat_tint_disabled);
+    case 279 :
+        return(%hitsplat_maxhit_disabled);
+    case 9 :
+        return(%wiki_icon_disabled);
+    case 8 :
+        return(%orbs_disabled);
+    case 2 :
+        return(%side_transparency);
+    case 3 :
+        return(%option_hidexptolevel);
+    case 4 :
+        return(%option_prayertooltips);
+    case 6 :
+        return(%option_satooltips);
+    case 10 :
+        return(%hpbar_hud_boss_disabled);
+    case 299 :
+        return(%hpbar_hud_boss_name_disabled);
+    case 300 :
+        return(%hpbar_hud_boss_compact_enabled);
+    case 111 :
+        return(%hpbar_hud_standard_disabled);
+    case 11 :
+        return(%chatbox_transparency);
+    case 13 :
+        return(%camera_zoom_mouse_disabled);
+    case 209 :
+        return(%mouseover_tooltips_hide_opcount);
+    case 34 :
+        return(%option_chat);
+    case 35 :
+        return(%option_pm);
+    case 36 :
+        return(%hide_pm_alongside_chatbox);
+    case 37 :
+        return(%option_chatfilter_disabled);
+    case 431 :
+        return(%clan_disable_lastseen);
+    case 38 :
+        return(%option_lootnotification_on);
+    case 40 :
+        return(%option_lootnotification_untradeables);
+    case 41 :
+        return(%boss_killcount_filtered);
+    case 42 :
+        return(%option_dropwarning_on);
+    case 278 :
+        return(calc(1 - %option_item_retrieval_warning_disabled));
+    case 46 :
+        return(%transparent_chatbox_blockclick);
+    case 47 :
+        return(%tli_storebutton_toggle_mobile);
+    case 181 :
+        return(%tli_storebutton_toggle_desktop);
+    case 312 :
+        return(%tradeoption_disabled);
+    case 372 :
+        return(%rightclick_report_abuse_disabled);
+    case 49 :
+        return(%mousecam_disabled);
+    case 50 :
+        return(%followerops_deprioritised);
+    case 51 :
+        return(%desktop_shiftclickdrop_enabled);
+    case 48 :
+        return(%option_mouse);
+    case 408 :
+        return(%osm_hide_hotkeys);
+    case 414 :
+        return(%settings_osm_hotkeys_open_sidepanels_on_left);
+    case 415 :
+        return(%settings_osm_hotkeys_show_empty_hotkeys);
+    case 54 :
+        return(%hotkey_cannot_close_sidepanel);
+    case 57 :
+        return(%keybinding_esc_to_close);
+    case 59 :
+        return(%option_acceptaid);
+    case 60 :
+        return(%bounty_teleport_warning);
+    case 61 :
+        return(%dareeyak_teleport_warning);
+    case 62 :
+        return(%carrallagar_teleport_warning);
+    case 63 :
+        return(%annakarl_teleport_warning);
+    case 64 :
+        return(%ghorrock_teleport_warning);
+    case 471 :
+        return(%sailing_warning_teleportoffboat);
+    case 253 :
+        return(%wilderness_lever_blockwarning_standard);
+    case 254 :
+        return(%wilderness_lever_blockwarning_highrisk);
+    case 255 :
+        return(%wildy_hub_warning);
+    case 308 :
+        return(%wildy_hub_warning_highrisk);
+    case 256 :
+        return(%wildy_canoe_warning);
+    case 309 :
+        return(%wildy_canoe_warning_highrisk);
+    case 65 :
+        return(%alchemy_warning_untradeables);
+    case 432 :
+        return(%alchemy_warning_forinventory_disabled);
+    case 67 :
+        return(%teletab_ice_plateau_warning);
+    case 68 :
+        return(%teletab_cemetery_warning);
+    case 69 :
+        return(%teletab_wildycrabs_warning);
+    case 70 :
+        return(%teletab_dareeyak_warning);
+    case 71 :
+        return(%teletab_carrallangar_warning);
+    case 72 :
+        return(%teletab_annakarl_warning);
+    case 73 :
+        return(%teletab_ghorrock_warning);
+    case 182 :
+        return(%iron_noloot_icon_disabled);
+    case 183 :
+        return(%iron_noloot_message_disabled);
+    case 365 :
+        return(%crm_surprisepopup_blocked);
+    case 82 :
+        return(%option_precise_timing);
+    case 83 :
+        return(%option_separate_hours);
+    case 84 :
+        return(%gravestone_supplypiles_disabled);
+    case 112 :
+        return(%tile_highlighting_disabled);
+    case 410 :
+        return(%settings_mobile_tile_highlight_enabled);
+    case 409 :
+        return(%settings_mobile_tile_highlights_hidden);
+    case 114 :
+        return(%mouseover_tooltips_disabled);
+    case 147 :
+        return(%mouseover_text_enabled);
+    case 115 :
+        return(%antidrag_enabled);
+    case 116 :
+        return(%regen_indicator_disabled);
+    case 118 :
+        return(%cox_helper_disabled);
+    case 163 :
+        return(%agility_helper_disabled);
+    case 164 :
+        return(%agility_helper_highlight_obstacles_enabled);
+    case 453 :
+        return(%poll_booth_highlight_disabled);
+    case 120 :
+        return(%fishing_spot_indicator_disabled);
+    case 121 :
+        return(%fishing_spot_indicator_all_fish_disabled);
+    case 122 :
+        return(%fishing_spot_indicator_more_info_disabled);
+    case 123 :
+        return(%attack_style_enabled);
+    case 125 :
+        return(%buff_home_teleport_disabled);
+    case 126 :
+        return(%buff_minigame_teleport_disabled);
+    case 124 :
+        return(%buff_bar_hidden);
+    case 127 :
+        return(%buff_league_relics_hidden);
+    case 418 :
+        return(%buff_league_masteries_hidden);
+    case 128 :
+        return(%buff_bar_tooltips_hidden);
+    case 129 :
+        return(%buff_teleblock_disabled);
+    case 130 :
+        return(%buff_charge_spell_disabled);
+    case 131 :
+        return(%buff_godwars_altar_disabled);
+    case 132 :
+        return(%buff_dragonfire_shield_cooldown_disabled);
+    case 133 :
+        return(%buff_imbued_heart_cooldown_disabled);
+    case 437 :
+        return(%buff_surge_potion_cooldown_disabled);
+    case 134 :
+        return(%buff_vengeance_cooldown_disabled);
+    case 135 :
+        return(%buff_vengeance_active_disabled);
+    case 136 :
+        return(%buff_stamina_duration_disabled);
+    case 137 :
+        return(%buff_prayer_enhance_duration_disabled);
+    case 138 :
+        return(%buff_overload_duration_disabled);
+    case 139 :
+        return(%buff_magic_imbue_duration_disabled);
+    case 140 :
+        return(%buff_sire_stun_duration_disabled);
+    case 141 :
+        return(%buff_freeze_duration_disabled);
+    case 142 :
+        return(%buff_sotd_duration_disabled);
+    case 143 :
+        return(%buff_divine_potion_duration_disabled);
+    case 144 :
+        return(%buff_antifire_duration_disabled);
+    case 145 :
+        return(%buff_antipoison_duration_disabled);
+    case 208 :
+        return(%buff_desert_damage_disabled);
+    case 284 :
+        return(%buff_statrenewal_duration_disabled);
+    case 388 :
+        return(%buff_prayer_regeneration_potion_duration_disabled);
+    case 390 :
+        return(%buff_goading_potion_duration_disabled);
+    case 285 :
+        return(%buff_apmekens_sight_disabled);
+    case 286 :
+        return(%buff_akkha_burn_duration_disabled);
+    case 287 :
+        return(%buff_akkha_darkness_duration_disabled);
+    case 288 :
+        return(%buff_akkha_freeze_duration_disabled);
+    case 289 :
+        return(%buff_zebak_bleed_duration_disabled);
+    case 290 :
+        return(%buff_toa_midraidloot_healing_duration_disabled);
+    case 291 :
+        return(%buff_toa_midraidloot_prayer_duration_disabled);
+    case 292 :
+        return(%buff_toa_midraidloot_energy_duration_disabled);
+    case 293 :
+        return(%buff_toa_midraidloot_stats_duration_disabled);
+    case 146 :
+        return(%always_on_top);
+    case 241 :
+        return(deviceoption_get(^deviceoption_full_screen));
+    case 148 :
+        return(%stat_boosts_hud_hidden);
+    case 149 :
+        return(%stat_boosts_hud_tooltips_hidden);
+    case 151 :
+        return(%stat_boosts_hud_display_relative);
+    case 152 :
+        return(%buff_corruption_disabled);
+    case 153 :
+        return(%buff_mark_of_darkness_disabled);
+    case 154 :
+        return(%buff_shadow_veil_disabled);
+    case 155 :
+        return(%buff_death_charge_disabled);
+    case 156 :
+        return(%buff_ward_of_arceuus_disabled);
+    case 157 :
+        return(%buff_resurrection_disabled);
+    case 161 :
+        return(%ca_failure_notifications_enabled);
+    case 159 :
+        return(%ca_task_popup);
+    case 160 :
+        return(%ca_task_recompletion_notifications);
+    case 162 :
+        if (%ca_failure_notifications_enabled = 1) {
+            return(%ca_refailure_notifications_enabled);
+        }
+        return(0);
+    case 170 :
+        return(%buff_ammo_disabled);
+    case 85 :
+        return(testbit(%option_collection_new_item, 0));
+    case 171 :
+        return(testbit(%option_collection_new_item, 1));
+    case 172 :
+        return(%highlighting_tile_mouseover_enabled);
+    case 175 :
+        return(%highlighting_tile_current_enabled);
+    case 178 :
+        return(%highlighting_tile_destination_enabled);
+    case 173 :
+        return(%highlighting_tile_mouseover_alwaysontop);
+    case 176 :
+        return(%highlighting_tile_current_alwaysontop);
+    case 179 :
+        return(%highlighting_tile_destination_alwaysontop);
+    case 166 :
+        return(%minimap_zoom_lock_disabled);
+    case 317 :
+        return(%osm_minimap_toggle);
+    case 184 :
+        return(%slayer_helper_disabled);
+    case 185 :
+        return(%logout_notification_disabled);
+    case 186 :
+        return(%buff_poison_damage_disabled);
+    case 189 :
+        return(%birdnest_notification_disabled);
+    case 190 :
+        return(%mouseover_entity_highlights_enabled);
+    case 212 :
+        return(%interact_entity_highlights_disabled);
+    case 251 :
+        return(%popout_panel_desktop_disabled);
+    case 252 :
+        return(%popout_panel_mobile_enabled);
+    case 191 :
+        return(%popout_xptracker_disabled);
+    case 192 :
+        return(%gravestone_disable_warning);
+    case 362 :
+        return(%compass_reorientation_setheight);
+    case 425 :
+        return(calc(1 - %option_camera_effect_combat_disabled));
+    case 426 :
+        return(calc(1 - %option_camera_effect_atmospherics_disabled));
+    case 427 :
+        return(calc(1 - %option_camera_effect_shamans_disabled));
+    case 428 :
+        return(calc(1 - %option_camera_effect_olm_disabled));
+    case 429 :
+        return(calc(1 - %option_camera_effect_monkey_madness_disabled));
+    case 281 :
+        return(calc(1 - %option_camera_effect_baba_yaga_disabled));
+    case 282 :
+        return(calc(1 - %trawler_camera_static));
+    case 283 :
+        return(calc(1 - %option_camera_effect_barrows_disabled));
+    case 436 :
+        return(calc(1 - %option_camera_effect_snow_disabled));
+    case 305 :
+        return(%take_ammo_toggle);
+    case 306 :
+        return(%take_runes_toggle);
+    case 354 :
+        return(%emptyondeath_runepouch);
+    case 355 :
+        return(%emptyondeath_tacklebox);
+    case 356 :
+        return(%emptyondeath_boltpouch);
+    case 357 :
+        return(%emptyondeath_seedbox);
+    case 358 :
+        return(%emptyondeath_essencepouch);
+    case 359 :
+        return(%emptyondeath_herbsack);
+    case 195 :
+        return(%option_chatbox_mode_autoset);
+    case 313 :
+        return(%purgeignored_permbanned_disabled);
+    case 314 :
+        return(%purgeignored_permmuted_enabled);
+    case 201 :
+        return(%option_gim_loot_broadcasts_disabled);
+    case 202 :
+        return(%option_gim_levelup_broadcasts_disabled);
+    case 203 :
+        return(%option_gim_quest_broadcasts_disabled);
+    case 204 :
+        return(%option_gim_ca_broadcasts_disabled);
+    case 210 :
+        return(%agility_helper_highlight_shortcuts_overlay_disabled);
+    case 206 :
+        if (~deadman_world ! 0) {
+            return(0);
+        }
+        return(%skull_prevent_enabled);
+    case 205 :
+        return(%trade_delay_disabled);
+    case 213 :
+        return(%buff_cannon_ammo_disabled);
+    case 217 :
+        return(%questlist_hide_not_started);
+    case 218 :
+        return(%questlist_hide_in_progress);
+    case 219 :
+        return(%questlist_hide_completed);
+    case 220 :
+        return(%questlist_hide_miniquests);
+    case 221 :
+        return(%questlist_hide_quests);
+    case 223 :
+        return(%questlist_disable_text_shadow);
+    case 229 :
+        return(%option_haptic_on_op_disabled);
+    case 230 :
+        return(%option_haptic_on_drag_disabled);
+    case 231 :
+        return(%option_haptic_on_minimenu_open_disabled);
+    case 232 :
+        return(%option_haptic_on_minimenu_entry_hover_enabled);
+    case 234 :
+        return(%examine_price_ge_enabled);
+    case 235 :
+        return(%examine_price_alch_enabled);
+    case 239 :
+        return(%questlist_disable_headers);
+    case 240 :
+        return(%questlist_hide_unavailable);
+    case 257 :
+        return(%option_content_recommender_hide);
+    case 242 :
+        return(%tog_helper_disabled);
+    case 243 :
+        return(%hunter_trap_timers_disabled);
+    case 244 :
+        return(%buff_water_charges_disabled);
+    case 245 :
+        return(%herbiboar_helper_disabled);
+    case 246 :
+        return(%buff_cannon_decay_disabled);
+    case 247 :
+        return(%cannon_hud_disabled);
+    case 248 :
+        return(%cannon_low_notification_enabled);
+    case 250 :
+        return(%cannon_no_ammo_notification_enabled);
+    case 261 :
+        return(%option_npc_indicators_enabled);
+    case 416 :
+        return(%option_npc_indicators_tagging_enabled);
+    case 260 :
+        return(%option_npc_indicators_outline_enabled);
+    case 265 :
+        return(%option_minimap_icons_max_zoom_disabled);
+    case 268 :
+        return(%blast_furnace_helper_disabled);
+    case 269 :
+        return(%blast_furnace_highlights_disabled);
+    case 270 :
+        return(%option_cluehelper_overlay_enabled);
+    case 277 :
+        return(%option_cluehelper_target_highlight_enabled);
+    case 271 :
+        return(%option_cluehelper_enabled);
+    case 272 :
+        return(%option_cluehelper_worldmap_marker_enabled);
+    case 273 :
+        return(%option_cluehelper_target_world_arrow_enabled);
+    case 274 :
+        return(%option_cluehelper_menu_highlight_enabled);
+    case 275 :
+        return(%option_cluehelper_infobox_enabled);
+    case 276 :
+        return(%option_cluehelper_infobox_show_clue_text);
+    case 294 :
+        return(%settings_warning_confirmation_charter_ships);
+    case 295 :
+        return(%settings_warning_confirmation_farming_protection);
+    case 347 :
+        return(%worldswitcher_disable_confirmation);
+    case 424 :
+        return(%bank_depositbox_oplocu_askquantity);
+    case 370 :
+        return(%poison_karambwan_warning_disabled);
+    case 420 :
+        return(%dream_plankspell_plain);
+    case 421 :
+        return(%dream_plankspell_oak);
+    case 422 :
+        return(%dream_plankspell_teak);
+    case 423 :
+        return(%dream_plankspell_mahogany);
+    case 296 :
+        return(%wilderness_lever_first_op);
+    case 297 :
+        return(%option_ge_price_buy_warning_disabled);
+    case 298 :
+        return(%option_ge_price_sell_warning_disabled);
+    case 302 :
+        return(%settings_muspah_messages);
+    case 303 :
+        return(%show_dialogue_in_chatbox);
+    case 304 :
+        return(%show_mesbox_in_chatbox);
+    case 307 :
+        return(%buff_wbr_exit_cave);
+    case 311 :
+        return(%combat_level_decimal_enabled);
+    case 315 :
+        return(%option_level_up_message);
+    case 316 :
+        return(%option_fletch_dart_or_bolt_makex);
+    case 320 :
+        return(%popout_loottools_disabled);
+    case 321 :
+        return(%ground_items_enabled);
+    case 333 :
+        return(%ground_items_price_type);
+    case 366 :
+        return(%ground_items_untradeable_items_disabled);
+    case 346 :
+        return(%ground_items_display_price_disabled);
+    case 335 :
+        return(%ground_items_despawn_time_enabled_mobile);
+    case 337 :
+        return(%ground_items_visibility_time_enabled_mobile);
+    case 339 :
+        return(%ground_items_edit_mode_enabled_mobile);
+    case 343 :
+        return(%option_loottracker_disabled);
+    case 344 :
+        return(%option_loottracker_ignore_consumed_drops);
+    case 348 :
+        return(%music_enableloop);
+    case 360 :
+        return(%option_skill_guide);
+    case 352 :
+        return(%lootingbag_useallitems);
+    case 353 :
+        return(%lootingbag_ignore_food);
+    case 386 :
+        return(%death_waivecosmeticsprotection);
+    case 363 :
+        return(%buff_group_gathering_woodcutting_disabled);
+    case 368 :
+        return(%quest_start_highlight_filter_requirements);
+    case 369 :
+        return(%buff_scurrius_food_pile);
+    case 371 :
+        return(%settings_gravestone_autoequip);
+    case 373 :
+        return(%settings_barbarian_potion_makex);
+    case 380 :
+        return(%auto_smash_vials);
+    case 381 :
+        return(%brut_smash_pots_automatically);
+    case 374 :
+        return(%option_trail_reminder_beginner);
+    case 375 :
+        return(%option_trail_reminder_easy);
+    case 376 :
+        return(%option_trail_reminder_medium);
+    case 377 :
+        return(%option_trail_reminder_hard);
+    case 378 :
+        return(%option_trail_reminder_elite);
+    case 379 :
+        return(%option_trail_reminder_master);
+    case 383 :
+        return(%settings_hd_beta_enabled);
+    case 385 :
+        return(%buff_deadman_overload_potion);
+    case 391 :
+        return(%settings_minimenu_start_index_toggle);
+    case 396 :
+        return(%settings_minimenu_filter_visual_feedback);
+    case 397 :
+        return(%settings_minimenu_filter_target);
+    case 398 :
+        return(%settings_minimenu_filter_entity);
+    case 399 :
+        return(%settings_minimenu_filter_interface);
+    case 400 :
+        return(%settings_minimenu_filter_walk);
+    case 401 :
+        return(%settings_minimenu_filter_global_click);
+    case 402 :
+        return(%settings_minimenu_filter_player);
+    case 403 :
+        return(%settings_minimenu_filter_use);
+    case 404 :
+        return(%settings_minimenu_filter_cancel);
+    case 405 :
+        return(%settings_minimenu_filter_examine);
+    case 406 :
+        return(%settings_minimenu_reordering_toggle);
+    case 447 :
+        return(%settings_mobile_minimenu_icon_enabled);
+    case 417 :
+        return(%popout_hiscores_globalclick_enabled);
+    case 413 :
+        return(%settings_mobile_taptodrop_enabled);
+    case 419 :
+        return(%settings_minimenu_scrollbar_toggle);
+    case 430 :
+        return(%settings_mobile_show_filter_stones_enabled);
+    case 433 :
+        return(%settings_didyouknow_disabled);
+    case 441 :
+        return(%settings_world_map_hotkey_disabled);
+    case 439 :
+        return(%settings_hd_new_renderer_toggle);
+    case 442 :
+        return(%settings_interface_resizing);
+    case 443 :
+        return(%buff_bowstring_spool_disabled);
+    case 444 :
+        return(%buff_ent_totems_bonus_xp_disabled);
+    case 445 :
+        return(calc(1 - %option_camera_effect_dom_disabled));
+    case 446 :
+        return(%settings_farming_dig_disable_warning);
+    case 448 :
+        return(%settings_birdhouse_seed_warning_enabled);
+    case 451 :
+        return(%option_hidey_holes_equipped);
+    case 452 :
+        return(%settings_ca_open_last_interface_disabled);
+    case 455 :
+        return(%sailing_charting_drink_crate_warning);
+    case 456 :
+        return(%settings_sailing_charting_popup);
+    case 457 :
+        return(%sailing_port_task_cancel_warning_disabled);
+    case 458 :
+        return(%sailing_current_duck_hintarrow_disabled);
+    case 459 :
+        return(%sailing_barracuda_trials_hintarrow_disabled);
+    case 460 :
+        return(%settings_colourful_fade_disabled);
+    case 461 :
+        return(%keep_sailing_boat_when_leaving_helm);
+    case 463 :
+        return(%port_task_loading_bay_warning_dismissed);
+    case 464 :
+        return(%sailing_show_charting_hints);
+    case 465 :
+        return(%settings_sailing_dropitem_warning);
+    case 466 :
+        return(%sailing_show_customisation_material_messages);
+    case 467 :
+        return(%settings_cargo_in_hold_warning);
+    case 469 :
+        return(%settings_ironman_cargo_warning);
+    case 472 :
+        return(%settings_new_menu_interface);
+    case 473 :
+        return(%settings_new_menu_transparent_interface_disabled);
+    case 474 :
+        return(%settings_runepouch_loadout_names_disabled);
+    case 475 :
+        return(%settings_fairyring_mobile_keyboard_autoopen_disabled);
+}

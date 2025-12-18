@@ -1,0 +1,63 @@
+// 2909
+[proc,gauntlet_map_update]
+if (%gauntlet_corrupted = 1) {
+    if_setgraphic("gauntlet_map_icons,7", gauntlet_map:player);
+} else {
+    if_setgraphic("gauntlet_map_icons,4", gauntlet_map:player);
+}
+if (%gauntlet_corrupted = 1) {
+    if_setgraphic("gauntlet_map_icons,9", gauntlet_map:d4);
+} else {
+    if_setgraphic("gauntlet_map_icons,6", gauntlet_map:d4);
+}
+~gauntlet_map_start_update;
+~gauntlet_map_player_update;
+~gauntlet_map_room_update(gauntlet_map:a1, %gauntlet_room_0_found);
+~gauntlet_map_room_update(gauntlet_map:a2, %gauntlet_room_1_found);
+~gauntlet_map_room_update(gauntlet_map:a3, %gauntlet_room_2_found);
+~gauntlet_map_room_update(gauntlet_map:a4, %gauntlet_room_3_found);
+~gauntlet_map_room_update(gauntlet_map:a5, %gauntlet_room_4_found);
+~gauntlet_map_room_update(gauntlet_map:a6, %gauntlet_room_5_found);
+~gauntlet_map_room_update(gauntlet_map:a7, %gauntlet_room_6_found);
+~gauntlet_map_room_update(gauntlet_map:b1, %gauntlet_room_7_found);
+~gauntlet_map_room_update(gauntlet_map:b2, %gauntlet_room_8_found);
+~gauntlet_map_room_update(gauntlet_map:b3, %gauntlet_room_9_found);
+~gauntlet_map_room_update(gauntlet_map:b4, %gauntlet_room_10_found);
+~gauntlet_map_room_update(gauntlet_map:b5, %gauntlet_room_11_found);
+~gauntlet_map_room_update(gauntlet_map:b6, %gauntlet_room_12_found);
+~gauntlet_map_room_update(gauntlet_map:b7, %gauntlet_room_13_found);
+~gauntlet_map_room_update(gauntlet_map:c1, %gauntlet_room_14_found);
+~gauntlet_map_room_update(gauntlet_map:c2, %gauntlet_room_15_found);
+~gauntlet_map_room_update(gauntlet_map:c3, %gauntlet_room_16_found);
+~gauntlet_map_room_update(gauntlet_map:c4, %gauntlet_room_17_found);
+~gauntlet_map_room_update(gauntlet_map:c5, %gauntlet_room_18_found);
+~gauntlet_map_room_update(gauntlet_map:c6, %gauntlet_room_19_found);
+~gauntlet_map_room_update(gauntlet_map:c7, %gauntlet_room_20_found);
+~gauntlet_map_room_update(gauntlet_map:d1, %gauntlet_room_21_found);
+~gauntlet_map_room_update(gauntlet_map:d2, %gauntlet_room_22_found);
+~gauntlet_map_room_update(gauntlet_map:d3, %gauntlet_room_23_found);
+~gauntlet_map_room_update(gauntlet_map:d4, %gauntlet_room_24_found);
+~gauntlet_map_room_update(gauntlet_map:d5, %gauntlet_room_25_found);
+~gauntlet_map_room_update(gauntlet_map:d6, %gauntlet_room_26_found);
+~gauntlet_map_room_update(gauntlet_map:d7, %gauntlet_room_27_found);
+~gauntlet_map_room_update(gauntlet_map:e1, %gauntlet_room_28_found);
+~gauntlet_map_room_update(gauntlet_map:e2, %gauntlet_room_29_found);
+~gauntlet_map_room_update(gauntlet_map:e3, %gauntlet_room_30_found);
+~gauntlet_map_room_update(gauntlet_map:e4, %gauntlet_room_31_found);
+~gauntlet_map_room_update(gauntlet_map:e5, %gauntlet_room_32_found);
+~gauntlet_map_room_update(gauntlet_map:e6, %gauntlet_room_33_found);
+~gauntlet_map_room_update(gauntlet_map:e7, %gauntlet_room_34_found);
+~gauntlet_map_room_update(gauntlet_map:f1, %gauntlet_room_35_found);
+~gauntlet_map_room_update(gauntlet_map:f2, %gauntlet_room_36_found);
+~gauntlet_map_room_update(gauntlet_map:f3, %gauntlet_room_37_found);
+~gauntlet_map_room_update(gauntlet_map:f4, %gauntlet_room_38_found);
+~gauntlet_map_room_update(gauntlet_map:f5, %gauntlet_room_39_found);
+~gauntlet_map_room_update(gauntlet_map:f6, %gauntlet_room_40_found);
+~gauntlet_map_room_update(gauntlet_map:f7, %gauntlet_room_41_found);
+~gauntlet_map_room_update(gauntlet_map:g1, %gauntlet_room_42_found);
+~gauntlet_map_room_update(gauntlet_map:g2, %gauntlet_room_43_found);
+~gauntlet_map_room_update(gauntlet_map:g3, %gauntlet_room_44_found);
+~gauntlet_map_room_update(gauntlet_map:g4, %gauntlet_room_45_found);
+~gauntlet_map_room_update(gauntlet_map:g5, %gauntlet_room_46_found);
+~gauntlet_map_room_update(gauntlet_map:g6, %gauntlet_room_47_found);
+~gauntlet_map_room_update(gauntlet_map:g7, %gauntlet_room_48_found);

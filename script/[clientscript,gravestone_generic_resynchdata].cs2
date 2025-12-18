@@ -1,0 +1,14 @@
+// 3477
+[clientscript,gravestone_generic_resynchdata](int $int0, component $component1, int $int2, component $component3, component $component4, component $component5)
+if (%gravestone_transmit_coffer ! $int2 | %gravestone_transmit_fee ! $int0) {
+    if_settext(~gravestone_generic_parsefee(%gravestone_transmit_fee), $component1);
+    if_settext(~gravestone_generic_parsecoffer(%gravestone_transmit_coffer), $component3);
+    if (%gravestone_transmit_fee ! 0) {
+        if_setop(1, "Unlock", $component4);
+        if_setgraphic("bankbuttons,7", $component5);
+    } else {
+        if_setop(1, "Take-All", $component4);
+        if_setgraphic("bankbuttons,4", $component5);
+    }
+    if_setontimer("gravestone_generic_resynchdata(%gravestone_transmit_fee, $component1, %gravestone_transmit_coffer, $component3, $component4, $component5)", $component3);
+}

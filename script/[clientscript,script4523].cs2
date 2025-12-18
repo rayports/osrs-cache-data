@@ -1,0 +1,6 @@
+// 4523
+[clientscript,script4523]
+if (~on_enhanced_any = false) {
+    return;
+}
+if_setonvartransmit("script4524{settings_varp_2, com_mode, randomhitsound, toplevel_temp}", pvp_icons:attackstyle);

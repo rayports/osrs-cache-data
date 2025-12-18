@@ -1,0 +1,11 @@
+// 1979
+[proc,osm_hidechat]()(boolean)
+if (%chat_view ! 1337) {
+    %chat_view_saved = %chat_view;
+    %chat_view = 1337;
+    ~toplevel_chatbox_background;
+    ~redraw_chat_buttons;
+    ~script7609;
+    return(true);
+}
+return(false);

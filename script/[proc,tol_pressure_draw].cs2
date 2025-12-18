@@ -1,0 +1,296 @@
+// 2763
+[proc,tol_pressure_draw]
+if (%tol_pres_solved1 = 1) {
+    if_sethide(false, tol_pressure_machine:tol_leakstopper_layer01);
+    if (%tol_pres1_level >= 5) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer1_1);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer1_1);
+    }
+    if (%tol_pres1_level >= 4) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer1_2);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer1_2);
+    }
+    if (%tol_pres1_level >= 3) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer1_3);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer1_3);
+    }
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer1_3);
+    if (%tol_pres1_level >= 2) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer1_4);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer1_4);
+    }
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer1_4);
+    if (%tol_pres1_level >= 1) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer1_5);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer1_5);
+    }
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer1_5);
+    if_sethide(true, tol_pressure_machine:tol_leakflow_layer01);
+    if_sethide(true, tol_pressure_machine:tol_leak_blackhole_layer01);
+} else {
+    if_sethide(true, tol_pressure_machine:tol_leakstopper_layer01);
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_layer1_1);
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_layer1_2);
+    if (%tol_pres1_level >= 3) {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer1_3);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_filled_ball_layer1_3);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer1_4);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer1_4);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer1_5);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer1_5);
+        if_sethide(false, tol_pressure_machine:tol_leakflow_layer01);
+        if_sethide(true, tol_pressure_machine:tol_leak_blackhole_layer01);
+    } else if (%tol_pres1_level = 2) {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer1_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer1_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer1_4);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_filled_ball_layer1_4);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer1_5);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer1_5);
+        if_sethide(false, tol_pressure_machine:tol_leakflow_layer01);
+        if_sethide(true, tol_pressure_machine:tol_leak_blackhole_layer01);
+    } else if (%tol_pres1_level <= 1) {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer1_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer1_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer1_4);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer1_4);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_filled_ball_layer1_5);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer1_5);
+        if_sethide(true, tol_pressure_machine:tol_leakflow_layer01);
+        if_sethide(false, tol_pressure_machine:tol_leak_blackhole_layer01);
+    }
+}
+if (%tol_pres_solved2 = 1) {
+    if_sethide(false, tol_pressure_machine:tol_leakstopper_layer02);
+    if (%tol_pres2_level >= 5) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer2_1);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer2_1);
+    }
+    if (%tol_pres2_level >= 4) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer2_2);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer2_2);
+    }
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_2);
+    if (%tol_pres2_level >= 3) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer2_3);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer2_3);
+    }
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_3);
+    if (%tol_pres2_level >= 2) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer2_4);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer2_4);
+    }
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_4);
+    if (%tol_pres2_level >= 1) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer2_5);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer2_5);
+    }
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_5);
+    if_sethide(true, tol_pressure_machine:tol_leakflow_layer02);
+    if_sethide(true, tol_pressure_machine:tol_leak_blackhole_layer02);
+} else {
+    if_sethide(true, tol_pressure_machine:tol_leakstopper_layer02);
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_layer2_1);
+    if (%tol_pres2_level >= 4) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_2);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer2_2);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_3);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer2_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_4);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer2_4);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_5);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer2_5);
+        if_sethide(false, tol_pressure_machine:tol_leakflow_layer02);
+        if_sethide(true, tol_pressure_machine:tol_leak_blackhole_layer02);
+    } else if (%tol_pres2_level = 3) {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_2);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer2_2);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer2_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_4);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer2_4);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_5);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer2_5);
+        if_sethide(false, tol_pressure_machine:tol_leakflow_layer02);
+        if_sethide(true, tol_pressure_machine:tol_leak_blackhole_layer02);
+    } else if (%tol_pres2_level = 2) {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_2);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer2_2);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer2_3);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_4);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer2_4);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_5);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer2_5);
+        if_sethide(true, tol_pressure_machine:tol_leakflow_layer02);
+        if_sethide(false, tol_pressure_machine:tol_leak_blackhole_layer02);
+    } else if (%tol_pres2_level <= 1) {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_2);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer2_2);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer2_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_4);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer2_4);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_filled_ball_layer2_5);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer2_5);
+        if_sethide(true, tol_pressure_machine:tol_leakflow_layer02);
+        if_sethide(false, tol_pressure_machine:tol_leak_blackhole_layer02);
+    }
+}
+if (%tol_pres_solved3 = 1) {
+    if_sethide(false, tol_pressure_machine:tol_leakstopper_layer03);
+    if (%tol_pres3_level >= 5) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer3_1);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer3_1);
+    }
+    if (%tol_pres3_level >= 4) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer3_2);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer3_2);
+    }
+    if (%tol_pres3_level >= 3) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer3_3);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer3_3);
+    }
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer3_3);
+    if (%tol_pres3_level >= 2) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer3_4);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer3_4);
+    }
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer3_4);
+    if (%tol_pres3_level >= 1) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer3_5);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer3_5);
+    }
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer3_5);
+    if_sethide(true, tol_pressure_machine:tol_leakflow_layer03);
+    if_sethide(true, tol_pressure_machine:tol_leak_blackhole_layer03);
+} else {
+    if_sethide(true, tol_pressure_machine:tol_leakstopper_layer03);
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_layer3_1);
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_layer3_2);
+    if (%tol_pres3_level >= 3) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_filled_ball_layer3_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer3_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer3_4);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer3_4);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer3_5);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer3_5);
+        if_sethide(false, tol_pressure_machine:tol_leakflow_layer03);
+        if_sethide(true, tol_pressure_machine:tol_leak_blackhole_layer03);
+    } else if (%tol_pres3_level = 2) {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer3_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer3_3);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_filled_ball_layer3_4);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer3_4);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer3_5);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer3_5);
+        if_sethide(true, tol_pressure_machine:tol_leakflow_layer03);
+        if_sethide(false, tol_pressure_machine:tol_leak_blackhole_layer03);
+    } else if (%tol_pres3_level <= 1) {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer3_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer3_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer3_4);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer3_4);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_filled_ball_layer3_5);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer3_5);
+        if_sethide(true, tol_pressure_machine:tol_leakflow_layer03);
+        if_sethide(false, tol_pressure_machine:tol_leak_blackhole_layer03);
+    }
+}
+if (%tol_pres_solved4 = 1) {
+    if_sethide(false, tol_pressure_machine:tol_leakstopper_layer04);
+    if (%tol_pres4_level >= 5) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer4_1);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer4_1);
+    }
+    if (%tol_pres4_level >= 4) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer4_2);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer4_2);
+    }
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_2);
+    if (%tol_pres4_level >= 3) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer4_3);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer4_3);
+    }
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_3);
+    if (%tol_pres4_level >= 2) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer4_4);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer4_4);
+    }
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_4);
+    if (%tol_pres4_level >= 1) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer4_5);
+    } else {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer4_5);
+    }
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_5);
+    if_sethide(true, tol_pressure_machine:tol_leakflow_layer04);
+    if_sethide(true, tol_pressure_machine:tol_leak_blackhole_layer04);
+} else {
+    if_sethide(true, tol_pressure_machine:tol_leakstopper_layer04);
+    if_sethide(true, tol_pressure_machine:tol_waterlevel_layer4_1);
+    if (%tol_pres4_level >= 4) {
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_2);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer4_2);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_3);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer4_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_4);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer4_4);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_5);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer4_5);
+        if_sethide(false, tol_pressure_machine:tol_leakflow_layer04);
+        if_sethide(true, tol_pressure_machine:tol_leak_blackhole_layer04);
+    } else if (%tol_pres4_level = 3) {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_2);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer4_2);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer4_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_4);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer4_4);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_5);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer4_5);
+        if_sethide(true, tol_pressure_machine:tol_leakflow_layer04);
+        if_sethide(false, tol_pressure_machine:tol_leak_blackhole_layer04);
+    } else if (%tol_pres4_level = 2) {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_2);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer4_2);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer4_3);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_4);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer4_4);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_5);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_layer4_5);
+        if_sethide(true, tol_pressure_machine:tol_leakflow_layer04);
+        if_sethide(false, tol_pressure_machine:tol_leak_blackhole_layer04);
+    } else if (%tol_pres4_level <= 1) {
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_2);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer4_2);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer4_3);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_4);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer4_4);
+        if_sethide(false, tol_pressure_machine:tol_waterlevel_filled_ball_layer4_5);
+        if_sethide(true, tol_pressure_machine:tol_waterlevel_layer4_5);
+        if_sethide(true, tol_pressure_machine:tol_leakflow_layer04);
+        if_sethide(false, tol_pressure_machine:tol_leak_blackhole_layer04);
+    }
+}

@@ -1,0 +1,30 @@
+// 1195
+[proc,hosidius_tithe_hud_update](component $component0, component $component1, component $component2)
+if (%hosidius_tithe_type = 1) {
+    if_setobject_nonum(hosidius_tithe_fruit_a, 1, $component0);
+} else if (%hosidius_tithe_type = 2) {
+    if_setobject_nonum(hosidius_tithe_fruit_b, 1, $component0);
+} else if (%hosidius_tithe_type = 3) {
+    if_setobject_nonum(hosidius_tithe_fruit_c, 1, $component0);
+} else {
+    if_setobject_nonum(cabbage, 1, $component0);
+}
+def_int $int3 = 100;
+if (%hosidius_tithe_score <= 100) {
+    $int3 = %hosidius_tithe_score;
+}
+if_settext(tostring($int3), $component1);
+def_int $int4 = interpolate(0, 75, 0, 100, 100);
+def_int $int5 = 210;
+def_int $int6 = 0;
+if ($int3 < $int4) {
+    $int5 = interpolate(0, $int3, 0, $int4, 152);
+    $int6 = interpolate(0, $int3, 0, $int4, 31);
+}
+if_setcolour(~rgb_to_hex(255, $int5, $int6), $component1);
+if_settext("Points: <~tostring_spacer(%hosidius_tithe_rewardpoints, ",")>", $component2);
+if (%hosidius_tithe_rewardpoints >= 16000) {
+    if_setcolour(^red, $component2);
+} else {
+    if_setcolour(0xff981f, $component2);
+}

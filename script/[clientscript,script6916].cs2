@@ -1,0 +1,41 @@
+// 6916
+[clientscript,script6916](int $int0)
+if (worldlist_fetch = false) {
+    return;
+}
+if_setontimer(null, fsw_optin:universe);
+worldlist_sort(8, false, 0, false);
+def_int $intbool1 = ^false;
+if (map_members = true) {
+    $intbool1 = ^true;
+}
+def_int $int2 = 0;
+def_int $int3 = -1;
+def_int $int4 = 0;
+def_string $string0 = "";
+def_int $int5 = -1;
+def_int $int6 = 0;
+def_string $string1 = "";
+$int3, $int4, $string0, $int5, $int6, $string1 = worldlist_start;
+def_int $int7 = -1;
+def_int $int8 = 0;
+def_int $intbool9 = ^false;
+while ($int8 = 0 & $int3 > 0) {
+    $intbool9 = testbit($int4, 0);
+    if (~script6917($int0, $intbool1, $int4, $intbool9) = 1) {
+        if ($intbool9 = ^false & $int6 > 950 | $intbool9 = ^true & $int6 > 1950) {
+            if ($int7 = -1) {
+                $int7 = $int3;
+            }
+        } else {
+            $int8 = 1;
+        }
+    }
+    if ($int8 = 0) {
+        $int3, $int4, $string0, $int5, $int6, $string1 = worldlist_next;
+    }
+}
+if ($int8 = 0) {
+    $int3 = $int7;
+}
+resume_countdialog(tostring($int3));

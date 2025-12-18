@@ -1,0 +1,6 @@
+// 5999
+[proc,script5999]
+if (~on_enhanced_desktop = false) {
+    return;
+}
+%antidrag_enabled = calc(1 - %antidrag_enabled);

@@ -1,0 +1,8 @@
+// 3995
+[proc,script3995]
+if (~on_mobile = true) {
+    return;
+}
+if (%resizable_stone_arrangement = 1) {
+    %hotkey_cannot_close_sidepanel = calc(1 - %hotkey_cannot_close_sidepanel);
+}

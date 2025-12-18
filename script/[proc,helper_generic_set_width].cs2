@@ -1,0 +1,5 @@
+// 4701
+[proc,helper_generic_set_width](int $int0)
+if (%helper_generic_current_width < $int0) {
+    %helper_generic_current_width = ~min($int0, 140);
+}

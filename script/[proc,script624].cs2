@@ -1,0 +1,18 @@
+// 624
+[proc,script624](component $component0, int $int1, int $int2, int $int3, int $int4, int $int5, int $int6, int $int7, int $int8, int $int9)(int)
+def_int $int10 = 4;
+def_int $int11 = 8;
+def_int $int12 = calc($int4 - $int10 + $int2);
+def_int $int13 = calc($int5 - $int10 + $int3);
+def_int $int14 = calc($int4 - $int11);
+def_int $int15 = calc($int5 - $int11);
+~create_graphic($component0, $int1, graphic_6840, $int2, $int3, ^setpos_abs_left, ^setpos_abs_top, $int10, $int10, ^setsize_abs, ^setsize_abs, true);
+~create_graphic($component0, calc($int1 + 1), graphic_6841, calc($int10 + $int2), $int3, ^setpos_abs_left, ^setpos_abs_top, $int14, $int10, ^setsize_abs, ^setsize_abs, true);
+~create_graphic($component0, calc($int1 + 2), graphic_6842, $int12, $int3, ^setpos_abs_left, ^setpos_abs_top, $int10, $int10, ^setsize_abs, ^setsize_abs, true);
+~create_graphic($component0, calc($int1 + 3), graphic_6846, $int2, calc($int10 + $int3), ^setpos_abs_left, ^setpos_abs_top, $int10, $int15, ^setsize_abs, ^setsize_abs, true);
+~create_graphic($component0, calc($int1 + 4), graphic_6847, calc($int10 + $int2), calc($int10 + $int3), ^setpos_abs_left, ^setpos_abs_top, $int14, $int15, ^setsize_abs, ^setsize_abs, true);
+~create_graphic($component0, calc($int1 + 5), graphic_6848, $int12, calc($int10 + $int3), ^setpos_abs_left, ^setpos_abs_top, $int10, $int15, ^setsize_abs, ^setsize_abs, true);
+~create_graphic($component0, calc($int1 + 6), graphic_6852, $int2, $int13, ^setpos_abs_left, ^setpos_abs_top, $int10, $int10, ^setsize_abs, ^setsize_abs, true);
+~create_graphic($component0, calc($int1 + 7), graphic_6853, calc($int10 + $int2), $int13, ^setpos_abs_left, ^setpos_abs_top, $int14, $int10, ^setsize_abs, ^setsize_abs, true);
+~create_graphic($component0, calc($int1 + 8), graphic_6854, $int12, $int13, ^setpos_abs_left, ^setpos_abs_top, $int10, $int10, ^setsize_abs, ^setsize_abs, true);
+return(calc($int1 + 9));

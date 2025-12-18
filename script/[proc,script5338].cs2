@@ -1,0 +1,16 @@
+// 5338
+[proc,script5338](component $component0, int $int1, component $component2, string $string0, string $string1, fontmetrics $fontmetrics3, int $int4)
+if (~on_enhanced_mobile = true) {
+    return;
+}
+if (~on_enhanced_any = false & %tooltip_time < calc(clientclock + $int4)) {
+    if (%tooltip_time < clientclock) {
+        %tooltip_time = clientclock;
+    }
+    %tooltip_time = calc(%tooltip_time + 2);
+    return;
+}
+%tooltip_time = calc(clientclock + $int4 + 10);
+if (%tooltip_built = 0 & if_gethide($component2) = false) {
+    ~script2344($component0, $int1, $component2, $string0, $string1, $fontmetrics3);
+}

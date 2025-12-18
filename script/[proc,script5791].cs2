@@ -1,0 +1,18 @@
+// 5791
+[proc,script5791](int $int0)(int)
+switch_int ($int0) {
+    case 0 :
+        return(%league_3_fragment_loadout_slot_0);
+    case 1 :
+        return(%league_3_fragment_loadout_slot_1);
+    case 2 :
+        return(%league_3_fragment_loadout_slot_2);
+    case 3 :
+        return(%league_3_fragment_loadout_slot_3);
+    case 4 :
+        return(%league_3_fragment_loadout_slot_4);
+    case 5 :
+        return(%league_3_fragment_loadout_slot_5);
+    case 6 :
+        return(%league_3_fragment_loadout_slot_6);
+}

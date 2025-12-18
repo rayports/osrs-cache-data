@@ -1,0 +1,20 @@
+// 2830
+[clientscript,script2830](int $int0, int $int1)
+switch_int ($int0) {
+    case 1 :
+        %seed_vault_fave1 = $int1;
+    case 2 :
+        %seed_vault_fave2 = $int1;
+    case 3 :
+        %seed_vault_fave3 = $int1;
+    case 4 :
+        %seed_vault_fave4 = $int1;
+    case 5 :
+        %seed_vault_fave5 = $int1;
+    case 6 :
+        %seed_vault_fave6 = $int1;
+    case 7 :
+        %seed_vault_fave7 = $int1;
+    case 8 :
+        %seed_vault_fave8 = $int1;
+}

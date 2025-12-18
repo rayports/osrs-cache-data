@@ -1,0 +1,179 @@
+// 2666
+[proc,telenexus_set_slot](int $int0, int $int1)
+switch_int ($int0) {
+    case 1 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_1_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_1_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_1_temp = $int1;
+    case 2 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_2_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_2_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_2_temp = $int1;
+    case 3 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_3_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_3_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_3_temp = $int1;
+    case 4 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_4_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_4_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_4_temp = $int1;
+    case 5 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_5_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_5_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_5_temp = $int1;
+    case 6 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_6_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_6_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_6_temp = $int1;
+    case 7 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_7_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_7_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_7_temp = $int1;
+    case 8 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_8_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_8_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_8_temp = $int1;
+    case 9 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_9_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_9_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_9_temp = $int1;
+    case 10 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_10_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_10_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_10_temp = $int1;
+    case 11 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_11_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_11_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_11_temp = $int1;
+    case 12 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_12_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_12_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_12_temp = $int1;
+    case 13 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_13_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_13_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_13_temp = $int1;
+    case 14 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_14_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_14_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_14_temp = $int1;
+    case 15 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_15_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_15_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_15_temp = $int1;
+    case 16 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_16_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_16_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_16_temp = $int1;
+    case 17 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_17_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_17_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_17_temp = $int1;
+    case 18 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_18_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_18_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_18_temp = $int1;
+    case 19 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_19_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_19_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_19_temp = $int1;
+    case 20 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_20_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_20_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_20_temp = $int1;
+    case 21 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_21_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_21_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_21_temp = $int1;
+    case 22 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_22_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_22_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_22_temp = $int1;
+    case 23 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_23_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_23_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_23_temp = $int1;
+    case 24 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_24_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_24_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_24_temp = $int1;
+    case 25 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_25_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_25_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_25_temp = $int1;
+    case 26 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_26_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_26_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_26_temp = $int1;
+    case 27 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_27_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_27_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_27_temp = $int1;
+    case 28 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_28_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_28_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_28_temp = $int1;
+    case 29 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_29_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_29_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_29_temp = $int1;
+    case 30 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_30_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_30_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_30_temp = $int1;
+    case 31 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_31_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_31_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_31_temp = $int1;
+    case 32 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_32_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_32_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_32_temp = $int1;
+    case 33 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_33_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_33_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_33_temp = $int1;
+    case 34 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_34_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_34_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_34_temp = $int1;
+    case 35 :
+        if (%poh_nexus_left_click_temp = %poh_nexus_tele_35_temp | %poh_nexus_left_click_temp = calc(%poh_nexus_tele_35_temp + 150)) {
+            %poh_nexus_left_click_temp = $int1;
+        }
+        %poh_nexus_tele_35_temp = $int1;
+}

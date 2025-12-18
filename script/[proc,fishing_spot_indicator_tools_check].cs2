@@ -1,0 +1,55 @@
+// 4557
+[proc,fishing_spot_indicator_tools_check](obj $obj0)(boolean)
+def_boolean $boolean1 = false;
+def_boolean $boolean2 = map_members;
+switch_obj ($obj0) {
+    case net :
+        if (inv_total(inv, net) > 0) {
+            $boolean1 = true;
+        }
+    case big_net :
+        if (inv_total(inv, big_net) > 0) {
+            $boolean1 = true;
+        }
+    case harpoon :
+        $boolean1 = ~script4558;
+    case candle_lantern_lit :
+        if (inv_total(inv, candle_lantern_lit) > 0 | inv_total(inv, oil_lantern_lit) > 0 | inv_total(inv, bullseye_lantern_lit) > 0) {
+            $boolean1 = true;
+        }
+    case fishing_rod :
+        if ($boolean2 = true & (inv_total(inv, fishingrod_pearl) > 0 | inv_total(worn, fishingrod_pearl) > 0)) {
+            $boolean1 = true;
+        }
+        if (inv_total(inv, fishing_rod) > 0) {
+            $boolean1 = true;
+        }
+    case oily_fishing_rod :
+        if (inv_total(inv, oily_fishing_rod) > 0 | inv_total(inv, fishingrod_pearl_oily) > 0 | inv_total(worn, fishingrod_pearl_oily) > 0) {
+            $boolean1 = true;
+        }
+    case fly_fishing_rod :
+        if ($boolean2 = true & (inv_total(inv, fishingrod_pearl_fly) > 0 | inv_total(worn, fishingrod_pearl_fly) > 0)) {
+            $boolean1 = true;
+        }
+        if (inv_total(inv, fly_fishing_rod) > 0) {
+            $boolean1 = true;
+        }
+    case brut_fishing_rod :
+        if (inv_total(inv, brut_fishing_rod) > 0 | inv_total(inv, fishingrod_pearl_brut) > 0 | inv_total(worn, fishingrod_pearl_brut) > 0) {
+            $boolean1 = true;
+        }
+    case aerial_fishing_gloves_no_bird :
+        if (inv_total(worn, aerial_fishing_gloves_bird) > 0 | inv_total(worn, aerial_fishing_gloves_no_bird) > 0) {
+            $boolean1 = true;
+        }
+    case tbwt_karambwan_vessel_loaded_with_karambwanji :
+        if (inv_total(inv, tbwt_karambwan_vessel_loaded_with_karambwanji) > 0 | inv_total(inv, tbwt_karambwan_vessel) > 0) {
+            $boolean1 = true;
+        }
+    case lobster_pot :
+        if (inv_total(inv, lobster_pot) > 0) {
+            $boolean1 = true;
+        }
+}
+return($boolean1);

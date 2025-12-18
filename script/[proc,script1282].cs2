@@ -1,0 +1,5 @@
+// 1282
+[proc,script1282]
+if (%osm_deadsides < 0 | %osm_deadsides > 2200) {
+    %osm_deadsides = 250;
+}

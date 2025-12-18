@@ -1,0 +1,5 @@
+// 2727
+[clientscript,meslayer_keyboard_show]
+if (~on_mobile = true) {
+    ~keyboard_show_string(%osm_last_keyboard, %osm_last_keyboard_limit, %meslayerinput);
+}

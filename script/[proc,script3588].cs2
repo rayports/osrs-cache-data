@@ -1,0 +1,6 @@
+// 3588
+[proc,script3588]()(obj)
+if (%tablet_spellbook = 3) {
+    return(arceuus_essence_block_dark);
+}
+return(softclay);

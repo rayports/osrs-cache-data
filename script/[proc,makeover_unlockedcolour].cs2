@@ -1,0 +1,21 @@
+// 2163
+[proc,makeover_unlockedcolour](int $int0)(boolean)
+switch_int ($int0) {
+    case 0, 1, 2, 3, 4, 5, 6, 7 :
+        return(true);
+    case 8 :
+        if (%hw07_skincols = 1) {
+            return(true);
+        }
+    case 9, 10 :
+        if (%hw15_skincols = 1) {
+            return(true);
+        }
+    case 11 :
+        if (%hw17_skincols = 1) {
+            return(true);
+        }
+    case 12 :
+        return(true);
+}
+return(false);

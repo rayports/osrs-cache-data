@@ -1,0 +1,10 @@
+// 376
+[proc,get_selected_quantity](enum $enum0)(int)
+switch_enum ($enum0) {
+    case enum_2193, enum_342 :
+        return(%farming_tools_selectedquantity);
+    case enum_2850 :
+        return(%ii_elnock_storage_selectedquantity);
+    case enum_2737 :
+        return(%depositbox_mode);
+}

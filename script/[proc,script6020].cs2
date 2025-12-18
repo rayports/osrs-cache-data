@@ -1,0 +1,4 @@
+// 6020
+[proc,script6020]
+%option_haptic_on_minimenu_entry_hover_enabled = calc(1 - %option_haptic_on_minimenu_entry_hover_enabled);
+~script6025(^gameoption_haptic_on_minimenu_entry_hover, %option_haptic_on_minimenu_entry_hover_enabled);

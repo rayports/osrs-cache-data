@@ -1,0 +1,4 @@
+// 749
+[clientscript,tutorial_progressbar_init](component $component0, component $component1, int $int2, component $component3, component $component4, int $int5)
+~script4729($component1, $component3, 65256, ^setpos_abs_left, ^setpos_abs_top, false);
+if_sethide(true, $component4);

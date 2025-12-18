@@ -1,0 +1,6 @@
+// 4612
+[proc,script4612]
+if (~on_enhanced_any = false) {
+    return;
+}
+%stat_boosts_hud_hidden = calc(1 - %stat_boosts_hud_hidden);

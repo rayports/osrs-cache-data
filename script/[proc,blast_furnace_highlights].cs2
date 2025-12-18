@@ -1,0 +1,23 @@
+// 6667
+[proc,blast_furnace_highlights]
+if (%blast_furnace_highlights_disabled = 0) {
+    highlight_loctype_setup(14, ^red, 1, 30, 5);
+    highlight_loctype_setup(15, ^green, 1, 30, 5);
+    highlight_loctype_on(blast_furnace_pipes2_broken, 14);
+    highlight_loctype_on(blast_furnace_pipes6_broken, 14);
+    highlight_loctype_on(blast_furnace_conveyer_cogs_broken, 14);
+    highlight_loctype_on(blast_furnace_conveyer_cogs2_broken, 14);
+    if (~script6668 = true) {
+        highlight_loctype_on(blast_furnace_conveyer_belt_clickable, 15);
+    } else {
+        highlight_loctype_off(blast_furnace_conveyer_belt_clickable, 15);
+    }
+    if (inv_total(worn, ice_gloves) > 0 & %blast_furnace_bars_hot ! 0 | %blast_furnace_bars_hot = 3) {
+        highlight_loctype_on(blast_furnace_dispenser, 15);
+    } else {
+        highlight_loctype_off(blast_furnace_dispenser, 15);
+    }
+} else {
+    highlight_loctype_setup(14, ^red, 1, 30, 0);
+    highlight_loctype_setup(15, ^green, 1, 30, 0);
+}

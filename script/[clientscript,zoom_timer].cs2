@@ -1,0 +1,7 @@
+// 3943
+[clientscript,zoom_timer](int $int0, int $int1)
+if (%camera_zoom_small = $int0 & %camera_zoom_big = $int1) {
+    return;
+}
+~zoom_position_slider;
+if_setontimer("zoom_timer(%camera_zoom_small, %camera_zoom_big)", settings_side:zoom_slider_bobble);

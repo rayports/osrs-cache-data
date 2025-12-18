@@ -1,0 +1,15 @@
+// 3741
+[proc,in_tutorial]()(boolean)
+if (%tutorial < 1000) {
+    return(true);
+}
+if (%tutorial_2 < 1000) {
+    return(true);
+}
+if (~in_league_tutorial = true) {
+    return(true);
+}
+if (~in_speedrunning_intro = true) {
+    return(true);
+}
+return(false);

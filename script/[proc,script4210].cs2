@@ -1,0 +1,15 @@
+// 4210
+[proc,script4210](int $int0, component $component1, int $int2)
+def_int $int3 = 255;
+def_int $int4 = 150;
+def_int $int5 = 30;
+if ($int0 = 1) {
+    $int3, $int4, $int5 = $int4, $int3, 10;
+}
+if ($int2 = 1) {
+    if_settrans($int3, $component1);
+    if_setontimer("script4211(clientclock, $int3, $int4, $int5, event_com)", $component1);
+} else {
+    if_settrans($int4, $component1);
+    if_setontimer(null, $component1);
+}

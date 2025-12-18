@@ -1,0 +1,3 @@
+// 1974
+[clientscript,mesoverlay](string $string0)
+~mesoverlay_draw($string0, if_getheight(mesoverlay:text), mesoverlay:text, mesoverlay:scrollbar);

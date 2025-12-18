@@ -1,0 +1,54 @@
+// 5388
+[proc,xptracker_get_lastxp](stat $stat0)(int)
+switch_stat ($stat0) {
+    case null :
+        return(%xptracker_lastxp_overall);
+    case attack :
+        return(%xptracker_lastxp_attack);
+    case strength :
+        return(%xptracker_lastxp_strength);
+    case defence :
+        return(%xptracker_lastxp_defence);
+    case ranged :
+        return(%xptracker_lastxp_ranged);
+    case prayer :
+        return(%xptracker_lastxp_prayer);
+    case magic :
+        return(%xptracker_lastxp_magic);
+    case runecraft :
+        return(%xptracker_lastxp_runecraft);
+    case construction :
+        return(%xptracker_lastxp_construction);
+    case hitpoints :
+        return(%xptracker_lastxp_hitpoints);
+    case agility :
+        return(%xptracker_lastxp_agility);
+    case herblore :
+        return(%xptracker_lastxp_herblore);
+    case thieving :
+        return(%xptracker_lastxp_thieving);
+    case crafting :
+        return(%xptracker_lastxp_crafting);
+    case fletching :
+        return(%xptracker_lastxp_fletching);
+    case slayer :
+        return(%xptracker_lastxp_slayer);
+    case hunter :
+        return(%xptracker_lastxp_hunter);
+    case mining :
+        return(%xptracker_lastxp_mining);
+    case smithing :
+        return(%xptracker_lastxp_smithing);
+    case fishing :
+        return(%xptracker_lastxp_fishing);
+    case cooking :
+        return(%xptracker_lastxp_cooking);
+    case firemaking :
+        return(%xptracker_lastxp_firemaking);
+    case woodcutting :
+        return(%xptracker_lastxp_woodcutting);
+    case farming :
+        return(%xptracker_lastxp_farming);
+    case sailing :
+        return(%xptracker_lastxp_sailing);
+}

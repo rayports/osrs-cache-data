@@ -1,0 +1,9 @@
+// 3297
+[proc,wiki_icon_enabled]()(boolean)
+if (%wiki_icon_disabled = 1) {
+    return(false);
+}
+if (%orbs_disabled = 1 & ~on_mobile = false) {
+    return(false);
+}
+return(true);

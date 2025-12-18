@@ -1,0 +1,90 @@
+// 7295
+[proc,worldswitcher_filterlink](int $int0, int $int1, string $string0, int $int2)(boolean)
+if (%worldswitcher_filter_member ! 0) {
+    if (testbit(%worldswitcher_filter_member, 0) = ^true & testbit($int1, 0) = ^false) {
+        return(false);
+    }
+    if (testbit(%worldswitcher_filter_member, 1) = ^true & testbit($int1, 0) = ^true) {
+        return(false);
+    }
+}
+if (%worldswitcher_filter_country ! 0) {
+    switch_int ($int2) {
+        case 0 :
+            if (testbit(%worldswitcher_filter_country, 1) = ^true) {
+                return(false);
+            }
+        case 1 :
+            if (testbit(%worldswitcher_filter_country, 0) = ^true) {
+                return(false);
+            }
+        case 3 :
+            if (testbit(%worldswitcher_filter_country, 5) = ^true) {
+                return(false);
+            }
+        case 7 :
+            if (testbit(%worldswitcher_filter_country, 4) = ^true) {
+                return(false);
+            }
+        case -73 :
+            if (testbit(%worldswitcher_filter_country, 2) = ^true) {
+                return(false);
+            }
+        case -42 :
+            if (testbit(%worldswitcher_filter_country, 3) = ^true) {
+                return(false);
+            }
+    }
+}
+def_int $int3 = -1;
+if (%worldswitcher_filter_theme ! 0) {
+    if (testbit(%worldswitcher_filter_theme, 0) = ^true & testbit($int1, 7) = ^true) {
+        return(false);
+    }
+    if (testbit(%worldswitcher_filter_theme, 1) = ^true & ~pvp_world_fromflags($int1) = true) {
+        return(false);
+    }
+    if (testbit(%worldswitcher_filter_theme, 2) = ^true & ~high_risk_world_fromflags($int1) = true) {
+        return(false);
+    }
+    if (testbit(%worldswitcher_filter_theme, 3) = ^true & ~deadman_world_fromflags($int1) ! 0) {
+        return(false);
+    }
+    if (testbit(%worldswitcher_filter_theme, 4) = ^true & ~speedrunning_world_fromflags($int1) = true) {
+        return(false);
+    }
+    if (testbit(%worldswitcher_filter_theme, 5) = ^true & ~pvpa_world_fromflags($int1) = true) {
+        return(false);
+    }
+    if (testbit(%worldswitcher_filter_theme, 6) = ^true) {
+        if (testbit($int1, 30) = ^true) {
+            return(false);
+        }
+        if (~league_world_fromflags($int1) = true) {
+            return(false);
+        }
+        if (~event_world_fromflags($int1) = true) {
+            return(false);
+        }
+        $int3 = ~deadman_world_fromflags($int1);
+        if ($int3 ! 0 & $int3 ! 1) {
+            return(false);
+        }
+    }
+    if (testbit(%worldswitcher_filter_theme, 7) = ^true) {
+        if (~beta_world_fromflags($int1) = true) {
+            return(false);
+        }
+        if (testbit($int1, 25) = ^true) {
+            return(false);
+        }
+    }
+    if (testbit(%worldswitcher_filter_theme, 8) = ^true & ~script6812($int1) = true) {
+        return(false);
+    }
+}
+def_string $string1 = ~worldswitcher_search_get;
+if (string_length($string1) > 0 & string_indexof_string(lowercase($string0), lowercase($string1), 0) = -1) {
+    return(false);
+}
+return(true);

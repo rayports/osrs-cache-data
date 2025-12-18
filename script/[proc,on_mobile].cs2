@@ -1,0 +1,9 @@
+// 1972
+[proc,on_mobile]()(boolean)
+if (%osm_simulate = 1) {
+    return(true);
+}
+if (clienttype = ^clienttype_enhanced_android) {
+    return(true);
+}
+return(on_mobile);

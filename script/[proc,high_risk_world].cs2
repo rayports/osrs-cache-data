@@ -1,0 +1,6 @@
+// 451
+[proc,high_risk_world]()(boolean)
+if (testbit(%map_flags_cached, 10) = ^true) {
+    return(true);
+}
+return(false);

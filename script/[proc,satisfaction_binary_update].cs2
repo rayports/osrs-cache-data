@@ -1,0 +1,4 @@
+// 2169
+[proc,satisfaction_binary_update](component $component0, component $component1)
+~satisfaction_binary_drawbutton($component0, 2, "thumbs,0", "thumbs,2");
+~satisfaction_binary_drawbutton($component1, 1, "thumbs,1", "thumbs,3");

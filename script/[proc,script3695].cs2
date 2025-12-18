@@ -1,0 +1,24 @@
+// 3695
+[proc,script3695]()(int)
+if (%rcu_pouch_degradation_giant >= 1200) {
+    return(0);
+}
+if (%rcu_pouch_degradation_giant >= 1000) {
+    return(3);
+}
+if (%rcu_pouch_degradation_giant >= 800) {
+    return(5);
+}
+if (%rcu_pouch_degradation_giant >= 600) {
+    return(6);
+}
+if (%rcu_pouch_degradation_giant >= 400) {
+    return(7);
+}
+if (%rcu_pouch_degradation_giant >= 300) {
+    return(8);
+}
+if (%rcu_pouch_degradation_giant >= 200) {
+    return(9);
+}
+return(12);

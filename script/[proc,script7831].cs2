@@ -1,0 +1,10 @@
+// 7831
+[proc,script7831]()(int)
+if (~on_mobile = false) {
+    return(1);
+}
+if (%osm_chatbox_disabled = 1 & %hide_pm_alongside_chatbox = 1) {
+    return(0);
+} else {
+    return(1);
+}

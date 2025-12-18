@@ -1,0 +1,32 @@
+// 8754
+[proc,sailing_sidepanel_stonebutton_in_filled](component $component0, int $int1, int $rgb2)(int)
+if (cc_find($component0, calc($int1 + 0)) = true) {
+    cc_setgraphic(tradebacking_dark);
+}
+if (cc_find($component0, calc($int1 + 1)) = true) {
+    cc_setgraphic(graphic_6812);
+}
+if (cc_find($component0, calc($int1 + 2)) = true) {
+    cc_setgraphic(graphic_6813);
+}
+if (cc_find($component0, calc($int1 + 3)) = true) {
+    cc_setgraphic(graphic_6814);
+}
+if (cc_find($component0, calc($int1 + 4)) = true) {
+    cc_setgraphic(graphic_6815);
+}
+if (cc_find($component0, calc($int1 + 5)) = true) {
+    cc_setgraphic(graphic_6816);
+}
+if (cc_find($component0, calc($int1 + 6)) = true) {
+    cc_setgraphic(graphic_6817);
+}
+if (cc_find($component0, calc($int1 + 7)) = true) {
+    cc_setgraphic(graphic_6818);
+}
+if (cc_find($component0, calc($int1 + 8)) = true) {
+    cc_setgraphic(graphic_6819);
+}
+if (cc_find($component0, calc($int1 + 10)) = true) {
+    cc_setcolour($rgb2);
+}

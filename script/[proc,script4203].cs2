@@ -1,0 +1,29 @@
+// 4203
+[proc,script4203](dbrow $dbrow0)(boolean)
+switch_dbrow ($dbrow0) {
+    case tithe_shop_grape_blessing :
+        if (%hosidius_evilgrapes < 2) {
+            return(true);
+        }
+    case tithe_shop_autoweed_toggle :
+        if (%farming_blockweeds = 0) {
+            return(true);
+        }
+    case tithe_shop_autoweed :
+        if (%farming_blockweeds > 0) {
+            return(true);
+        }
+    case tithe_shop_watering_can :
+        if (%omnishop_hasitem = 1) {
+            return(true);
+        }
+    case tithe_shop_watering_can_recharge :
+        if (%omnishop_hasitem = 0) {
+            return(true);
+        }
+    case cw_shop_data_castlewars_crate :
+        if (map_members = false) {
+            return(true);
+        }
+}
+return(false);

@@ -1,0 +1,10 @@
+// 5339
+[proc,on_mac]()(boolean)
+if (%osm_simulate = 1) {
+    return(false);
+} else if (%mac_simulate = 1) {
+    return(true);
+} else if (clienttype = ^clienttype_enhanced_mac) {
+    return(true);
+}
+return(false);

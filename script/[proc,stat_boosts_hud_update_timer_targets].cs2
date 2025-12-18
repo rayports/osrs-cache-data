@@ -1,0 +1,12 @@
+// 4519
+[proc,stat_boosts_hud_update_timer_targets]
+%sbh_restore_up_rate = %sbh_restore_up_rate_standard;
+%sbh_cycles_to_next_restore_up = %sbh_cycles_to_next_restore_up_standard;
+%sbh_last_update_time_restore_up = %sbh_last_update_time_restore_up_standard;
+def_int $int0 = calc(%sbh_last_update_time_restore_up_standard + %sbh_cycles_to_next_restore_up_standard * 30);
+def_int $int1 = calc(%sbh_last_update_time_restore_up_rapidrestore + %sbh_cycles_to_next_restore_up_rapidrestore * 30);
+if (%sbh_restore_up_rate <= 0 | %sbh_restore_up_rate_rapidrestore > 0 & $int1 < $int0) {
+    %sbh_restore_up_rate = %sbh_restore_up_rate_rapidrestore;
+    %sbh_cycles_to_next_restore_up = %sbh_cycles_to_next_restore_up_rapidrestore;
+    %sbh_last_update_time_restore_up = %sbh_last_update_time_restore_up_rapidrestore;
+}

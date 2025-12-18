@@ -1,0 +1,12 @@
+// 1182
+[proc,deadman_skullduration]()(string)
+if (%deadman_skullduration <= 0) {
+    return("");
+}
+if (%deadman_skullduration >= 255) {
+    return("<enum(int, string, enum_1245, %deadman_skulltype)> Ages!");
+}
+if (calc(%deadman_skullduration % 2) = 1) {
+    return("<enum(int, string, enum_1245, %deadman_skulltype)> <tostring(calc(%deadman_skullduration / 2))>:30");
+}
+return("<enum(int, string, enum_1245, %deadman_skulltype)> <tostring(calc(%deadman_skullduration / 2))>:00");

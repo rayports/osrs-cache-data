@@ -1,0 +1,3 @@
+// 3982
+[proc,script3982]
+%camera_zoom_mouse_disabled = calc(1 - %camera_zoom_mouse_disabled);

@@ -1,0 +1,15 @@
+// 3210
+[proc,script3210](enum $enum0)(int)
+switch_enum ($enum0) {
+    case enum_2676 :
+        return(%league_task_filter_tier);
+    case enum_2677 :
+        return(%league_task_filter_completed);
+    case enum_3413 :
+        return(%league_task_filter_type);
+    case enum_4105 :
+        return(%league_task_filter_skill);
+    case enum_3414 :
+        return(%league_task_filter_area);
+}
+return(0);

@@ -1,0 +1,18 @@
+// 4790
+[proc,ca_tier_status](int $int0)(int)
+switch_int ($int0) {
+    case 1 :
+        return(%ca_tier_status_easy);
+    case 2 :
+        return(%ca_tier_status_medium);
+    case 3 :
+        return(%ca_tier_status_hard);
+    case 4 :
+        return(%ca_tier_status_elite);
+    case 5 :
+        return(%ca_tier_status_master);
+    case 6 :
+        return(%ca_tier_status_grandmaster);
+    case default :
+        return(-1);
+}

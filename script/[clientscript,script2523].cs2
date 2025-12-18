@@ -1,0 +1,10 @@
+// 2523
+[clientscript,script2523](boolean $boolean0, int $int1)
+def_component $component2 = questjournal:textlayer;
+def_component $component3 = questjournal:scrollbar;
+cc_deleteall($component2);
+def_int $int4 = ^max_32bit_int;
+if ($boolean0 = true) {
+    $int4 = 0;
+}
+~quest_journal_scrollbar($component3, $component2, $int1, $int4);

@@ -1,0 +1,12 @@
+// 8225
+[proc,script8225](int $int0)(int, int, int, int)
+switch_int ($int0) {
+    case default :
+        return(-1, -1, -1, -1);
+    case 0 :
+        return(%cr_ui_window_x, %cr_ui_window_y, %cr_ui_window_width, %cr_ui_window_height);
+    case 1 :
+        return(%bingo_overlay_x, %bingo_overlay_y, %bingo_overlay_width, %bingo_overlay_height);
+    case 2 :
+        return(%xpdrops_fake_4, %osm_tile_highlighting_op_enabled, %osm_tile_highlights_disabled, %osm_taptodrop_enabled);
+}

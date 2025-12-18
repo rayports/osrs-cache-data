@@ -1,0 +1,19 @@
+// 4422
+[proc,script4422](enum $enum0)(int)
+switch_enum ($enum0) {
+    case enum_3817 :
+        return(%clans_events_selection_world);
+    case enum_3808 :
+        return(%clans_events_selection_type);
+    case enum_3813 :
+        return(%clans_events_selection_subtype);
+    case enum_3810, enum_3809, enum_3811, enum_3812 :
+        return(%clans_events_selection_activity);
+    case enum_3815 :
+        return(%clans_events_selection_duration);
+    case enum_3814 :
+        return(%clans_events_selection_date);
+    case enum_3816 :
+        return(%clans_events_selection_time);
+}
+return(0);

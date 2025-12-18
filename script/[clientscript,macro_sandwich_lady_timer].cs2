@@ -1,0 +1,20 @@
+// 1359
+[clientscript,macro_sandwich_lady_timer](int $int0, component $component1)
+if (clientclock < $int0) {
+    return;
+}
+%sandwich_lady_model_0_y = calc((%sandwich_lady_model_0_y + random(8) + 15) % 2048);
+%sandwich_lady_model_1_y = calc((%sandwich_lady_model_1_y + random(8) + 15) % 2048);
+%sandwich_lady_model_2_y = calc((%sandwich_lady_model_2_y + random(8) + 15) % 2048);
+%sandwich_lady_model_3_y = calc((%sandwich_lady_model_3_y + random(8) + 15) % 2048);
+%sandwich_lady_model_4_y = calc((%sandwich_lady_model_4_y + random(8) + 15) % 2048);
+%sandwich_lady_model_5_y = calc((%sandwich_lady_model_5_y + random(8) + 15) % 2048);
+%sandwich_lady_model_6_y = calc((%sandwich_lady_model_6_y + random(8) + 15) % 2048);
+%sandwich_lady_model_0_z = calc((%sandwich_lady_model_0_y + random(8) + 15) % 2048);
+%sandwich_lady_model_1_z = calc((%sandwich_lady_model_1_y + random(8) + 15) % 2048);
+%sandwich_lady_model_2_z = calc((%sandwich_lady_model_2_y + random(8) + 15) % 2048);
+%sandwich_lady_model_3_z = calc((%sandwich_lady_model_3_y + random(8) + 15) % 2048);
+%sandwich_lady_model_4_z = calc((%sandwich_lady_model_4_y + random(8) + 15) % 2048);
+%sandwich_lady_model_5_z = calc((%sandwich_lady_model_5_y + random(8) + 15) % 2048);
+%sandwich_lady_model_6_z = calc((%sandwich_lady_model_6_y + random(8) + 15) % 2048);
+~macro_sandwich_lady_setcomponent;

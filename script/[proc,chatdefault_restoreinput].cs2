@@ -1,0 +1,7 @@
+// 4079
+[proc,chatdefault_restoreinput]
+~chatdefault_setonkey(1);
+%snapshot_open = 0;
+if (~on_mobile = true) {
+    ~keyboard_hide;
+}

@@ -1,0 +1,3 @@
+// 3987
+[clientscript,script3987]
+%loginlogout_permanent = calc(1 - %loginlogout_permanent);

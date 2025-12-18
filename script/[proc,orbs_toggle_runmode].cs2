@@ -1,0 +1,14 @@
+// 7557
+[proc,orbs_toggle_runmode](int $int0, component $component1, component $component2)
+if ($int0 ! 1) {
+    return;
+}
+if (%option_run <= 0) {
+    %option_run = 1;
+} else {
+    %option_run = 0;
+}
+~orbs_update_runmode($component1, $component2);
+if (~toplevel_getcomponents = enum_1745) {
+    ~script7429(22);
+}

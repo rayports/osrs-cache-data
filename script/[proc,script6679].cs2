@@ -1,0 +1,6 @@
+// 6679
+[proc,script6679]()(boolean)
+if (%tog_helper_disabled = 1) {
+    return(false);
+}
+return(true);

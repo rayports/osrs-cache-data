@@ -1,0 +1,6 @@
+// 3720
+[proc,rental_world]()(boolean)
+if (testbit(%map_flags_cached, 13) = ^true) {
+    return(true);
+}
+return(false);

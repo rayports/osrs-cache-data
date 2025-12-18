@@ -1,0 +1,537 @@
+// 5923
+[proc,buff_bar_get_value](struct $struct0)(int)
+def_int $int1 = 0;
+switch_struct ($struct0) {
+    case struct_3091 :
+        if (%buff_sire_stun_start > 0) {
+            return(~script4674(%buff_sire_stun_start, calc(45 * 30 + 150)));
+        }
+    case struct_3092 :
+        if (%buff_player_frozen_time > 0) {
+            return(~script4678(%buff_player_frozen_time));
+        }
+    case struct_3093 :
+        if (%buff_sotd_special_start > 0) {
+            return(~script5940(%buff_sotd_special_start, struct_param($struct0, param_1541)));
+        }
+    case struct_3083 :
+        if (%buff_imbued_heart_start > 0) {
+            return(~script5942(%buff_imbued_heart_start, %imbued_heart_timer, struct_param($struct0, param_1541)));
+        }
+    case struct_4735 :
+        if (%buff_surge_potion_start > 0) {
+            return(~script5942(%buff_surge_potion_start, %surge_potion_timer, struct_param($struct0, param_1541)));
+        }
+    case struct_3082 :
+        if (%buff_dragonfire_shield_start > 0) {
+            return(~script5942(%buff_dragonfire_shield_start, %dragonfire_shield_recharge, 8));
+        }
+    case struct_3086 :
+        if (%stamina_active = 1) {
+            return(~script5942(%buff_stamina_potion_start, %stamina_duration, 10));
+        }
+    case struct_4150 :
+        if (%raids_prayer_enhance_tier = 1 & %raids_prayerenhance_timer > 0) {
+            return(~script5942(%buff_prayer_enhance_start, %raids_prayerenhance_timer, %raids_prayerenhance_rate));
+        }
+    case struct_3087 :
+        if (%raids_prayer_enhance_tier = 2 & %raids_prayerenhance_timer > 0) {
+            return(~script5942(%buff_prayer_enhance_start, %raids_prayerenhance_timer, %raids_prayerenhance_rate));
+        }
+    case struct_4151 :
+        if (%raids_prayer_enhance_tier = 3 & %raids_prayerenhance_timer > 0) {
+            return(~script5942(%buff_prayer_enhance_start, %raids_prayerenhance_timer, %raids_prayerenhance_rate));
+        }
+    case struct_4152 :
+        if (%raids_overload_tier = 1 & %buff_overload_start > 0) {
+            return(~script5942(%buff_overload_start, %raids_overload_timer, 25));
+        }
+    case struct_3089 :
+        if (%raids_overload_tier = 2 & %buff_overload_start > 0) {
+            return(~script5942(%buff_overload_start, %raids_overload_timer, 25));
+        }
+    case struct_4153 :
+        if (%raids_overload_tier = 3 & %buff_overload_start > 0) {
+            return(~script5942(%buff_overload_start, %raids_overload_timer, 25));
+        }
+    case struct_3088 :
+        if (%buff_overload_start > 0) {
+            return(~script5942(%buff_overload_start, %nzone_overload_potion_effects, 25));
+        }
+    case struct_3102 :
+        if (%buff_antifire_start > 0) {
+            return(~script5942(%buff_antifire_start, %antifire_potion, struct_param($struct0, param_1541)));
+        }
+    case struct_3103 :
+        if (%buff_super_antifire_start > 0) {
+            return(~script5942(%buff_super_antifire_start, %super_antifire_potion, struct_param($struct0, param_1541)));
+        }
+    case struct_3105 :
+        if (%poison >= -38 & %poison < 0) {
+            return(~script5942(%buff_antipoison_start, calc(%poison * -1), struct_param($struct0, param_1541)));
+        }
+    case struct_3104 :
+        if (%poison < -38) {
+            return(~script5942(%buff_antipoison_start, calc((%poison + 38) * -1), struct_param($struct0, param_1541)));
+        }
+    case struct_3080 :
+        if (%buff_charge_start > 0) {
+            return(~script5942(%buff_charge_start, %magearena_charge, 2));
+        }
+    case struct_3090 :
+        if (%buff_magic_imbue_start > 0) {
+            return(~script5942(%buff_magic_imbue_start, %magic_imbue_active, struct_param($struct0, param_1541)));
+        }
+    case struct_3081 :
+        if (%buff_gwd_altar_start > 0) {
+            return(~script5942(%buff_gwd_altar_start, %godwars_altar_delay, 100));
+        }
+    case struct_776 :
+        if (%buff_rat_boss_food_pile_start > 0) {
+            return(~script5942(%buff_rat_boss_food_pile_start, %rat_boss_food_pile_player_eat_delay, 100));
+        }
+    case struct_3077 :
+        if (%aide_tele_timer > 0) {
+            return(~script5941(%aide_tele_timer, 30));
+        }
+    case struct_5894 :
+        $int1 = max(0, calc(6 - 1 * (~stat_totallevel / 300)));
+        if (%league_last_recall_cooldown > 0 & $int1 > 0) {
+            return(~script5941(%league_last_recall_cooldown, $int1));
+        }
+    case struct_5895 :
+        if (%buff_league_undying_retribution_start > 0) {
+            return(~script5940(%buff_league_undying_retribution_start, calc(%buff_league_undying_retribution_duration - 3)));
+        }
+    case struct_3078 :
+        if (%slug2_regionuid > 0) {
+            return(~script5941(%slug2_regionuid, 20));
+        }
+    case struct_3079 :
+        if (%teleblock_cycles > 0) {
+            return(calc(%teleblock_cycles - 100));
+        }
+    case struct_3094 :
+        if (%divinecombat_potion_time = 0) {
+            return(%divineattack_potion_time);
+        }
+    case struct_3101 :
+        if (%divinecombat_potion_time = 0) {
+            return(%divinestrength_potion_time);
+        }
+    case struct_3098 :
+        if (%divinecombat_potion_time = 0 & %divinebastion_potion_time = 0 & %divinebattlemage_potion_time = 0 & %moonlight_potion_time = 0) {
+            return(%divinedefence_potion_time);
+        }
+    case struct_912 :
+        if (%moonlight_potion_time > 0) {
+            return(%moonlight_potion_time);
+        }
+    case struct_3099 :
+        if (%divinebattlemage_potion_time = 0) {
+            return(%divinemagic_potion_time);
+        }
+    case struct_3100 :
+        if (%divinebastion_potion_time = 0) {
+            return(%divinerange_potion_time);
+        }
+    case struct_3095 :
+        if (%divinebastion_potion_time > 0) {
+            return(%divinebastion_potion_time);
+        }
+    case struct_3096 :
+        if (%divinebattlemage_potion_time > 0) {
+            return(%divinebattlemage_potion_time);
+        }
+    case struct_3097 :
+        if (%divinecombat_potion_time > 0) {
+            return(%divinecombat_potion_time);
+        }
+    case struct_3085 :
+        if (%vengeance_rebound > 0) {
+            return(%vengeance_rebound);
+        }
+    case struct_3084 :
+        if (%buff_vengeance_cast_start > 0) {
+            return(~script5942(%buff_vengeance_cast_start, %vengeance_timelimit, 50));
+        }
+    case struct_3118 :
+        if (%arceuus_corruption = 1) {
+            return(1);
+        }
+    case struct_4156 :
+        if (%arceuus_corruption = 2) {
+            return(1);
+        }
+    case struct_3119 :
+        if (%buff_corruption_start > 0) {
+            return(~script5942(%buff_corruption_start, %arceuus_corruption_cooldown, 50));
+        }
+    case struct_3120 :
+        if (%buff_mark_of_darkness_start > 0) {
+            return(~script5940(%buff_mark_of_darkness_start, %buff_mark_of_darkness_duration));
+        }
+    case struct_3122 :
+        if (%buff_shadow_veil_active_start > 0) {
+            return(~script5940(%buff_shadow_veil_active_start, stat_base(magic)));
+        }
+    case struct_3121 :
+        if (%buff_shadow_veil_cooldown_start > 0) {
+            return(~script5942(%buff_shadow_veil_cooldown_start, %arceuus_shadow_veil_cooldown, 50));
+        }
+    case struct_3124 :
+        if (%buff_death_charge_active_start > 0) {
+            return(~script5942(%buff_death_charge_active_start, %arceuus_death_charge_active, 100));
+        }
+    case struct_3123 :
+        if (%buff_death_charge_cooldown_start > 0) {
+            return(~script5942(%buff_death_charge_cooldown_start, %arceuus_death_charge_cooldown, 100));
+        }
+    case struct_3126 :
+        if (%buff_ward_of_arceuus_active_start > 0) {
+            return(~script5940(%buff_ward_of_arceuus_active_start, stat_base(magic)));
+        }
+    case struct_3125 :
+        if (%buff_ward_of_arceuus_cooldown_start > 0) {
+            return(~script5942(%buff_ward_of_arceuus_cooldown_start, %arceuus_ward_cooldown, 50));
+        }
+    case struct_3128 :
+        if (%buff_resurrection_active_start > 0) {
+            return(~script5940(%buff_resurrection_active_start, calc(%buff_resurrection_active_duration - 3)));
+        }
+    case struct_5896 :
+        if (%buff_league_guardian_active_start > 0) {
+            return(~script5940(%buff_league_guardian_active_start, calc(%buff_league_guardian_active_duration - 3)));
+        }
+    case struct_3127 :
+        if (%buff_resurrection_cooldown_start > 0) {
+            return(~script5942(%buff_resurrection_cooldown_start, %arceuus_resurrection_cooldown, 17));
+        }
+    case struct_3661 :
+        if (%buff_bar_weapon ! null) {
+            return(%buff_bar_ammo_amount);
+        }
+    case struct_3659 :
+        if (%buff_bar_weapon = null) {
+            return(%buff_bar_ammo_amount);
+        }
+    case struct_3740 :
+        if (%poison > 0 & %poison < 1000000) {
+            return(~script5940(%buff_poison_damage_timer_start, struct_param($struct0, param_1541)));
+        }
+    case struct_3741 :
+        if (%poison >= 1000000) {
+            return(~script5940(%buff_poison_damage_timer_start, struct_param($struct0, param_1541)));
+        }
+    case struct_989 :
+        if (%player_own_burn_damage_total > 0) {
+            return(%player_own_burn_damage_total);
+        }
+    case struct_3763 :
+        if (%buff_desert_damage_start > 0) {
+            return(~script5942(%buff_desert_damage_start, 1, %buff_bar_desert_heat_timer_iteration));
+        }
+    case struct_3765 :
+        if (%buff_player_nex_prison > 0) {
+            return(~script4678(%buff_player_nex_prison));
+        }
+    case struct_3766 :
+        if (%buff_player_nex_sacrifice > 0) {
+            return(~script4678(%buff_player_nex_sacrifice));
+        }
+    case struct_3767 :
+        if (%buff_player_nex_virus > 0) {
+            return(~script4678(%buff_player_nex_virus));
+        }
+    case struct_4158 :
+        if (%dropcannon = 4 & calc(map_world % 128) = %mcannon_world & %mcannon_last_balltype = 0 & %mcannon_decayed = 0) {
+            return(%rockthrower);
+        }
+    case struct_4159 :
+        if (%dropcannon = 4 & calc(map_world % 128) = %mcannon_world & %mcannon_last_balltype = 1 & %mcannon_decayed = 0) {
+            return(%rockthrower);
+        }
+    case struct_4134 :
+        if (%revenant_reward_timed_buff_end > 0) {
+            return(calc(%revenant_reward_timed_buff_end - %date_minutes));
+        }
+    case struct_4367 :
+        if (%statrenewal_potion_timer > 0) {
+            return(~script5942(%buff_statrenewal_start, %statrenewal_potion_timer, 25));
+        }
+    case struct_1014 :
+        if (%prayer_regeneration_potion_timer > 0) {
+            return(~script5942(%buff_prayer_regeneration_start, %prayer_regeneration_potion_timer, 12));
+        }
+    case struct_3773 :
+        if (~script2278(0) = true) {
+            return(1);
+        }
+    case struct_3774 :
+        if (~script2278(1) = true) {
+            return(1);
+        }
+    case struct_3775 :
+        if (~script2278(2) = true) {
+            return(1);
+        }
+    case struct_3776 :
+        if (~script2278(3) = true) {
+            return(1);
+        }
+    case struct_3777 :
+        if (~script2278(4) = true) {
+            return(1);
+        }
+    case struct_3778 :
+        if (~script2278(5) = true) {
+            return(1);
+        }
+    case struct_3779 :
+        if (~script2278(6) = true) {
+            return(1);
+        }
+    case struct_5897 :
+        if (~script2277(0) = true) {
+            return(1);
+        }
+    case struct_5898 :
+        if (~script2277(1) = true) {
+            return(1);
+        }
+    case struct_5899 :
+        if (~script2277(2) = true) {
+            return(1);
+        }
+    case struct_5900 :
+        if (~script2277(3) = true) {
+            return(1);
+        }
+    case struct_5901 :
+        if (~script2277(4) = true) {
+            return(1);
+        }
+    case struct_5902 :
+        if (~script2277(5) = true) {
+            return(1);
+        }
+    case struct_5903 :
+        if (~script2277(6) = true) {
+            return(1);
+        }
+    case struct_5904 :
+        if (~script2277(7) = true) {
+            return(1);
+        }
+    case struct_1112 :
+        if (~script7658 = true & %league_combat_mastery_melee_progress > 0) {
+            return(1);
+        }
+    case struct_1113 :
+        if (~script7658 = true & %league_combat_mastery_ranged_progress > 0) {
+            return(1);
+        }
+    case struct_1114 :
+        if (~script7658 = true & %league_combat_mastery_magic_progress > 0) {
+            return(1);
+        }
+    case struct_4099 :
+        if (~script4676(14) > 0) {
+            return(1);
+        }
+    case struct_4100 :
+        if (~script4676(5) > 0) {
+            return(1);
+        }
+    case struct_4101 :
+        if (~script4676(3) > 0) {
+            return(1);
+        }
+    case struct_4102 :
+        if (~script4676(8) > 0) {
+            return(1);
+        }
+    case struct_4103 :
+        if (~script4676(6) > 0) {
+            return(1);
+        }
+    case struct_4104 :
+        if (~script4676(1) > 0) {
+            return(1);
+        }
+    case struct_4105 :
+        if (~script4676(10) > 0) {
+            return(1);
+        }
+    case struct_4106 :
+        if (~script4676(15) > 0) {
+            return(1);
+        }
+    case struct_4107 :
+        if (~script4676(2) > 0) {
+            return(1);
+        }
+    case struct_4108 :
+        if (~script4676(4) > 0) {
+            return(1);
+        }
+    case struct_4109 :
+        if (~script4676(9) > 0) {
+            return(1);
+        }
+    case struct_4110 :
+        if (~script4676(12) > 0) {
+            return(1);
+        }
+    case struct_4111 :
+        if (~script4676(7) > 0) {
+            return(1);
+        }
+    case struct_4112 :
+        if (~script4676(11) > 0) {
+            return(1);
+        }
+    case struct_4113 :
+        if (~script4676(13) > 0) {
+            return(1);
+        }
+    case struct_340 :
+        if (%buff_desert_damage_start > 0) {
+            return(~buff_bar_water_total);
+        }
+    case struct_341 :
+        if (%buff_cannon_decay_start > 0 & %dropcannon = 4 & calc(map_world % 128) = %mcannon_world & %mcannon_decayed = 0) {
+            return(~script5940(%buff_cannon_decay_start, struct_param($struct0, param_1541)));
+        }
+    case struct_342 :
+        if (%buff_cannon_decay_start > 0 & %dropcannon = 4 & calc(map_world % 128) = %mcannon_world & %mcannon_decayed = 1) {
+            return(~script5940(%buff_cannon_decay_start, struct_param($struct0, param_1541)));
+        }
+    case struct_4368 :
+        if (%buff_apmekens_sight_end > 0) {
+            return(~script4678(%buff_apmekens_sight_end));
+        }
+    case struct_4369 :
+        if (%buff_akkha_burn_end > 0) {
+            return(~script4678(%buff_akkha_burn_end));
+        }
+    case struct_4370 :
+        if (%buff_akkha_darkness_end > 0) {
+            return(~script4678(%buff_akkha_darkness_end));
+        }
+    case struct_4371 :
+        if (%buff_akkha_freeze_end > 0) {
+            return(~script4678(%buff_akkha_freeze_end));
+        }
+    case struct_4372 :
+        if (%buff_zebak_bleed_end > 0) {
+            return(~script4678(%buff_zebak_bleed_end));
+        }
+    case struct_4373 :
+        if (%buff_toa_midraidloot_healing_end > 0) {
+            return(~script4678(%buff_toa_midraidloot_healing_end));
+        }
+    case struct_4374 :
+        if (%buff_toa_midraidloot_prayer_end > 0) {
+            return(~script4678(%buff_toa_midraidloot_prayer_end));
+        }
+    case struct_4375 :
+        if (%buff_toa_midraidloot_energy_end > 0) {
+            return(~script4678(%buff_toa_midraidloot_energy_end));
+        }
+    case struct_4376 :
+        if (%toa_midraidloot_stats_timer > 0) {
+            return(~script5942(%buff_midraidloot_stats_start, %toa_midraidloot_stats_timer, 25));
+        }
+    case struct_4457 :
+        if (%buff_bar_exit_cave_debuff_start > 0) {
+            if (%wbr_decay_state < 5) {
+                return(~script5940(%buff_bar_exit_cave_debuff_start, calc(10 * (5 - %wbr_decay_state))));
+            } else {
+                return(~script5940(%buff_bar_exit_cave_debuff_start, 10));
+            }
+        }
+    case struct_4499 :
+        if (%buff_bleed_end > 0) {
+            return(~script4678(%buff_bleed_end));
+        }
+    case struct_4498 :
+        return(~script1784);
+    case struct_4695 :
+        if (%buff_star_on > 0) {
+            return(%star_bonus_dust);
+        }
+    case struct_888 :
+        if (%buff_doom_on > 0) {
+            return(%colosseum_doom_stacks_client);
+        }
+    case struct_889 :
+        if (%buff_pmoon_on > 0) {
+            return(%pmoon_boss_condition);
+        }
+    case struct_4693 :
+        if (%group_gathering_active_buff = 96 & %group_gathering_buff_value > 0) {
+            return(%group_gathering_buff_value);
+        } else {
+            return(0);
+        }
+    case struct_4694 :
+        if (%buff_woodcutting_leprechaun_rainbows_setting = 0 & ~axe_checker = null) {
+            return(0);
+        }
+        if (%gathering_event_woodcutting_leprechaun_total_rainbows >= 5) {
+            return(calc(%gathering_event_woodcutting_leprechaun_total_rainbows / 5));
+        }
+        return(0);
+    case struct_839 :
+        if (%buff_dragonfire_ward_start > 0) {
+            return(~script5942(%buff_dragonfire_ward_start, %dragonfire_ward_recharge, 8));
+        }
+    case struct_840 :
+        if (%buff_wyvern_shield_end > 0) {
+            return(~script4678(%buff_wyvern_shield_end));
+        }
+    case struct_964 :
+        return(%wgs_stone_of_jas_boost);
+    case struct_965 :
+        if (%wgs_smouldering_heart_timer > 0) {
+            return(~script5942(%wgs_smouldering_heart_buff_start, %wgs_smouldering_heart_timer, struct_param($struct0, param_1541)));
+        }
+    case struct_966 :
+        if (%wgs_smouldering_gland_timer > 0) {
+            return(~script5942(%wgs_smouldering_gland_buff_start, %wgs_smouldering_gland_timer, struct_param($struct0, param_1541)));
+        }
+    case struct_977 :
+        if (%buff_deadman_overload_potion_start > 0) {
+            return(~script5942(%buff_deadman_overload_potion_start, %deadman_overload_potion_effects, 25));
+        }
+    case struct_1023 :
+        if (%goading_potion_timer > 0) {
+            return(~script5942(%buff_goading_potion_start, %goading_potion_timer, 6));
+        }
+    case struct_4960 :
+        if (inv_total(inv, bowstring_spool) > 0) {
+            return(%bowstring_spool_charges);
+        }
+    case struct_4975 :
+        if (%dom_missed_orbs > 0) {
+            return(%dom_missed_orbs);
+        }
+    case struct_5010 :
+        if (%ent_totems_buffs_visible > 0) {
+            return(%ent_totems_trail_xp_buff_actions);
+        }
+    case struct_6368 :
+        if (%sailing_boat_time_till_trim > 0 & %sailing_boat_winds_timer_paused = 0 & %sailing_boat_speedboost_duration = 0) {
+            return(~script5940(%buff_sailing_winds_timer_start, struct_param($struct0, param_1541)));
+        }
+    case struct_6369 :
+        if (%sailing_boat_time_trim_window > 0) {
+            return(~script5940(%buff_sailing_trim_timer_start, struct_param($struct0, param_1541)));
+        }
+    case struct_6370 :
+        if (%sailing_boat_speedboost_duration > 0) {
+            return(~script5940(%buff_sailing_winds_timer_start, struct_param($struct0, param_1541)));
+        }
+}
+return(struct_param($struct0, param_1540));

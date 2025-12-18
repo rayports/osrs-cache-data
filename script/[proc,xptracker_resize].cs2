@@ -1,0 +1,5 @@
+// 4200
+[proc,xptracker_resize]
+if (%osm_popout_scrollpos_xptracker > 0) {
+    ~scrollbar_resize(xptracker:tracker_scrollbar, xptracker:tracker_container, %osm_popout_scrollpos_xptracker);
+}

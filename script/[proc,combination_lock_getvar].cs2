@@ -1,0 +1,17 @@
+// 6966
+[proc,combination_lock_getvar](int $int0)(int)
+switch_int ($int0) {
+    case 0 :
+        return(%combination_lock_value_0);
+    case 1 :
+        return(%combination_lock_value_1);
+    case 2 :
+        return(%combination_lock_value_2);
+    case 3 :
+        return(%combination_lock_value_3);
+    case 4 :
+        return(%combination_lock_value_4);
+    case 5 :
+        return(%combination_lock_value_5);
+}
+return(-1);

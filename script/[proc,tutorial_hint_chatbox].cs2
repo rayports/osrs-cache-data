@@ -1,0 +1,10 @@
+// 2585
+[proc,tutorial_hint_chatbox]
+def_string $string0 = "bottom";
+if (~on_mobile = true) {
+    $string0 = "top";
+}
+if_settext("Exit through the nearby door", tutorial_overlay:hint_text_1);
+if_settext("to continue the tutorial.", tutorial_overlay:hint_text_2);
+if_settext("This box will remind you of", tutorial_overlay:hint_text_3);
+if_settext("what you need to do in future steps.", tutorial_overlay:hint_text_4);

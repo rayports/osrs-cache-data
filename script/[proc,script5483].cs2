@@ -1,0 +1,15 @@
+// 5483
+[proc,script5483]()(boolean)
+switch_int (%woodcutting_respawn_timer) {
+    case 0 :
+        return(true);
+    case 1 :
+        if (~axe_checker ! null) {
+            return(true);
+        } else {
+            return(false);
+        }
+    case 2 :
+        return(false);
+}
+return(false);

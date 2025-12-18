@@ -1,0 +1,4 @@
+// 3293
+[clientscript,boardgames_draughts_options_update_ranked]
+%boardgames_rankedgame = calc(1 - %boardgames_rankedgame);
+~boardgames_draughts_options_update_ranked(%boardgames_rankedgame);

@@ -1,0 +1,7 @@
+// 4594
+[proc,settings_buff_minigame_teleport]
+if (~on_enhanced_any = false) {
+    return;
+}
+%buff_minigame_teleport_disabled = calc(1 - %buff_minigame_teleport_disabled);
+~buff_bar_layout_redraw;

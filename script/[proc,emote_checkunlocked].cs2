@@ -1,0 +1,109 @@
+// 702
+[proc,emote_checkunlocked](int $int0)(boolean)
+def_int $int1 = 1;
+def_stat $stat2 = null;
+switch_int ($int0) {
+    case 22, 23 :
+        if (%lost_tribe_quest >= 7) {
+            return(true);
+        }
+        return(false);
+    case 24 :
+        return(~int_to_bool(%emote_glassbox));
+    case 25 :
+        return(~int_to_bool(%emote_climbrope));
+    case 26 :
+        return(~int_to_bool(%emote_lean));
+    case 27 :
+        return(~int_to_bool(%emote_glasswall));
+    case 28 :
+        return(~int_to_bool(%sos_emote_idea));
+    case 29 :
+        return(~int_to_bool(%sos_emote_stamp));
+    case 30 :
+        return(~int_to_bool(%sos_emote_flap));
+    case 31 :
+        return(~int_to_bool(%sos_emote_doh));
+    case 32 :
+        return(~int_to_bool(%emote_zombie_walk));
+    case 33 :
+        return(~int_to_bool(%emote_zombie_dance));
+    case 34 :
+        return(~int_to_bool(%emote_terrified));
+    case 35 :
+        return(~int_to_bool(%emote_bunny_hop));
+    case 43 :
+        if (%qp >= %qp_max & %qp_max > 0) {
+            return(true);
+        }
+        if (%emote_maxcape = 1) {
+            return(true);
+        }
+        if (%emote_event_skillcapes = 1) {
+            return(true);
+        }
+        $stat2 = enum(int, stat, enum_681, $int1);
+        while ($stat2 ! null) {
+            if (stat_base($stat2) >= 99) {
+                return(true);
+            }
+            $int1 = calc($int1 + 1);
+            $stat2 = enum(int, stat, enum_681, $int1);
+        }
+        return(false);
+    case 41 :
+        return(~int_to_bool(%emote_zombie_hand));
+    case 44 :
+        if (%emote_musiccape = 1) {
+            return(true);
+        }
+        return(false);
+    case 36 :
+        return(~int_to_bool(%emote_drilldemon));
+    case 37 :
+        return(~int_to_bool(%emote_drilldemon));
+    case 38 :
+        return(~int_to_bool(%emote_drilldemon));
+    case 39 :
+        return(~int_to_bool(%emote_drilldemon));
+    case 40 :
+        return(~int_to_bool(%emote_flex));
+    case 42 :
+        return(~int_to_bool(%emote_ash));
+    case 45 :
+        return(~int_to_bool(%emote_uri_transform));
+    case 46 :
+        return(~int_to_bool(%emote_hotline_bling));
+    case 47 :
+        return(~int_to_bool(%emote_gangnam));
+    case 48 :
+        return(~int_to_bool(%emote_premier_club_2018));
+    case 49 :
+        return(~int_to_bool(%emote_explore));
+    case 50 :
+        switch_int (%poh_leaguehall_outfitstand_relichunter_type) {
+            case 3 :
+                return(true);
+            case 6 :
+                return(true);
+            case 9 :
+                return(true);
+            case 12 :
+                return(true);
+            case 15 :
+                return(true);
+            case default :
+                return(false);
+        }
+    case 51 :
+        return(~int_to_bool(%emote_party));
+    case 52 :
+        return(~int_to_bool(%emote_trick));
+    case 53 :
+        if (~script4922 < 6) {
+            return(false);
+        }
+    case 55 :
+        return(~int_to_bool(%emote_crab));
+}
+return(true);

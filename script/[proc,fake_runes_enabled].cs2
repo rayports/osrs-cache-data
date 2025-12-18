@@ -1,0 +1,9 @@
+// 234
+[proc,fake_runes_enabled]()(boolean)
+if (%barbassault_areaexit_pending = 1) {
+    return(true);
+}
+if (%br_ingame = 1) {
+    return(true);
+}
+return(false);

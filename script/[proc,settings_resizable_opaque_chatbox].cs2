@@ -1,0 +1,9 @@
+// 3981
+[proc,settings_resizable_opaque_chatbox]
+if (~on_mobile = true) {
+    return;
+}
+if (getwindowmode = ^windowmode_small) {
+    return;
+}
+%chatbox_transparency = calc(1 - %chatbox_transparency);

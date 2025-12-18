@@ -1,0 +1,5 @@
+// 1432
+[clientscript,wint_outside_event]
+if_sethide(true, wint_status:brazier_layer);
+if_sethide(true, wint_status:energy);
+if_sethide(true, wint_status:warmth);

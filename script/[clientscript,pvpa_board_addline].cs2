@@ -1,0 +1,229 @@
+// 6222
+[clientscript,pvpa_board_addline](int $int0, int $int1, string $string0)
+if (if_hassub(enum(component, component, ~toplevel_getcomponents, toplevel_osrs_stretch:mainmodal)) = false) {
+    return;
+}
+def_component $component2 = enum(int, component, enum_4403, $int0);
+if ($component2 = null) {
+    return;
+}
+cc_deleteall($component2);
+def_string $string1 = "";
+def_string $string2 = "";
+def_string $string3 = "";
+def_string $string4 = "";
+def_string $string5 = "";
+def_string $string6 = "";
+def_string $string7 = "";
+def_string $string8 = "";
+def_string $string9 = "";
+def_int $int3 = 0;
+def_int $int4 = 0;
+def_int $int5 = 0;
+def_int $int6 = 0;
+def_int $int7 = 0;
+if (string_length($string0) > 0) {
+    cc_create($component2, ^iftype_rectangle, 0);
+    cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre);
+    cc_setsize(0, 0, ^setsize_minus, ^setsize_minus);
+    cc_setfill(true);
+    $string1, $string0 = ~script632($string0);
+    ~pvpa_board_entry_init(%poll_id, $component2, $int0, $string1, pvp_arena_board:list);
+    $int6 = if_getwidth(pvp_arena_board:sort_name);
+    cc_create($component2, ^iftype_text, 1);
+    cc_setposition($int5, 0, ^setpos_abs_left, ^setpos_abs_top);
+    cc_setsize($int6, 22, ^setsize_abs, ^setsize_abs);
+    cc_setcolour(0xffb83f);
+    cc_settextfont(p12_full);
+    cc_settextalign(^settextalign_centre, ^settextalign_centre, 0);
+    cc_settextshadow(true);
+    cc_settext($string1);
+    $int5 = calc($int5 + $int6);
+    $string2, $string0 = ~script632($string0);
+    $int6 = if_getwidth(pvp_arena_board:sort_size);
+    cc_create($component2, ^iftype_text, 2);
+    cc_setposition($int5, 0, ^setpos_abs_left, ^setpos_abs_top);
+    cc_setsize($int6, 22, ^setsize_abs, ^setsize_abs);
+    cc_setcolour(0xff981f);
+    cc_settextfont(p12_full);
+    cc_settextalign(^settextalign_centre, ^settextalign_centre, 0);
+    cc_settextshadow(true);
+    cc_settext($string2);
+    $int5 = calc($int5 + $int6);
+    $string5, $string0 = ~script632($string0);
+    $string6, $string0 = ~script632($string0);
+    $int6 = if_getwidth(pvp_arena_board:sort_age);
+    cc_create($component2, ^iftype_text, 3);
+    cc_setposition(0, 0, ^setpos_abs_right, ^setpos_abs_top);
+    cc_setsize($int5, 22, ^setsize_minus, ^setsize_abs);
+    cc_setcolour(0xff981f);
+    cc_settextfont(p12_full);
+    cc_settextalign(^settextalign_centre, ^settextalign_centre, 0);
+    cc_settextshadow(true);
+    cc_settext($string5);
+    $int7 = calc($int7 + 22);
+    $string3, $string0 = ~script632($string0);
+    $string4, $string0 = ~script632($string0);
+    cc_create($component2, ^iftype_text, 4);
+    cc_setposition(2, $int7, ^setpos_abs_left, ^setpos_abs_top);
+    cc_setsize(2, 22, ^setsize_minus, ^setsize_abs);
+    cc_setcolour(0x7f7f7f);
+    cc_settextfont(p12_full);
+    cc_settextalign(^settextalign_centre, ^settextalign_centre, 0);
+    cc_settextshadow(true);
+    cc_settext("<enum(int, string, enum_4406, ~string_to_int($string3))>: <enum(int, string, enum_4414, ~string_to_int($string4))>");
+    $int7 = calc($int7 + 22);
+    $string8, $string0 = ~script632($string0);
+    $string9, $string0 = ~script632($string0);
+    if (string_length($string9) > 0) {
+        $int3 = setbit($int3, 0);
+    }
+    if (string_length($string8) > 0) {
+        $int3 = setbit($int3, 1);
+    }
+    $int6 = if_getwidth(pvp_arena_board:list);
+    cc_create($component2, ^iftype_text, 5);
+    cc_setposition(2, $int7, ^setpos_abs_left, ^setpos_abs_top);
+    cc_setsize(calc($int6 / 2 - 2), 22, ^setsize_abs, ^setsize_abs);
+    cc_setcolour(0x7f7f7f);
+    cc_settextfont(p12_full);
+    cc_settextalign(^settextalign_centre, ^settextalign_centre, 0);
+    cc_settextshadow(true);
+    cc_settext("Min Rank:");
+    if (%if2 = 0) {
+        cc_sethide(true);
+    }
+    cc_create($component2, ^iftype_graphic, 6);
+    cc_setposition(102, calc($int7 + 6), ^setpos_abs_left, ^setpos_abs_top);
+    cc_setsize(13, 13, ^setsize_abs, ^setsize_abs);
+    cc_setgraphic(enum(int, graphic, enum_4407, ~string_to_int($string8)));
+    if (%if2 = 0) {
+        cc_sethide(true);
+    }
+    cc_create($component2, ^iftype_text, 7);
+    cc_setposition(0, $int7, ^setpos_abs_right, ^setpos_abs_top);
+    cc_setsize(calc($int6 / 2 - 2), 22, ^setsize_abs, ^setsize_abs);
+    cc_setcolour(0x7f7f7f);
+    cc_settextfont(p12_full);
+    cc_settextalign(^settextalign_centre, ^settextalign_centre, 0);
+    cc_settextshadow(true);
+    cc_settext("Max Rank:");
+    if (%if2 = 0) {
+        cc_sethide(true);
+    }
+    cc_create($component2, ^iftype_graphic, 8);
+    cc_setposition(28, calc($int7 + 6), ^setpos_abs_right, ^setpos_abs_top);
+    cc_setsize(13, 13, ^setsize_abs, ^setsize_abs);
+    cc_setgraphic(enum(int, graphic, enum_4407, ~string_to_int($string9)));
+    if (%if2 = 0) {
+        cc_sethide(true);
+    }
+    cc_create($component2, ^iftype_text, 9);
+    cc_sethide(true);
+    cc_setcolour(0xff981f);
+    cc_settextfont(p11_full);
+    cc_settextalign(^settextalign_centre, ^settextalign_centre, 0);
+    cc_settextshadow(true);
+    cc_settext(append_num(~string_prependzero($string6, 6), $int0));
+    cc_create($component2, ^iftype_text, 10);
+    cc_sethide(true);
+    cc_setcolour(0xff981f);
+    cc_settextfont(p11_full);
+    cc_settextalign(^settextalign_centre, ^settextalign_centre, 0);
+    cc_settextshadow(true);
+    cc_settext(append_num(~string_prependzero($string2, 3), $int0));
+    if (%if2 = 1) {
+        $int7 = calc($int7 + 22);
+    }
+    if_setsize(0, $int7, ^setsize_minus, ^setsize_abs, $component2);
+    %poll_id, %poll_ypos = calc(%poll_id + 1), calc(%poll_ypos + $int7);
+} else {
+    if_setsize(0, 0, ^setsize_minus, ^setsize_abs, $component2);
+    if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_top, $component2);
+    if_setonop(null, $component2);
+    if_clearops($component2);
+}
+if_setontimer(null, $component2);
+def_int $int8 = 0;
+def_int $int9 = 0;
+def_int $int10 = 0;
+def_int $int11 = 0;
+if ($int0 >= calc(47 - 1)) {
+    switch_int (%pvpa_board_sort) {
+        case 1, 2, 3, 4, 5, 0 :
+        case default :
+            %pvpa_board_sort = 5;
+    }
+    ~pvpa_board_setsort;
+    cc_deleteall(pvp_arena_board:list);
+    $int0, $int5 = 0, calc(47 * 2);
+    while ($int0 < $int5) {
+        $component2 = enum(int, component, enum_4403, $int0);
+        if ($component2 ! null) {
+            if_sethide(false, $component2);
+        }
+        cc_create(pvp_arena_board:list, ^iftype_rectangle, $int0);
+        cc_sethide(true);
+        $int0 = calc($int0 + 1);
+    }
+    if (%poll_id <= 0) {
+        cc_create(pvp_arena_board:list, ^iftype_text, $int0);
+        cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre);
+        cc_setsize(10, 10, ^setsize_minus, ^setsize_minus);
+        cc_setcolour(0xff981f);
+        cc_settextfont(p12_full);
+        cc_settextalign(^settextalign_centre, ^settextalign_centre, 0);
+        cc_settextshadow(true);
+        ~script6225;
+        cc_setonvartransmit("script6224(event_com, event_comsubid){pvpa_recruitment_filter}");
+    }
+    $int0 = 0;
+    while ($int0 <= 1) {
+        cc_create(pvp_arena_board:filters, ^iftype_rectangle, $int0);
+        cc_sethide(true);
+        $int0 = calc($int0 + 1);
+    }
+    $int5, $int7, $int6 = 0, 21, calc(if_getwidth(pvp_arena_board:filters) - 21);
+    if (~on_mobile = true) {
+        $int7 = 25;
+    }
+    while ($int8 <= 1) {
+        $string1 = enum(int, string, enum_4405, $int8);
+        if (string_length($string1) > 0) {
+            cc_create(pvp_arena_board:filters, ^iftype_rectangle, $int0);
+            $int0 = calc($int0 + 1);
+            cc_setsize(0, $int7, ^setsize_minus, ^setsize_abs);
+            cc_setposition(0, $int5, ^setpos_abs_centre, ^setpos_abs_top);
+            cc_setcolour(^white);
+            cc_setfill(true);
+            ~script6233(220, 255, 235, $int8);
+            cc_setop(1, "Change filter");
+            cc_setopbase("<col=ff9040><$string1></col>");
+            .cc_create(pvp_arena_board:filters, ^iftype_graphic, $int0);
+            $int0 = calc($int0 + 1);
+            .cc_setsize(17, 17, ^setsize_abs, ^setsize_abs);
+            .cc_setposition(1, calc($int5 + ($int7 - 17) / 2), ^setpos_abs_left, ^setpos_abs_top);
+            ~pvpa_board_filterupdate($int8);
+            cc_setonvartransmit("pvpa_board_filterupdate(event_com, .cc_getid, $int8){pvpa_recruitment_filter}");
+            cc_create(pvp_arena_board:filters, ^iftype_text, $int0);
+            $int0 = calc($int0 + 1);
+            cc_setsize($int6, $int7, ^setsize_abs, ^setsize_abs);
+            cc_setposition(0, $int5, ^setpos_abs_right, ^setpos_abs_top);
+            cc_setcolour(0xff981f);
+            cc_settextalign(^settextalign_left, ^settextalign_centre, 0);
+            cc_settextfont(p12_full);
+            cc_settextshadow(true);
+            cc_settext(~script4193($string1, $int6, p12_full));
+            $int5 = calc($int5 + $int7);
+        }
+        $int8 = calc($int8 + 1);
+    }
+    $int9 = calc(52 + if_getheight(pvp_arena_board:filter_bottomarea));
+    $int10 = calc(50 + if_getheight(pvp_arena_board:sortarea) + 1 + 2 + if_getheight(pvp_arena_board:bottom));
+    $int11 = ~max(300, ~max(calc($int5 + $int9), calc(%poll_ypos + $int10)));
+    ~pvpa_board_setsize(%poll_ypos, $int10, pvp_arena_board:list, pvp_arena_board:list_scrollbar, $int5, $int9, pvp_arena_board:filters, pvp_arena_board:filter_scrollbar, $int11, pvp_arena_board:universe, if_getheight(if_getlayer(pvp_arena_board:universe)));
+    if_sethide(false, pvp_arena_board:mygroup);
+    if_sethide(false, pvp_arena_board:refresh);
+    if_sethide(false, pvp_arena_board:reset);
+    if_sethide(false, pvp_arena_board:options);
+}

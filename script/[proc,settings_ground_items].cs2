@@ -1,0 +1,9 @@
+// 7112
+[proc,settings_ground_items]
+if (~on_enhanced_any = false) {
+    return;
+}
+%ground_items_enabled = calc(1 - %ground_items_enabled);
+if (~toplevel_getcomponents = enum_1745) {
+    ~script7429(24);
+}

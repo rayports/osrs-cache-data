@@ -1,0 +1,17 @@
+// 5894
+[proc,speedrunning_quest_enabled](dbrow $dbrow0)(boolean)
+def_dbrow $dbrow1 = ~script4865($dbrow0);
+if ($dbrow1 = null | db_getrowtable($dbrow1) ! speedrun) {
+    return(false);
+}
+switch_int (db_getfield($dbrow1, speedrun:speedrun_state, 0)) {
+    case 1 :
+        return(true);
+    case 3 :
+        return(true);
+    case 2 :
+        if (~script6806 = true) {
+            return(true);
+        }
+}
+return(false);

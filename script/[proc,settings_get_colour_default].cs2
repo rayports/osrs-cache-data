@@ -1,0 +1,96 @@
+// 5328
+[proc,settings_get_colour_default](int $int0)(int)
+switch_int ($int0) {
+    case 87 :
+        return(struct_param(struct_2896, param_1230));
+    case 88 :
+        return(struct_param(struct_2897, param_1230));
+    case 89 :
+        return(struct_param(struct_2898, param_1230));
+    case 90 :
+        return(struct_param(struct_2899, param_1230));
+    case 91 :
+        return(struct_param(struct_2900, param_1230));
+    case 92 :
+        return(struct_param(struct_2901, param_1230));
+    case 93 :
+        return(struct_param(struct_2902, param_1230));
+    case 94 :
+        return(struct_param(struct_2903, param_1230));
+    case 95 :
+        return(struct_param(struct_2904, param_1230));
+    case 96 :
+        return(struct_param(struct_2905, param_1230));
+    case 97 :
+        return(struct_param(struct_2906, param_1230));
+    case 98 :
+        return(struct_param(struct_2907, param_1230));
+    case 99 :
+        return(struct_param(struct_2908, param_1230));
+    case 100 :
+        return(struct_param(struct_2909, param_1230));
+    case 101 :
+        return(struct_param(struct_2910, param_1230));
+    case 102 :
+        return(struct_param(struct_2911, param_1230));
+    case 103 :
+        return(struct_param(struct_2912, param_1230));
+    case 104 :
+        return(struct_param(struct_2913, param_1230));
+    case 105 :
+        return(struct_param(struct_2975, param_1230));
+    case 106 :
+        return(struct_param(struct_2976, param_1230));
+    case 193 :
+        return(struct_param(struct_3745, param_1230));
+    case 194 :
+        return(struct_param(struct_3746, param_1230));
+    case 196 :
+        return(struct_param(struct_3747, param_1230));
+    case 197 :
+        return(struct_param(struct_3748, param_1230));
+    case 198 :
+        return(struct_param(struct_3749, param_1230));
+    case 199 :
+        return(struct_param(struct_3750, param_1230));
+    case 434 :
+        return(struct_param(struct_4732, param_1230));
+    case 435 :
+        return(struct_param(struct_4733, param_1230));
+    case 113 :
+        return(struct_param(struct_3005, param_1230));
+    case 174 :
+        return(struct_param(struct_3648, param_1230));
+    case 177 :
+        return(struct_param(struct_3649, param_1230));
+    case 180 :
+        return(struct_param(struct_3650, param_1230));
+    case 224 :
+        return(struct_param(struct_4157, param_1230));
+    case 225 :
+        return(struct_param(struct_4249, param_1230));
+    case 226 :
+        return(struct_param(struct_4250, param_1230));
+    case 227 :
+        return(struct_param(struct_4251, param_1230));
+    case 262 :
+        return(struct_param(struct_318, param_1230));
+    case 263 :
+        return(struct_param(struct_320, param_1230));
+    case 266 :
+        return(struct_param(struct_324, param_1230));
+    case 322 :
+        return(struct_param(struct_4516, param_1230));
+    case 323 :
+        return(struct_param(struct_4517, param_1230));
+    case 324 :
+        return(struct_param(struct_4518, param_1230));
+    case 325 :
+        return(struct_param(struct_4519, param_1230));
+    case 326 :
+        return(struct_param(struct_4520, param_1230));
+    case 327 :
+        return(struct_param(struct_4521, param_1230));
+    case default :
+        return(-1);
+}

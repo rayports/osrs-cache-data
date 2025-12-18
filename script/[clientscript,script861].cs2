@@ -1,0 +1,71 @@
+// 861
+[clientscript,script861](obj $obj0, obj $obj1, obj $obj2, int $int3)
+cc_deleteall(favour_keyring:buttons);
+cc_deleteall(favour_keyring:remove);
+~options_button_off(favour_keyring:remove, 0);
+cc_create(favour_keyring:buttons, ^iftype_rectangle, 0);
+cc_sethide(true);
+if_setcolour(0xa6a692, favour_keyring:remove_text);
+if_setontimer(null, favour_keyring:remove);
+if ($obj0 ! null) {
+    if_settext("Remove this key", favour_keyring:remove_text);
+    if_setonmouserepeat("text_colour_swapper(favour_keyring:remove_text, 16777215)", favour_keyring:remove);
+    if_setonmouseleave("text_colour_swapper(favour_keyring:remove_text, 10921618)", favour_keyring:remove);
+    if_setop(1, "Remove", favour_keyring:remove);
+    if_setopbase("<col=ff9040><oc_name($obj0)></col>", favour_keyring:remove);
+    if_setonop("script862(event_op, event_com, cc_getlayer, cc_getid)", favour_keyring:remove);
+} else {
+    if_settext("---", favour_keyring:remove_text);
+    if_setonmouserepeat(null, favour_keyring:remove);
+    if_setonmouseleave(null, favour_keyring:remove);
+    if_clearops(favour_keyring:remove);
+    if_setonop(null, favour_keyring:remove);
+}
+def_string $string0 = "";
+cc_create(favour_keyring:buttons, ^iftype_rectangle, 1);
+cc_sethide(true);
+if_setmodel(model_5626, favour_keyring:previous);
+if_sethide(true, favour_keyring:previous_highlight);
+if_setontimer(null, favour_keyring:previous);
+if ($obj1 ! null) {
+    if_setonmouserepeat("comp_sethide(false, favour_keyring:previous_highlight)", favour_keyring:previous);
+    if_setonmouseleave("comp_sethide(true, favour_keyring:previous_highlight)", favour_keyring:previous);
+    if_setop(1, "Previous:", favour_keyring:previous);
+    if_setopbase("<col=ff9040><oc_name($obj1)></col>", favour_keyring:previous);
+    if_setonop("script864(event_op, event_com, model_5626, model_5627, favour_keyring:previous_highlight, cc_getlayer, cc_getid)", favour_keyring:previous);
+    if_setonclick(null, favour_keyring:previous);
+} else {
+    if_setonmouserepeat(null, favour_keyring:previous);
+    if_setonmouseleave(null, favour_keyring:previous);
+    if_clearops(favour_keyring:previous);
+    if ($obj2 ! null) {
+        $string0 = "This is the first key on your key ring.";
+    } else {
+        $string0 = "There are no more keys on your key ring.";
+    }
+    if_setonclick("mes($string0)", favour_keyring:previous);
+}
+cc_create(favour_keyring:buttons, ^iftype_rectangle, 2);
+cc_sethide(true);
+if_setmodel(model_5625, favour_keyring:next);
+if_sethide(true, favour_keyring:next_highlight);
+if_setontimer(null, favour_keyring:next);
+if ($obj2 ! null) {
+    if_setonmouserepeat("comp_sethide(false, favour_keyring:next_highlight)", favour_keyring:next);
+    if_setonmouseleave("comp_sethide(true, favour_keyring:next_highlight)", favour_keyring:next);
+    if_setop(1, "Next:", favour_keyring:next);
+    if_setopbase("<col=ff9040><oc_name($obj2)></col>", favour_keyring:next);
+    if_setonop("script864(event_op, event_com, model_5625, model_5629, favour_keyring:next_highlight, cc_getlayer, cc_getid)", favour_keyring:next);
+    if_setonclick(null, favour_keyring:next);
+} else {
+    if_setonmouserepeat(null, favour_keyring:next);
+    if_setonmouseleave(null, favour_keyring:next);
+    if_clearops(favour_keyring:next);
+    if ($obj1 ! null) {
+        $string0 = "This is the last key on your key ring.";
+    } else {
+        $string0 = "There are no more keys on your key ring.";
+    }
+    if_setonclick("mes($string0)", favour_keyring:next);
+}
+if_settext("Key total: <tostring($int3)>", favour_keyring:keytotal);

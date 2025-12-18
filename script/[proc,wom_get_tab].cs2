@@ -1,0 +1,12 @@
+// 2626
+[proc,wom_get_tab](int $int0)(component)
+switch_int ($int0) {
+    case 0 :
+        return(wom_recycling:layer_1);
+    case 1 :
+        return(wom_recycling:layer_2);
+    case 2 :
+        return(wom_recycling:layer_3);
+    case default :
+        return(null);
+}

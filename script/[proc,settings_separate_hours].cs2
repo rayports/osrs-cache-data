@@ -1,0 +1,3 @@
+// 4034
+[proc,settings_separate_hours]
+%option_separate_hours = calc(1 - %option_separate_hours);

@@ -1,0 +1,26 @@
+// 4980
+[proc,script4980](struct $struct0)(int)
+switch_struct ($struct0) {
+    case struct_894 :
+        return(%colosseum_modifier_blasphemy_stacks_client);
+    case struct_892 :
+        return(%colosseum_modifier_toxicity_stacks_client);
+    case struct_915 :
+        return(%colosseum_modifier_mantimayhem_stacks_client);
+    case struct_891 :
+        return(%colosseum_modifier_reentry_stacks_client);
+    case struct_903 :
+        return(%colosseum_modifier_myopia_stacks_client);
+    case struct_906 :
+        return(%colosseum_modifier_frailty_stacks_client);
+    case struct_902 :
+        return(%colosseum_modifier_solarflare_stacks_client);
+    case struct_897 :
+        return(%colosseum_modifier_relentless_stacks_client);
+    case struct_893 :
+        return(%colosseum_modifier_volatility_stacks_client);
+    case struct_900 :
+        return(%colosseum_modifier_doom_stacks_client);
+    case default :
+        return(0);
+}

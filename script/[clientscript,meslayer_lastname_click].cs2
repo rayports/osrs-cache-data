@@ -1,0 +1,8 @@
+// 682
+[clientscript,meslayer_lastname_click](int $int0, string $string0)
+if (%meslayermode ! $int0) {
+    return;
+}
+%meslayerinput = $string0;
+~script222("");
+~meslayer_enter;

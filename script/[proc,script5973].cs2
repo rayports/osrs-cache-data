@@ -1,0 +1,3 @@
+// 5973
+[proc,script5973]
+%questlist_hide_not_started = calc(1 - %questlist_hide_not_started);

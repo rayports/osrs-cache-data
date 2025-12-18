@@ -1,0 +1,61 @@
+// 3967
+[proc,settings_set_dropdown](int $int0, int $int1, int $int2)
+%settings_selected_setting = $int0;
+switch_int ($int0) {
+    case 45 :
+        ~script3646($int1);
+    case 169 :
+        deviceoption_set(^deviceoption_ui_quality, $int1);
+    case 187 :
+        ~settings_ore_respawn_timer($int1);
+    case 188 :
+        ~settings_woodcutting_respawn_timer($int1);
+    case 214 :
+        ~settings_questlist_sort($int1);
+    case 215 :
+        ~settings_questlist_requirement_show($int1);
+    case 216 :
+        ~script5971($int1);
+    case 222 :
+        ~settings_questlist_text_size($int1);
+    case 259 :
+        ~settings_npc_indicators_tile($int1);
+    case 258 :
+        ~settings_npc_indicators_name($int1);
+    case 264 :
+        ~settings_npc_name_all($int1);
+    case 318 :
+        ~script7111($int1);
+    case 334 :
+        ~settings_ground_items_despawn_time($int1);
+    case 336 :
+        ~settings_ground_items_despawn_time($int1);
+    case 338 :
+        ~settings_ground_items_edit_mode($int1);
+    case 340 :
+        ~settings_ground_items_modifier_key($int1);
+    case 364 :
+        ~settings_buff_woodcutting_leprechaun_rainbows($int1);
+    case 367 :
+        ~settings_quest_start_highlight($int1);
+    case 382 :
+        ~settings_hit_sounds($int1);
+    case 384 :
+        ~settings_hd_beta_full_hd_or_fake_sd_set($int1);
+    case 387 :
+        ~settings_pronouns($int1);
+    case 392 :
+        ~settings_minimenu_start_index_set($int1);
+    case 411 :
+        ~script7454($int1);
+    case 438 :
+        ~script7881($int1);
+    case 454 :
+        %settings_sailing_side_panel_onlyonboat = $int1;
+    case 462 :
+        %sailing_start_boat_when_setting_heading = $int1;
+    case 470 :
+        ~script8830($int1);
+    case 999 :
+        ~script9119($int1, $int2);
+}

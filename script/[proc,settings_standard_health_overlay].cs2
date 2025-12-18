@@ -1,0 +1,6 @@
+// 4579
+[proc,settings_standard_health_overlay]
+if (~on_enhanced_any = false) {
+    return;
+}
+%hpbar_hud_standard_disabled = calc(1 - %hpbar_hud_standard_disabled);

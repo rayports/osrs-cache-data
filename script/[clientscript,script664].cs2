@@ -1,0 +1,16 @@
+// 664
+[clientscript,script664](boolean $boolean0)
+def_int $int1 = clientclock;
+def_int $int2 = -1;
+if ($boolean0 = true | $int1 = %chat_force_chatbox_rebuild | calc($int1 % 25) = 0) {
+    $int2 = ~script553;
+    if ($int1 = %chat_force_chatbox_rebuild) {
+        ~rebuildchatbox($int2);
+    }
+    ~rebuildpmbox($int2);
+    if (%chat_force_chatbox_rebuild > $int1 | reboottimer > 0 | %chat_lastbroadcast_time > calc($int1 - 3000)) {
+        if_setontimer("script664(false)", chatbox:universe);
+    } else {
+        if_setontimer(null, chatbox:universe);
+    }
+}

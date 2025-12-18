@@ -1,0 +1,4 @@
+// 7504
+[proc,hiscores_group_members_clear]
+%hiscores_gim_group_found = 0;
+~hiscores_group_members_show;

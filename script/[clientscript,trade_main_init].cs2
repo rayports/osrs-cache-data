@@ -1,0 +1,67 @@
+// 755
+[clientscript,trade_main_init](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5)
+%trade_slot_0_changed = 0;
+%trade_slot_1_changed = 0;
+%trade_slot_2_changed = 0;
+%trade_slot_3_changed = 0;
+%trade_slot_4_changed = 0;
+%trade_slot_5_changed = 0;
+%trade_slot_6_changed = 0;
+%trade_slot_7_changed = 0;
+%trade_slot_8_changed = 0;
+%trade_slot_9_changed = 0;
+%trade_slot_10_changed = 0;
+%trade_slot_11_changed = 0;
+%trade_slot_12_changed = 0;
+%trade_slot_13_changed = 0;
+%trade_slot_14_changed = 0;
+%trade_slot_15_changed = 0;
+%trade_slot_16_changed = 0;
+%trade_slot_17_changed = 0;
+%trade_slot_18_changed = 0;
+%trade_slot_19_changed = 0;
+%trade_slot_20_changed = 0;
+%trade_slot_21_changed = 0;
+%trade_slot_22_changed = 0;
+%trade_slot_23_changed = 0;
+%trade_slot_24_changed = 0;
+%trade_slot_25_changed = 0;
+%trade_slot_26_changed = 0;
+%trade_slot_27_changed = 0;
+def_int $int6 = inv_size(tradeoffer);
+cc_deleteall($component1);
+cc_deleteall($component3);
+def_int $int7 = 0;
+while ($int7 < $int6) {
+    cc_create($component1, ^iftype_graphic, $int7);
+    .cc_create($component3, ^iftype_graphic, $int7);
+    cc_setsize(36, 32, ^setsize_abs, ^setsize_abs);
+    .cc_setsize(36, 32, ^setsize_abs, ^setsize_abs);
+    cc_setgraphicshadow(0x333333);
+    .cc_setgraphicshadow(0x333333);
+    cc_setoutline(1);
+    .cc_setoutline(1);
+    cc_sethide(true);
+    .cc_sethide(true);
+    $int7 = calc($int7 + 1);
+}
+def_int $int8 = 0;
+$int7 = 0;
+while ($int7 < $int6) {
+    $int8 = calc($int6 + $int7);
+    cc_create($component1, ^iftype_graphic, $int8);
+    .cc_create($component3, ^iftype_graphic, $int8);
+    cc_setgraphic(exclamation_mark);
+    .cc_setgraphic(exclamation_mark);
+    cc_setsize(10, 32, ^setsize_abs, ^setsize_abs);
+    .cc_setsize(10, 32, ^setsize_abs, ^setsize_abs);
+    cc_sethide(false);
+    .cc_sethide(false);
+    cc_settrans(255);
+    .cc_settrans(255);
+    $int7 = calc($int7 + 1);
+}
+def_int $int9 = calc((36 - 10) / 2);
+~trade_main_drawitems($int6, $int9, $component1, $component2, $component3, $component4, $component5);
+if_setoninvtransmit("trade_main_drawitems($int6, $int9, $component1, $component2, $component3, $component4, $component5){tradeoffer}", $component0);
+if_setonvartransmit("trade_main_drawitems($int6, $int9, $component1, $component2, $component3, $component4, $component5){traderemoved}", $component0);

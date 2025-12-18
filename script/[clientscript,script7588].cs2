@@ -1,0 +1,10 @@
+// 7588
+[clientscript,script7588]
+if (%osm_walk_here_hidden_state ! -1) {
+    %osm_walk_here_hidden = %osm_walk_here_hidden_state;
+    %osm_walk_here_hidden_state = -1;
+}
+if (%osm_entity_interaction_hidden_state ! -1) {
+    %osm_entity_interaction_hidden = %osm_entity_interaction_hidden_state;
+    %osm_entity_interaction_hidden_state = -1;
+}

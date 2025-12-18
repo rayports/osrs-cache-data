@@ -1,0 +1,3 @@
+// 5491
+[clientscript,zoom_slider_max]
+~zoom_slider_specific_pos(settings_side:zoom_slider_bobble, settings_side:zoom_slider, 0);

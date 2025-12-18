@@ -1,0 +1,173 @@
+// 2633
+[proc,questlist_draw](component $component0, component $component1, component $component2, component $component3, component $component4, boolean $boolean5)
+def_int $int6 = -3;
+if (%questlist_disable_headers = 1) {
+    $int6 = 2;
+}
+def_int $int7 = db_listall(quest);
+def_boolean $boolean8 = ~on_mobile;
+def_int $int9 = 1;
+def_graphic $graphic10 = p11_full;
+def_fontmetrics $fontmetrics11 = p11_full;
+def_int $int12 = 11;
+def_int $int13 = 5;
+if ($boolean8 = true) {
+    $int13 = 11;
+}
+if (%questlist_larger_text = 1) {
+    $graphic10 = p12_full;
+    $fontmetrics11 = p12_full;
+    $int12 = 13;
+    $int13 = calc($int13 + 2);
+}
+def_string $string0 = "";
+def_string $stringarray1($int7);
+def_int $intarray2($int7);
+def_int $int14 = ~script1411(%questlist_sort_type);
+def_string $string3 = "";
+def_string $string4 = "";
+def_dbrow $dbrow15 = null;
+def_string $string5 = "";
+def_int $int16 = 0;
+def_int $int17 = pow(2, 16);
+def_boolean $boolean18 = ~speedrunning_world;
+def_boolean $boolean19 = ~league_world;
+def_boolean $boolean20 = ~script7983(~int_to_bool(%questlist_disable_text_shadow));
+cc_deleteall($component4);
+cc_create($component4, ^iftype_rectangle, 0);
+cc_sethide(true);
+while ($int9 <= $int7) {
+    $dbrow15 = ~script6154($int9);
+    cc_create($component4, ^iftype_text, $int9);
+    cc_setsize(0, $int12, ^setsize_minus, ^setsize_abs);
+    cc_settextfont($graphic10);
+    cc_settextshadow($boolean20);
+    cc_settextalign(^settextalign_left, ^settextalign_centre, $int12);
+    $string5 = ~get_quest_name($dbrow15);
+    cc_setopbase("<col=ff9040><$string5></col>");
+    if (~script4026($dbrow15, %questlist_sort_type) = true) {
+        $string5 = "MQ: <$string5>";
+    }
+    if ($boolean18 = true & ~speedrunning_beta_quest($dbrow15) = true) {
+        $string5 = "<$string5> (Beta)";
+    }
+    cc_settext($string5);
+    cc_setsize(0, calc($int12 * paraheight($string5, cc_getwidth, $fontmetrics11) + $int13), ^setsize_minus, ^setsize_abs);
+    if ($boolean18 = true) {
+        cc_setop(1, "View info:");
+    } else {
+        cc_setop(1, "");
+    }
+    cc_setop(2, "Read journal:");
+    if (db_getfield($dbrow15, quest:startcoord, 0) ! null & db_getfield($dbrow15, quest:startcoord, 0) ! 0_0_0_0_0) {
+        cc_setop(3, "Show on map:");
+    } else {
+        cc_setop(3, "");
+    }
+    if (db_getfield($dbrow15, quest:release_type, 0) = 2) {
+        cc_setop(4, "Open wiki guide:");
+        cc_setop(5, "Open wiki quick guide:");
+    } else {
+        cc_setop(4, "");
+        cc_setop(5, "");
+    }
+    cc_setop(6, "Pin journal:");
+    $int16 = ~quest_status_get($dbrow15);
+    $intarray2(calc($int9 - 1)) = calc($int16 * $int17 + $int9);
+    $string3 = ~script2245($dbrow15, $int16, %questlist_sort_type);
+    if ($int14 ! -1) {
+        $string4 = ~script2245($dbrow15, $int16, $int14);
+    } else {
+        $string4 = "";
+    }
+    $string0 = "<$string3><$string4>";
+    $stringarray1(calc($int9 - 1)) = $string0;
+    cc_sethide(true);
+    $int9 = calc($int9 + 1);
+}
+if ($int7 > 1) {
+    array_sort($stringarray1, $intarray2);
+}
+def_int $int21 = 0;
+def_int $int22 = 0;
+def_int $int23 = 0;
+def_boolean $boolean24 = true;
+def_boolean $boolean25 = true;
+def_boolean $boolean26 = false;
+def_string $string6 = "************";
+def_string $string7 = "************";
+def_int $int27 = ~settings_get_colour_or_default(227);
+def_int $int28 = ~settings_get_colour_or_default(224);
+def_int $int29 = ~settings_get_colour_or_default(225);
+def_int $int30 = ~settings_get_colour_or_default(226);
+def_boolean $boolean31 = false;
+def_boolean $boolean32 = ~questlist_hide_miniquests($boolean18);
+while ($int21 < $int7) {
+    $int22 = calc($intarray2($int21) % $int17);
+    $int16 = calc($intarray2($int21) / $int17);
+    $dbrow15 = ~script6154($int22);
+    $boolean24 = ~quest_requirement_check($dbrow15);
+    $boolean25 = ~script5990($dbrow15);
+    $string7 = ~script2265($dbrow15, $int16, %questlist_sort_type);
+    $boolean26 = ~script4028($dbrow15, $int16, $boolean24, $boolean25, $boolean18, $boolean19);
+    $boolean31 = ~quest_is_subquest($dbrow15);
+    if (~questlist_hide_quest($dbrow15, $int16, $boolean24, $boolean25, $boolean26, $boolean18, $boolean31, $boolean32) = false) {
+        if (compare($string7, $string6) ! 0 & %questlist_disable_headers = 0) {
+            $int9, $int6 = ~questlist_add_header($string7, $int9, $int6, $component4);
+            $string6 = $string7;
+        }
+        if (cc_find($component4, $int22) = true) {
+            if ($boolean31 = true) {
+                cc_sethide(true);
+            } else {
+                cc_sethide(false);
+                cc_setposition(0, $int6, ^setpos_abs_centre, ^setpos_abs_top);
+                ~questlist_setcolour($int16, $boolean26, $boolean18, $int27, $int28, $int29, $int30, $boolean8);
+                $int23 = calc($int23 + 1);
+                $int12 = cc_getheight;
+            }
+        }
+        $int21, $int6 = calc($int21 + 1), calc($int6 + $int12);
+    } else {
+        $int21 = calc($int21 + 1);
+    }
+}
+$int6 = calc($int6 + 2);
+if_setsize(0, $int6, ^setsize_minus, ^setsize_abs, $component4);
+cc_deleteall($component1);
+if ($int23 <= 0) {
+    if_sethide(true, $component3);
+    cc_create($component1, ^iftype_text, 0);
+    cc_setsize(40, calc(16384 / 2), ^setsize_minus, ^setsize_rel);
+    cc_setposition(0, 8, ^setpos_abs_centre, ^setpos_abs_top);
+    cc_setcolour(0xff981f);
+    cc_settextfont(p12_full);
+    cc_settextshadow(true);
+    cc_settextalign(^settextalign_centre, ^settextalign_centre, 14);
+    cc_settext("There are no quests available that match your current filters.");
+} else {
+    if_sethide(false, $component3);
+}
+def_int $int33 = %qj_lastscrollpos;
+if ($boolean5 = true) {
+    $int33 = %speedrun_qj_lastscrollpos;
+}
+if ($int6 > if_getheight($component2)) {
+    if_setscrollsize(0, $int6, $component2);
+    ~scrollbar_vertical($component3, $component2, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1");
+    if (cc_find($component3, 1) = true) {
+        ~scrollbar_vertical_doscroll($component3, $component2, $int33, true);
+    }
+} else {
+    if ($boolean5 = true) {
+        %speedrun_qj_lastscrollpos = 0;
+    } else {
+        %qj_lastscrollpos = 0;
+    }
+    if_setscrollsize(0, 0, $component2);
+    ~scrollbar_vertical($component3, $component2, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1");
+    if (cc_find($component3, 1) = true) {
+        ~scrollbar_vertical_doscroll($component3, $component2, 0, true);
+    }
+}
+~script4137($component0, $component1, $component2, $component3, $component4, $boolean5);

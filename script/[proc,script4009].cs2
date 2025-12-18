@@ -1,0 +1,3 @@
+// 4009
+[proc,script4009]
+%alchemy_warning_untradeables = calc(1 - %alchemy_warning_untradeables);

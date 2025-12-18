@@ -1,0 +1,40 @@
+// 1481
+[proc,hidey_tabbuttons](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6)
+if_sethide(true, hidey_holes:easy_contents);
+if_sethide(true, hidey_holes:easy_scrollbar);
+if_sethide(true, hidey_holes:medium_contents);
+if_sethide(true, hidey_holes:medium_scrollbar);
+if_sethide(true, hidey_holes:hard_contents);
+if_sethide(true, hidey_holes:hard_scrollbar);
+if_sethide(true, hidey_holes:elite_contents);
+if_sethide(true, hidey_holes:elite_scrollbar);
+if_sethide(true, hidey_holes:master_contents);
+if_sethide(true, hidey_holes:master_scrollbar);
+if_sethide(true, hidey_holes:beginner_contents);
+if_sethide(true, hidey_holes:beginner_scrollbar);
+if ($component0 = $component2) {
+    if_sethide(false, hidey_holes:medium_contents);
+    if_sethide(false, hidey_holes:medium_scrollbar);
+} else if ($component0 = $component3) {
+    if_sethide(false, hidey_holes:hard_contents);
+    if_sethide(false, hidey_holes:hard_scrollbar);
+} else if ($component0 = $component4) {
+    if_sethide(false, hidey_holes:elite_contents);
+    if_sethide(false, hidey_holes:elite_scrollbar);
+} else if ($component0 = $component5) {
+    if_sethide(false, hidey_holes:master_contents);
+    if_sethide(false, hidey_holes:master_scrollbar);
+} else if ($component0 = $component1) {
+    if_sethide(false, hidey_holes:easy_contents);
+    if_sethide(false, hidey_holes:easy_scrollbar);
+} else {
+    $component0 = $component6;
+    if_sethide(false, hidey_holes:beginner_contents);
+    if_sethide(false, hidey_holes:beginner_scrollbar);
+}
+~hidey_tabbuttons_draw($component1, "Easy", $component0, $component1, $component2, $component3, $component4, $component5, $component6);
+~hidey_tabbuttons_draw($component2, "Medium", $component0, $component1, $component2, $component3, $component4, $component5, $component6);
+~hidey_tabbuttons_draw($component3, "Hard", $component0, $component1, $component2, $component3, $component4, $component5, $component6);
+~hidey_tabbuttons_draw($component4, "Elite", $component0, $component1, $component2, $component3, $component4, $component5, $component6);
+~hidey_tabbuttons_draw($component5, "Master", $component0, $component1, $component2, $component3, $component4, $component5, $component6);
+~hidey_tabbuttons_draw($component6, "Beginner", $component0, $component1, $component2, $component3, $component4, $component5, $component6);

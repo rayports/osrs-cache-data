@@ -1,0 +1,51 @@
+// 7698
+[proc,script7698](stat $stat0)(int)
+switch_stat ($stat0) {
+    case attack :
+        return(%extra_xp_attack);
+    case strength :
+        return(%extra_xp_strength);
+    case defence :
+        return(%extra_xp_defence);
+    case prayer :
+        return(%extra_xp_prayer);
+    case ranged :
+        return(%extra_xp_ranged);
+    case magic :
+        return(%extra_xp_magic);
+    case runecraft :
+        return(%extra_xp_runecrafting);
+    case construction :
+        return(%extra_xp_construction);
+    case hitpoints :
+        return(%extra_xp_hitpoints);
+    case agility :
+        return(%extra_xp_agility);
+    case herblore :
+        return(%extra_xp_herblore);
+    case thieving :
+        return(%extra_xp_thieving);
+    case crafting :
+        return(%extra_xp_crafting);
+    case fletching :
+        return(%extra_xp_fletching);
+    case slayer :
+        return(%extra_xp_slayer);
+    case hunter :
+        return(%extra_xp_hunter);
+    case mining :
+        return(%extra_xp_mining);
+    case smithing :
+        return(%extra_xp_smithing);
+    case fishing :
+        return(%extra_xp_fishing);
+    case cooking :
+        return(%extra_xp_cooking);
+    case firemaking :
+        return(%extra_xp_firemaking);
+    case woodcutting :
+        return(%extra_xp_woodcutting);
+    case farming :
+        return(%extra_xp_farming);
+}
+return(%extra_xp_total);

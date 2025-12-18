@@ -1,0 +1,25 @@
+// 2800
+[proc,side_journal_switchtab](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10, component $component11, component $component12, component $component13, component $component14, component $component15, component $component16, component $component17, component $component18, component $component19, component $component20, component $component21, component $component22, component $component23, component $component24, component $component25, component $component26, component $component27, component $component28, component $component29, component $component30, component $component31, component $component32, component $component33, component $component34, component $component35, component $component36)
+~script2596($component2, $component3, $component4, $component21, $component22, $component23);
+~script2596($component6, $component7, $component8, $component24, $component25, $component26);
+~script2596($component10, $component11, $component12, $component27, $component28, $component29);
+if (%adventurepath_player_participating ! 0) {
+    ~script2596($component14, $component15, $component16, $component30, $component31, $component32);
+}
+if (~deadman_world = 3) {
+    ~script2596($component18, $component19, $component20, $component33, $component34, $component35);
+} else if (~league_world = true & %league_tutorial_completed >= 3) {
+    ~script2596($component18, $component19, $component20, $component33, $component34, $component35);
+}
+switch_int (%side_journal_tab) {
+    case 0 :
+        ~script2595($component2, $component3, $component4, $component21, $component22, $component23, $component0, $component36);
+    case 1 :
+        ~script2595($component6, $component7, $component8, $component24, $component25, $component26, $component0, $component36);
+    case 2 :
+        ~script2595($component10, $component11, $component12, $component27, $component28, $component29, $component0, $component36);
+    case 3 :
+        ~script2595($component14, $component15, $component16, $component30, $component31, $component32, $component0, $component36);
+    case 4 :
+        ~script2595($component18, $component19, $component20, $component33, $component34, $component35, $component0, $component36);
+}

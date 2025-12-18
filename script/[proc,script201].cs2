@@ -1,0 +1,6 @@
+// 201
+[proc,script201]
+if (~on_enhanced_desktop = false) {
+    return;
+}
+%popout_panel_desktop_disabled = calc(1 - %popout_panel_desktop_disabled);

@@ -1,0 +1,250 @@
+// 4684
+[proc,buff_bar_buff_disabled](int $int0)(int)
+switch_int ($int0) {
+    case 0 :
+        return(%buff_sire_stun_duration_disabled);
+    case 1 :
+        return(%buff_freeze_duration_disabled);
+    case 2 :
+        return(%buff_sotd_duration_disabled);
+    case 3 :
+        return(%buff_vengeance_cooldown_disabled);
+    case 4 :
+        return(%buff_imbued_heart_cooldown_disabled);
+    case 126 :
+        return(%buff_surge_potion_cooldown_disabled);
+    case 5 :
+        return(%buff_dragonfire_shield_cooldown_disabled);
+    case 6 :
+        return(%buff_stamina_duration_disabled);
+    case 7 :
+        return(%buff_prayer_enhance_duration_disabled);
+    case 63 :
+        return(%buff_prayer_enhance_duration_disabled);
+    case 64 :
+        return(%buff_prayer_enhance_duration_disabled);
+    case 8 :
+        return(%buff_overload_duration_disabled);
+    case 61 :
+        return(%buff_overload_duration_disabled);
+    case 62 :
+        return(%buff_overload_duration_disabled);
+    case 14 :
+        return(%buff_overload_duration_disabled);
+    case 9 :
+        return(%buff_antifire_duration_disabled);
+    case 58 :
+        return(%buff_antifire_duration_disabled);
+    case 15 :
+        return(%buff_antifire_duration_disabled);
+    case 59 :
+        return(%buff_antifire_duration_disabled);
+    case 10 :
+        return(%buff_antipoison_duration_disabled);
+    case 27 :
+        return(%buff_antipoison_duration_disabled);
+    case 42 :
+        return(%buff_poison_damage_disabled);
+    case 43 :
+        return(%buff_poison_damage_disabled);
+    case 11 :
+        return(%buff_charge_spell_disabled);
+    case 12 :
+        return(%buff_magic_imbue_duration_disabled);
+    case 13 :
+        return(%buff_godwars_altar_disabled);
+    case 16 :
+        return(%buff_home_teleport_disabled);
+    case 17 :
+        return(%buff_minigame_teleport_disabled);
+    case 18 :
+        return(%buff_teleblock_disabled);
+    case 19 :
+        return(%buff_divine_potion_duration_disabled);
+    case 20 :
+        return(%buff_divine_potion_duration_disabled);
+    case 21 :
+        return(%buff_divine_potion_duration_disabled);
+    case 22 :
+        return(%buff_divine_potion_duration_disabled);
+    case 23 :
+        return(%buff_divine_potion_duration_disabled);
+    case 24 :
+        return(%buff_divine_potion_duration_disabled);
+    case 25 :
+        return(%buff_divine_potion_duration_disabled);
+    case 26 :
+        return(%buff_divine_potion_duration_disabled);
+    case 28 :
+        return(%buff_vengeance_active_disabled);
+    case 29 :
+        return(%buff_corruption_disabled);
+    case 60 :
+        return(%buff_corruption_disabled);
+    case 30 :
+        return(%buff_corruption_disabled);
+    case 31 :
+        return(%buff_mark_of_darkness_disabled);
+    case 32 :
+        return(%buff_shadow_veil_disabled);
+    case 33 :
+        return(%buff_shadow_veil_disabled);
+    case 34 :
+        return(%buff_death_charge_disabled);
+    case 35 :
+        return(%buff_death_charge_disabled);
+    case 36 :
+        return(%buff_ward_of_arceuus_disabled);
+    case 37 :
+        return(%buff_ward_of_arceuus_disabled);
+    case 39 :
+        return(%buff_resurrection_disabled);
+    case 38 :
+        return(%buff_resurrection_disabled);
+    case 40 :
+        return(%buff_ammo_disabled);
+    case 41 :
+        return(%buff_ammo_disabled);
+    case 44 :
+        return(%buff_desert_damage_disabled);
+    case 48 :
+        return(%buff_revenant_reward_disabled);
+    case 56 :
+        return(%buff_cannon_ammo_disabled);
+    case 57 :
+        return(%buff_cannon_ammo_disabled);
+    case 45 :
+    case 46 :
+    case 47 :
+    case 49 :
+        return(%buff_league_relics_hidden);
+    case 50 :
+        return(%buff_league_relics_hidden);
+    case 51 :
+        return(%buff_league_relics_hidden);
+    case 52 :
+        return(%buff_league_relics_hidden);
+    case 53 :
+        return(%buff_league_relics_hidden);
+    case 54 :
+        return(%buff_league_relics_hidden);
+    case 55 :
+        return(%buff_league_relics_hidden);
+    case 101 :
+        return(%buff_league_relics_hidden);
+    case 102 :
+        return(%buff_league_relics_hidden);
+    case 103 :
+        return(%buff_league_relics_hidden);
+    case 104 :
+        return(%buff_league_relics_hidden);
+    case 105 :
+        return(%buff_league_relics_hidden);
+    case 106 :
+        return(%buff_league_relics_hidden);
+    case 107 :
+        return(%buff_league_relics_hidden);
+    case 108 :
+        return(%buff_league_relics_hidden);
+    case 65 :
+        return(%buff_league_relics_hidden);
+    case 66 :
+        return(%buff_league_relics_hidden);
+    case 67 :
+        return(%buff_league_relics_hidden);
+    case 68 :
+        return(%buff_league_relics_hidden);
+    case 69 :
+        return(%buff_league_relics_hidden);
+    case 70 :
+        return(%buff_league_relics_hidden);
+    case 71 :
+        return(%buff_league_relics_hidden);
+    case 72 :
+        return(%buff_league_relics_hidden);
+    case 73 :
+        return(%buff_league_relics_hidden);
+    case 74 :
+        return(%buff_league_relics_hidden);
+    case 75 :
+        return(%buff_league_relics_hidden);
+    case 76 :
+        return(%buff_league_relics_hidden);
+    case 77 :
+        return(%buff_league_relics_hidden);
+    case 78 :
+        return(%buff_league_relics_hidden);
+    case 79 :
+        return(%buff_league_relics_hidden);
+    case 100 :
+        return(%buff_league_relics_hidden);
+    case 99 :
+        return(%buff_league_relics_hidden);
+    case 109 :
+        return(%buff_league_relics_hidden);
+    case 123 :
+        return(%buff_league_masteries_hidden);
+    case 124 :
+        return(%buff_league_masteries_hidden);
+    case 125 :
+        return(%buff_league_masteries_hidden);
+    case 80 :
+        return(%buff_water_charges_disabled);
+    case 81, 82 :
+        return(%buff_cannon_decay_disabled);
+    case 83 :
+        return(%buff_statrenewal_duration_disabled);
+    case 121 :
+        return(%buff_prayer_regeneration_potion_duration_disabled);
+    case 84 :
+        return(%buff_apmekens_sight_disabled);
+    case 85 :
+        return(%buff_akkha_burn_duration_disabled);
+    case 86 :
+        return(%buff_akkha_darkness_duration_disabled);
+    case 87 :
+        return(%buff_akkha_freeze_duration_disabled);
+    case 88 :
+        return(%buff_zebak_bleed_duration_disabled);
+    case 89 :
+        return(%buff_toa_midraidloot_healing_duration_disabled);
+    case 90 :
+        return(%buff_toa_midraidloot_prayer_duration_disabled);
+    case 91 :
+        return(%buff_toa_midraidloot_energy_duration_disabled);
+    case 92 :
+        return(%buff_toa_midraidloot_stats_duration_disabled);
+    case 93 :
+        return(%buff_wbr_exit_cave);
+    case 94 :
+        return(%buff_zebak_bleed_duration_disabled);
+    case 96 :
+        return(%buff_group_gathering_woodcutting_disabled);
+    case 97 :
+        if (%buff_woodcutting_leprechaun_rainbows_setting = 2) {
+            return(1);
+        }
+        return(0);
+    case 111 :
+        return(%buff_dragonfire_shield_cooldown_disabled);
+    case 112 :
+        return(%buff_dragonfire_shield_cooldown_disabled);
+    case 110 :
+        return(%buff_scurrius_food_pile);
+    case 119 :
+        return(%buff_deadman_overload_potion);
+    case 122 :
+        return(%buff_goading_potion_duration_disabled);
+    case 127 :
+        return(%buff_bowstring_spool_disabled);
+    case 129 :
+        return(%buff_ent_totems_bonus_xp_disabled);
+    case 130, 131, 132 :
+        if (%sailing_player_is_on_player_boat = 1) {
+            return(0);
+        } else {
+            return(1);
+        }
+    case default :
+        return(0);
+}

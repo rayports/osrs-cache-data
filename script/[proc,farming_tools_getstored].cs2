@@ -1,0 +1,41 @@
+// 1063
+[proc,farming_tools_getstored](obj $obj0)(int, obj)
+switch_obj ($obj0) {
+    case rake :
+        return(calc(pow(2, 1) * %farming_tools_extrarakes + %farming_tools_rake), rake);
+    case dibber :
+        return(calc(pow(2, 1) * %farming_tools_extradibbers + %farming_tools_dibber), dibber);
+    case spade :
+        return(calc(pow(2, 1) * %farming_tools_extraspades + %farming_tools_spade), spade);
+    case secateurs :
+        if (%farming_tools_fairysecateurs = 1) {
+            return(calc(pow(2, 1) * %farming_tools_extrasecateurs + %farming_tools_secateurs), fairy_enchanted_secateurs);
+        }
+        return(calc(pow(2, 1) * %farming_tools_extrasecateurs + %farming_tools_secateurs), secateurs);
+    case watering_can_dummy :
+        if (%farming_tools_wateringcan <= 0) {
+            return(0, null);
+        }
+        return(1, enum(int, namedobj, enum_136, %farming_tools_wateringcan));
+    case gardening_trowel :
+        return(calc(pow(2, 1) * %farming_tools_extratrowels + %farming_tools_trowel), gardening_trowel);
+    case plant_cure :
+        return(%farming_tools_plantcure, plant_cure);
+    case bottomless_compost_bucket :
+        if (%farming_tools_bottomless_bucket_type = 1) {
+            return(1, bottomless_compost_bucket);
+        } else if (%farming_tools_bottomless_bucket_type > 1) {
+            return(1, bottomless_compost_bucket_filled);
+        } else {
+            return(0, bottomless_compost_bucket);
+        }
+    case bucket_empty :
+        return(calc(pow(2, 8) * %farming_tools_extra2buckets + pow(2, 5) * %farming_tools_extrabuckets + %farming_tools_buckets), bucket_empty);
+    case bucket_compost :
+        return(calc(pow(2, 8) * %farming_tools_extracompost + %farming_tools_compost), bucket_compost);
+    case bucket_supercompost :
+        return(calc(pow(2, 8) * %farming_tools_extrasupercompost + %farming_tools_supercompost), bucket_supercompost);
+    case bucket_ultracompost :
+        return(%farming_tools_ultracompost, bucket_ultracompost);
+}
+return(0, null);

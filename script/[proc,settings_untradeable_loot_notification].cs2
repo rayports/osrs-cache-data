@@ -1,0 +1,5 @@
+// 4016
+[proc,settings_untradeable_loot_notification]
+if (%option_lootnotification_on = 1) {
+    %option_lootnotification_untradeables = calc(1 - %option_lootnotification_untradeables);
+}

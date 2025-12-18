@@ -1,0 +1,7 @@
+// 5190
+[proc,settings_minimap_lock]
+if (~on_enhanced_any = false) {
+    return;
+}
+%minimap_zoom_lock_disabled = calc(1 - %minimap_zoom_lock_disabled);
+minimap_setzoomable(~int_to_bool(%minimap_zoom_lock_disabled));

@@ -1,0 +1,148 @@
+// 6359
+[proc,pvpa_1v1_info_getlayer](int $int0, int $int1)(component)
+switch_int ($int0) {
+    case 6 :
+        switch_int ($int1) {
+            case 0 :
+                return(pvp_arena_1v1_info:ro64_00);
+            case 1 :
+                return(pvp_arena_1v1_info:ro64_01);
+            case 2 :
+                return(pvp_arena_1v1_info:ro64_02);
+            case 3 :
+                return(pvp_arena_1v1_info:ro64_03);
+            case 4 :
+                return(pvp_arena_1v1_info:ro64_04);
+            case 5 :
+                return(pvp_arena_1v1_info:ro64_05);
+            case 6 :
+                return(pvp_arena_1v1_info:ro64_06);
+            case 7 :
+                return(pvp_arena_1v1_info:ro64_07);
+            case 8 :
+                return(pvp_arena_1v1_info:ro64_08);
+            case 9 :
+                return(pvp_arena_1v1_info:ro64_09);
+            case 10 :
+                return(pvp_arena_1v1_info:ro64_10);
+            case 11 :
+                return(pvp_arena_1v1_info:ro64_11);
+            case 12 :
+                return(pvp_arena_1v1_info:ro64_12);
+            case 13 :
+                return(pvp_arena_1v1_info:ro64_13);
+            case 14 :
+                return(pvp_arena_1v1_info:ro64_14);
+            case 15 :
+                return(pvp_arena_1v1_info:ro64_15);
+            case 16 :
+                return(pvp_arena_1v1_info:ro64_16);
+            case 17 :
+                return(pvp_arena_1v1_info:ro64_17);
+            case 18 :
+                return(pvp_arena_1v1_info:ro64_18);
+            case 19 :
+                return(pvp_arena_1v1_info:ro64_19);
+            case 20 :
+                return(pvp_arena_1v1_info:ro64_20);
+            case 21 :
+                return(pvp_arena_1v1_info:ro64_21);
+            case 22 :
+                return(pvp_arena_1v1_info:ro64_22);
+            case 23 :
+                return(pvp_arena_1v1_info:ro64_23);
+            case 24 :
+                return(pvp_arena_1v1_info:ro64_24);
+            case 25 :
+                return(pvp_arena_1v1_info:ro64_25);
+            case 26 :
+                return(pvp_arena_1v1_info:ro64_26);
+            case 27 :
+                return(pvp_arena_1v1_info:ro64_27);
+            case 28 :
+                return(pvp_arena_1v1_info:ro64_28);
+            case 29 :
+                return(pvp_arena_1v1_info:ro64_29);
+            case 30 :
+                return(pvp_arena_1v1_info:ro64_30);
+            case 31 :
+                return(pvp_arena_1v1_info:ro64_31);
+        }
+    case 5 :
+        switch_int ($int1) {
+            case 0 :
+                return(pvp_arena_1v1_info:ro32_00);
+            case 1 :
+                return(pvp_arena_1v1_info:ro32_01);
+            case 2 :
+                return(pvp_arena_1v1_info:ro32_02);
+            case 3 :
+                return(pvp_arena_1v1_info:ro32_03);
+            case 4 :
+                return(pvp_arena_1v1_info:ro32_04);
+            case 5 :
+                return(pvp_arena_1v1_info:ro32_05);
+            case 6 :
+                return(pvp_arena_1v1_info:ro32_06);
+            case 7 :
+                return(pvp_arena_1v1_info:ro32_07);
+            case 8 :
+                return(pvp_arena_1v1_info:ro32_08);
+            case 9 :
+                return(pvp_arena_1v1_info:ro32_09);
+            case 10 :
+                return(pvp_arena_1v1_info:ro32_10);
+            case 11 :
+                return(pvp_arena_1v1_info:ro32_11);
+            case 12 :
+                return(pvp_arena_1v1_info:ro32_12);
+            case 13 :
+                return(pvp_arena_1v1_info:ro32_13);
+            case 14 :
+                return(pvp_arena_1v1_info:ro32_14);
+            case 15 :
+                return(pvp_arena_1v1_info:ro32_15);
+        }
+    case 4 :
+        switch_int ($int1) {
+            case 0 :
+                return(pvp_arena_1v1_info:ro16_00);
+            case 1 :
+                return(pvp_arena_1v1_info:ro16_01);
+            case 2 :
+                return(pvp_arena_1v1_info:ro16_02);
+            case 3 :
+                return(pvp_arena_1v1_info:ro16_03);
+            case 4 :
+                return(pvp_arena_1v1_info:ro16_04);
+            case 5 :
+                return(pvp_arena_1v1_info:ro16_05);
+            case 6 :
+                return(pvp_arena_1v1_info:ro16_06);
+            case 7 :
+                return(pvp_arena_1v1_info:ro16_07);
+        }
+    case 3 :
+        switch_int ($int1) {
+            case 0 :
+                return(pvp_arena_1v1_info:ro8_00);
+            case 1 :
+                return(pvp_arena_1v1_info:ro8_01);
+            case 2 :
+                return(pvp_arena_1v1_info:ro8_02);
+            case 3 :
+                return(pvp_arena_1v1_info:ro8_03);
+        }
+    case 2 :
+        if ($int1 = 0) {
+            return(pvp_arena_1v1_info:ro4_00);
+        }
+        if ($int1 = 1) {
+            return(pvp_arena_1v1_info:ro4_01);
+        }
+    case 1 :
+        if ($int1 = 0) {
+            return(pvp_arena_1v1_info:ro2);
+        }
+}
+return(null);

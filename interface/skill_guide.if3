@@ -1,0 +1,429 @@
+[infinity]
+type=layer
+widthmode=minus
+heightmode=minus
+xmode=abs_centre
+ymode=abs_centre
+
+[universe]
+type=layer
+width=512
+height=334
+layer=infinity
+dragrenderbehaviour=1
+onload=skill_guide_init(event_com, skill_guide:title, skill_guide:description, skill_guide:info, skill_guide:icons, skill_guide:scrollbar, skill_guide:categories, skill_guide:infinity)
+
+[com_2]
+type=model
+x=240
+y=161
+width=32
+height=32
+layer=universe
+model=model_20836
+modelanglex=512
+modelzoom=1393
+
+[com_3]
+type=model
+x=162
+y=13
+width=32
+height=32
+layer=universe
+model=model_20852
+modelanglex=512
+modelangley=1024
+modelzoom=1357
+
+[title]
+type=text
+x=35
+y=7
+width=291
+height=34
+layer=universe
+textfont=quill_oblique_large
+textalignh=centre
+textalignv=top
+colour=0x46320a
+
+[description]
+type=text
+x=35
+y=40
+width=291
+height=13
+layer=universe
+textfont=p11_full
+textalignh=centre
+textalignv=top
+colour=0x46320a
+
+[categories]
+type=layer
+x=348
+y=54
+width=160
+height=266
+layer=universe
+
+[noclick]
+type=layer
+width=20
+height=10
+widthmode=minus
+heightmode=minus
+xmode=abs_centre
+ymode=abs_centre
+layer=categories
+noclickthrough=yes
+
+[middle]
+type=layer
+height=10
+widthmode=minus
+heightmode=minus
+xmode=abs_centre
+ymode=abs_centre
+layer=categories
+
+[com_9]
+type=model
+width=32
+height=32
+xmode=abs_centre
+layer=middle
+model=model_59346
+modeloriginx=-46
+modeloriginy=-320
+modelanglex=512
+modelangley=1024
+modelzoom=1775
+
+[com_10]
+type=model
+y=-10
+width=32
+height=32
+xmode=abs_centre
+layer=categories
+model=model_20851
+modeloriginx=7
+modelanglex=517
+modelangley=1024
+modelzoom=1442
+
+[com_11]
+type=model
+y=-7
+width=32
+height=32
+xmode=abs_centre
+ymode=abs_bottom
+layer=categories
+model=model_20837
+modelanglex=517
+modelangley=1024
+modelzoom=1442
+
+[00]
+type=text
+y=12
+width=115
+height=17
+xmode=abs_centre
+layer=categories
+textfont=q8_full
+textalignh=centre
+textalignv=top
+colour=0x46320a
+events=2
+op1=Open subsection
+onmouseover=text_colour_swapper(event_com, 6574120)
+onmouseleave=text_colour_swapper(event_com, 4600330)
+
+[01]
+type=text
+y=29
+width=115
+height=17
+xmode=abs_centre
+layer=categories
+textfont=q8_full
+textalignh=centre
+textalignv=top
+colour=0x46320a
+events=2
+op1=Open subsection
+onmouseover=text_colour_swapper(event_com, 6574120)
+onmouseleave=text_colour_swapper(event_com, 4600330)
+
+[02]
+type=text
+y=46
+width=115
+height=17
+xmode=abs_centre
+layer=categories
+textfont=q8_full
+textalignh=centre
+textalignv=top
+colour=0x46320a
+events=2
+op1=Open subsection
+onmouseover=text_colour_swapper(event_com, 6574120)
+onmouseleave=text_colour_swapper(event_com, 4600330)
+
+[03]
+type=text
+y=63
+width=115
+height=17
+xmode=abs_centre
+layer=categories
+textfont=q8_full
+textalignh=centre
+textalignv=top
+colour=0x46320a
+events=2
+op1=Open subsection
+onmouseover=text_colour_swapper(event_com, 6574120)
+onmouseleave=text_colour_swapper(event_com, 4600330)
+
+[04]
+type=text
+y=80
+width=115
+height=17
+xmode=abs_centre
+layer=categories
+textfont=q8_full
+textalignh=centre
+textalignv=top
+colour=0x46320a
+events=2
+op1=Open subsection
+onmouseover=text_colour_swapper(event_com, 6574120)
+onmouseleave=text_colour_swapper(event_com, 4600330)
+
+[05]
+type=text
+y=97
+width=115
+height=17
+xmode=abs_centre
+layer=categories
+textfont=q8_full
+textalignh=centre
+textalignv=top
+colour=0x46320a
+events=2
+op1=Open subsection
+onmouseover=text_colour_swapper(event_com, 6574120)
+onmouseleave=text_colour_swapper(event_com, 4600330)
+
+[06]
+type=text
+y=114
+width=115
+height=17
+xmode=abs_centre
+layer=categories
+textfont=q8_full
+textalignh=centre
+textalignv=top
+colour=0x46320a
+events=2
+op1=Open subsection
+onmouseover=text_colour_swapper(event_com, 6574120)
+onmouseleave=text_colour_swapper(event_com, 4600330)
+
+[07]
+type=text
+y=131
+width=115
+height=17
+xmode=abs_centre
+layer=categories
+textfont=q8_full
+textalignh=centre
+textalignv=top
+colour=0x46320a
+events=2
+op1=Open subsection
+onmouseover=text_colour_swapper(event_com, 6574120)
+onmouseleave=text_colour_swapper(event_com, 4600330)
+
+[08]
+type=text
+y=148
+width=115
+height=17
+xmode=abs_centre
+layer=categories
+textfont=q8_full
+textalignh=centre
+textalignv=top
+colour=0x46320a
+events=2
+op1=Open subsection
+onmouseover=text_colour_swapper(event_com, 6574120)
+onmouseleave=text_colour_swapper(event_com, 4600330)
+
+[09]
+type=text
+y=165
+width=115
+height=17
+xmode=abs_centre
+layer=categories
+textfont=q8_full
+textalignh=centre
+textalignv=top
+colour=0x46320a
+events=2
+op1=Open subsection
+onmouseover=text_colour_swapper(event_com, 6574120)
+onmouseleave=text_colour_swapper(event_com, 4600330)
+
+[10]
+type=text
+y=182
+width=115
+height=17
+xmode=abs_centre
+layer=categories
+textfont=q8_full
+textalignh=centre
+textalignv=top
+colour=0x46320a
+events=2
+op1=Open subsection
+onmouseover=text_colour_swapper(event_com, 6574120)
+onmouseleave=text_colour_swapper(event_com, 4600330)
+
+[11]
+type=text
+y=199
+width=115
+height=17
+xmode=abs_centre
+layer=categories
+textfont=q8_full
+textalignh=centre
+textalignv=top
+colour=0x46320a
+events=2
+op1=Open subsection
+onmouseover=text_colour_swapper(event_com, 6574120)
+onmouseleave=text_colour_swapper(event_com, 4600330)
+
+[12]
+type=text
+y=216
+width=115
+height=17
+xmode=abs_centre
+layer=categories
+textfont=q8_full
+textalignh=centre
+textalignv=top
+colour=0x46320a
+events=2
+op1=Open subsection
+onmouseover=text_colour_swapper(event_com, 6574120)
+onmouseleave=text_colour_swapper(event_com, 4600330)
+
+[13]
+type=text
+y=233
+width=115
+height=17
+xmode=abs_centre
+layer=categories
+textfont=q8_full
+textalignh=centre
+textalignv=top
+colour=0x46320a
+events=2
+op1=Open subsection
+onmouseover=text_colour_swapper(event_com, 6574120)
+onmouseleave=text_colour_swapper(event_com, 4600330)
+
+[14]
+type=text
+y=250
+width=115
+height=17
+xmode=abs_centre
+layer=categories
+textfont=q8_full
+textalignh=centre
+textalignv=top
+colour=0x46320a
+events=2
+op1=Open subsection
+onmouseover=text_colour_swapper(event_com, 6574120)
+onmouseleave=text_colour_swapper(event_com, 4600330)
+
+[move_layer]
+type=layer
+x=12
+y=7
+width=332
+height=52
+layer=universe
+noclickthrough=yes
+events=262146
+op1=Move
+dragdeadzone=1
+dragdeadtime=5
+
+[info]
+type=layer
+x=21
+y=76
+width=295
+height=239
+layer=universe
+noclickthrough=yes
+
+[scrollbar]
+type=layer
+x=316
+y=76
+width=16
+height=239
+layer=universe
+noclickthrough=yes
+
+[close_layer]
+type=layer
+x=482
+y=6
+width=26
+height=23
+layer=universe
+noclickthrough=yes
+
+[close]
+type=graphic
+x=482
+y=6
+width=26
+height=23
+layer=universe
+graphic="close_buttons,6"
+events=2
+op1=Close
+onmouseover=graphic_swapper(event_com, "close_buttons,7")
+onmouseleave=graphic_swapper(event_com, "close_buttons,6")
+onop=closebutton_click
+
+[icons]
+type=layer
+width=295
+height=239
+layer=info
+

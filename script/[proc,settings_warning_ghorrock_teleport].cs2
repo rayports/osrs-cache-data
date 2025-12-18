@@ -1,0 +1,3 @@
+// 4005
+[proc,settings_warning_ghorrock_teleport]
+%ghorrock_teleport_warning = calc(1 - %ghorrock_teleport_warning);

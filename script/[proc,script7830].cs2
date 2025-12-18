@@ -1,0 +1,9 @@
+// 7830
+[proc,script7830]()(int)
+if (~on_mobile = false) {
+    return(0);
+} else if (%osm_sidepanel_on_left = 1 & %settings_osm_hotkeys_open_sidepanels_on_left = 1 & ~script7562 = 0) {
+    return(1);
+} else {
+    return(0);
+}

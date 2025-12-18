@@ -1,0 +1,31 @@
+// 572
+[proc,script572](enum $enum0)(int)
+switch_enum ($enum0) {
+    case enum_374 :
+        return(%clanwars_wincondition);
+    case enum_913 :
+        return(%clanwars_melee);
+    case enum_915 :
+        return(%clanwars_ranged);
+    case enum_917 :
+        return(%clanwars_magic);
+    case enum_919 :
+        return(%clanwars_prayer);
+    case enum_921 :
+        return(%clanwars_food);
+    case enum_923 :
+        return(%clanwars_drinks);
+    case enum_925 :
+        return(%clanwars_specialattacks);
+    case enum_927 :
+        return(%clanwars_stragglers);
+    case enum_929 :
+        return(%clanwars_arena);
+    case enum_2336 :
+        return(%clanwars_leavingcc);
+    case enum_2338 :
+        return(%clanwars_rejoiningdelay);
+    case enum_2340 :
+        return(%clanwars_playercap);
+}
+return(0);

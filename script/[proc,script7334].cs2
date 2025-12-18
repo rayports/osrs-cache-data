@@ -1,0 +1,72 @@
+// 7334
+[proc,script7334](coord $coord0)(dbrow)
+if (~script9105($coord0, chartering_destination_portsarim) = true) {
+    return(chartering_destination_portsarim);
+}
+if (~script9105($coord0, chartering_destination_brimhaven) = true) {
+    return(chartering_destination_brimhaven);
+}
+if (~script9105($coord0, chartering_destination_catherby) = true) {
+    return(chartering_destination_catherby);
+}
+if (~script9105($coord0, chartering_destination_mosleharmless) = true) {
+    return(chartering_destination_mosleharmless);
+}
+if (~script9105($coord0, chartering_destination_musapoint) = true) {
+    return(chartering_destination_musapoint);
+}
+if (~script9105($coord0, chartering_destination_portkhazard) = true) {
+    return(chartering_destination_portkhazard);
+}
+if (~script9105($coord0, chartering_destination_portphasmatys) = true) {
+    return(chartering_destination_portphasmatys);
+}
+if (~script9105($coord0, chartering_destination_shipyard) = true) {
+    return(chartering_destination_shipyard);
+}
+if (~script9105($coord0, chartering_destination_porttyras) = true) {
+    return(chartering_destination_porttyras);
+}
+if (~script9105($coord0, chartering_destination_corsaircove) = true) {
+    return(chartering_destination_corsaircove);
+}
+if (~script9105($coord0, chartering_destination_prifddinas) = true) {
+    return(chartering_destination_prifddinas);
+}
+if (~script9105($coord0, chartering_destination_piscarilius) = true) {
+    return(chartering_destination_piscarilius);
+}
+if (~script9105($coord0, chartering_destination_landsend) = true) {
+    return(chartering_destination_landsend);
+}
+if (~script9105($coord0, chartering_destination_fortis) = true) {
+    return(chartering_destination_fortis);
+}
+if (~script9105($coord0, chartering_destination_aldarin) = true) {
+    return(chartering_destination_aldarin);
+}
+if (~script9105($coord0, chartering_destination_sunsetcoast) = true) {
+    return(chartering_destination_sunsetcoast);
+}
+if (~script9105($coord0, chartering_destination_tempestus) = true) {
+    return(chartering_destination_tempestus);
+}
+if (~script9105($coord0, chartering_destination_pandemonium) = true) {
+    return(chartering_destination_pandemonium);
+}
+if (~script9105($coord0, chartering_destination_summer_shore) = true) {
+    return(chartering_destination_summer_shore);
+}
+if (~script9105($coord0, chartering_destination_red_rock) = true) {
+    return(chartering_destination_red_rock);
+}
+if (~script9105($coord0, chartering_destination_barracuda_hq) = true) {
+    return(chartering_destination_barracuda_hq);
+}
+if (~script9105($coord0, chartering_destination_deepfin_point) = true) {
+    return(chartering_destination_deepfin_point);
+}
+if (~script9105($coord0, chartering_destination_port_roberts) = true) {
+    return(chartering_destination_port_roberts);
+}
+return(null);

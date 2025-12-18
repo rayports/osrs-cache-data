@@ -1,0 +1,9 @@
+// 7028
+[proc,script7028]
+if (~on_enhanced_any = false) {
+    return;
+}
+if (%minimap_zoom_lock_disabled = 1) {
+    return;
+}
+minimap_setzoom(4);

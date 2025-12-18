@@ -1,0 +1,3 @@
+// 3478
+[clientscript,gravestone_transmit_data](int $int0, int $int1)
+%gravestone_transmit_fee, %gravestone_transmit_coffer = $int0, $int1;

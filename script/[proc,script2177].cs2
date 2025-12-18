@@ -1,0 +1,3 @@
+// 2177
+[proc,script2177]
+%questlist_disable_headers = calc(1 - %questlist_disable_headers);

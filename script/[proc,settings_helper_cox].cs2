@@ -1,0 +1,6 @@
+// 4585
+[proc,settings_helper_cox]
+if (~on_enhanced_any = false) {
+    return;
+}
+%cox_helper_disabled = calc(1 - %cox_helper_disabled);

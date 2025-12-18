@@ -1,0 +1,6 @@
+// 6390
+[proc,script6390]()(dbrow)
+if (%cr_ui_open = 0) {
+    return(null);
+}
+return(%cr_active_module);

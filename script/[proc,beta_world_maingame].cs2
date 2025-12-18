@@ -1,0 +1,6 @@
+// 403
+[proc,beta_world_maingame]()(boolean)
+if (testbit(%map_flags_cached, 25) = ^true & testbit(%map_flags_cached, 23) = ^true & testbit(%map_flags_cached, 4) = ^false) {
+    return(true);
+}
+return(false);

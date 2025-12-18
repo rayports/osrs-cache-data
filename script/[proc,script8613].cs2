@@ -1,0 +1,54 @@
+// 8613
+[proc,script8613](int $int0, int $int1)(graphic)
+switch_int ($int0) {
+    case 0 :
+        if ($int1 = 0) {
+            return(graphic_7017);
+        } else {
+            return(graphic_7014);
+        }
+    case 1 :
+        if ($int1 = 0) {
+            return(graphic_7017);
+        } else {
+            return(graphic_7009);
+        }
+    case 2 :
+        if ($int1 = 0) {
+            return(graphic_7017);
+        } else {
+            return(graphic_7010);
+        }
+    case 3 :
+        if ($int1 = 0) {
+            return(graphic_7017);
+        } else {
+            return(graphic_7011);
+        }
+    case 4 :
+        if ($int1 = 0) {
+            return(graphic_7017);
+        } else {
+            return(graphic_7012);
+        }
+    case 5 :
+        if ($int1 = 0) {
+            return(graphic_7017);
+        } else {
+            return(graphic_7013);
+        }
+    case 6 :
+        if ($int1 = 0) {
+            return(graphic_7017);
+        } else {
+            return(graphic_7015);
+        }
+    case 7 :
+        if ($int1 = 0) {
+            return(graphic_7017);
+        } else {
+            return(graphic_7016);
+        }
+    case default :
+        return(null);
+}

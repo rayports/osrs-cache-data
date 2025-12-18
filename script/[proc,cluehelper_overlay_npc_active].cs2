@@ -1,0 +1,15 @@
+// 6497
+[proc,cluehelper_overlay_npc_active]()(int)
+if (%cluehelper_npc_current_clue ! %cluehelper_infobox_clue) {
+    return(0);
+}
+if (npc_finduid(%cluehelper_npc_id) = true) {
+    return(1);
+}
+if (npc_finduid(%cluehelper_npc_id2) = true) {
+    return(1);
+}
+if (npc_finduid(%cluehelper_npc_id3) = true) {
+    return(1);
+}
+return(0);

@@ -1,0 +1,7 @@
+// 4014
+[proc,settings_loot_drop_notification]
+if (%option_lootnotification_on = 0 & %option_lootnotification_value <= 0) {
+    return;
+} else {
+    %option_lootnotification_on = calc(1 - %option_lootnotification_on);
+}

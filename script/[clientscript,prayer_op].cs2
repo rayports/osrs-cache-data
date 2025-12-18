@@ -1,0 +1,32 @@
+// 462
+[clientscript,prayer_op](int $int0, boolean $boolean1, obj $obj2, component $component3, component $component4, component $component5)
+def_int $int6 = oc_param($obj2, param_630);
+if ($int0 = 1) {
+    if ($boolean1 = false & cc_find($component3, 0) = true & .cc_find($component3, 1) = true) {
+        if (testbit(~prayer_allactive_get, $int6) = ^true) {
+            ~prayer_allactive_set(clearbit(~prayer_allactive_get, $int6));
+            ~prayer_updatebutton($boolean1, $obj2, $component3, $component4, $component5);
+            return;
+        }
+        if (~prayer_isavailable($obj2) = false) {
+            sound_synth(synth_2673, 1, 0);
+            return;
+        }
+        if (stat(prayer) <= 0) {
+            sound_synth(synth_2673, 1, 0);
+            mes("You need to recharge your Prayer at an altar.");
+            return;
+        }
+        ~prayer_allactive_set(setbit(~prayer_allactive_get, $int6));
+        ~prayer_updatebutton($boolean1, $obj2, $component3, $component4, $component5);
+    }
+} else if ($int0 = 2) {
+    ~deltooltip_action($component5);
+    if ($boolean1 = true & %osm_tooltip_stat ! $component3) {
+        sound_synth(synth_2266, 1, 0);
+        ~tooltip_build($component3, -1, $component5, ~prayer_gettooltiptext($obj2), if_getwidth($component4));
+        %osm_tooltip_stat = $component3;
+    } else {
+        %osm_tooltip_stat = null;
+    }
+}

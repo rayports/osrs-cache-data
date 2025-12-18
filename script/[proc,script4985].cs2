@@ -1,0 +1,4 @@
+// 4985
+[proc,script4985]
+if_sethide(false, pmoon_reward:confirmation);
+if_sethide(false, pmoon_reward:noclick);

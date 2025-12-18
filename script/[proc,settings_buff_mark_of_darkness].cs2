@@ -1,0 +1,7 @@
+// 529
+[proc,settings_buff_mark_of_darkness]
+if (~on_enhanced_any = false) {
+    return;
+}
+%buff_mark_of_darkness_disabled = calc(1 - %buff_mark_of_darkness_disabled);
+~buff_bar_layout_redraw;

@@ -1,0 +1,6 @@
+// 3
+[proc,target_world]()(boolean)
+if (testbit(%map_flags_cached, 5) = ^true) {
+    return(true);
+}
+return(false);

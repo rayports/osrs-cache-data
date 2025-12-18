@@ -1,0 +1,20 @@
+// 3910
+[proc,settings_side_tabs]
+if_setop(1, "Controls", settings_side:settings_tab);
+if_setop(1, "Audio", settings_side:audio_tab);
+if_setop(1, "Display", settings_side:display_tab);
+if_setonop("settings_side_switch_tab(0)", settings_side:settings_tab);
+if_setonop("settings_side_switch_tab(1)", settings_side:audio_tab);
+if_setonop("settings_side_switch_tab(2)", settings_side:display_tab);
+if (~on_mobile = true) {
+    if_setgraphic("acc_man_icons,15", settings_side:tab_icon_3);
+    return;
+} else {
+    if_setgraphic("acc_man_icons,14", settings_side:tab_icon_3);
+}
+if_setonmouserepeat("settings_side_tab_highlight(settings_side:tab_1_1, settings_side:tab_1_2, settings_side:tab_1_3, settings_side:tab_1_1_backing, settings_side:tab_1_2_backing, settings_side:tab_1_3_backing, 0)", settings_side:settings_tab);
+if_setonmouserepeat("settings_side_tab_highlight(settings_side:tab_2_1, settings_side:tab_2_2, settings_side:tab_2_3, settings_side:tab_2_1_backing, settings_side:tab_2_2_backing, settings_side:tab_2_3_backing, 1)", settings_side:audio_tab);
+if_setonmouserepeat("settings_side_tab_highlight(settings_side:tab_3_1, settings_side:tab_3_2, settings_side:tab_3_3, settings_side:tab_3_1_backing, settings_side:tab_3_2_backing, settings_side:tab_3_3_backing, 2)", settings_side:display_tab);
+if_setonmouseleave("settings_side_tab_highlight_reset(settings_side:tab_1_1, settings_side:tab_1_2, settings_side:tab_1_3, settings_side:tab_1_1_backing, settings_side:tab_1_2_backing, settings_side:tab_1_3_backing, 0)", settings_side:settings_tab);
+if_setonmouseleave("settings_side_tab_highlight_reset(settings_side:tab_2_1, settings_side:tab_2_2, settings_side:tab_2_3, settings_side:tab_2_1_backing, settings_side:tab_2_2_backing, settings_side:tab_2_3_backing, 1)", settings_side:audio_tab);
+if_setonmouseleave("settings_side_tab_highlight_reset(settings_side:tab_3_1, settings_side:tab_3_2, settings_side:tab_3_3, settings_side:tab_3_1_backing, settings_side:tab_3_2_backing, settings_side:tab_3_3_backing, 2)", settings_side:display_tab);

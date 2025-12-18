@@ -1,0 +1,33 @@
+// 179
+[proc,chat_alert_get](int $int0)(int)
+switch_int ($int0) {
+    case 1 :
+        return(%chat_alert_game);
+    case 2 :
+        return(%chat_alert_public);
+    case 3 :
+        return(%chat_alert_private);
+    case 4 :
+        return(%chat_alert_friendschat);
+    case 5 :
+        return(%chat_alert_clan);
+    case 6 :
+        return(%chat_alert_trade);
+    case 73 :
+        if (%chat_alert_game > 0) {
+            return(%chat_alert_game);
+        } else if (%chat_alert_public > 0) {
+            return(%chat_alert_public);
+        } else if (%chat_alert_private > 0) {
+            return(%chat_alert_private);
+        } else if (%chat_alert_friendschat > 0) {
+            return(%chat_alert_friendschat);
+        } else if (%chat_alert_clan > 0) {
+            return(%chat_alert_clan);
+        } else if (%chat_alert_trade > 0) {
+            return(%chat_alert_trade);
+        } else {
+            return(0);
+        }
+}
+return(0);

@@ -1,0 +1,21 @@
+// 7562
+[proc,script7562]()(int)
+if (~on_mobile = false) {
+    return(0);
+} else if (cc_find(bankmain:items, 0) = true) {
+    return(1);
+} else if (cc_find(bank_depositbox:inventory, 0) = true) {
+    return(1);
+} else if (cc_find(ge_collect:collect_0, 0) = true) {
+    return(1);
+} else if (cc_find(itemsets:itemlist, 0) = true) {
+    return(1);
+} else if (cc_find(ge_offers:setup, 0) = true) {
+    return(1);
+} else if (cc_find(bankpin_keypad:frame, 0) = true) {
+    return(1);
+} else if (cc_find(bankpin_settings:settings_frame, 0) = true) {
+    return(1);
+} else {
+    return(0);
+}

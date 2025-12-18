@@ -1,0 +1,29 @@
+// 2200
+[proc,diary_completion_info](int $int0)(int, int, int, int, int, int, int, int, int, int, int, int)
+switch_int ($int0) {
+    case 0 :
+        return(%karamja_easy_count, 10, %atjun_easy_reward, %karamja_med_count, 19, %atjun_med_reward, %karamja_hard_count, 10, %atjun_hard_reward, %karamja_elite_count, 5, %karamja_elite_reward);
+    case 1 :
+        return(%ardougne_easy_count, 10, %ardougne_easy_reward, %ardougne_med_count, 12, %ardougne_medium_reward, %ardougne_hard_count, 12, %ardougne_hard_reward, %ardougne_elite_count, 8, %ardougne_elite_reward);
+    case 2 :
+        return(%falador_easy_count, 11, %falador_easy_reward, %falador_med_count, 14, %falador_medium_reward, %falador_hard_count, 11, %falador_hard_reward, %falador_elite_count, 6, %falador_elite_reward);
+    case 9 :
+        return(%wilderness_easy_count, 12, %wilderness_easy_reward, %wilderness_med_count, 11, %wilderness_medium_reward, %wilderness_hard_count, 10, %wilderness_hard_reward, %wilderness_elite_count, 7, %wilderness_elite_reward);
+    case 10 :
+        return(%western_easy_count, 11, %western_easy_reward, %western_med_count, 13, %western_medium_reward, %western_hard_count, 13, %western_hard_reward, %western_elite_count, 7, %western_elite_reward);
+    case 4 :
+        return(%kandarin_easy_count, 11, %kandarin_easy_reward, %kandarin_med_count, 14, %kandarin_medium_reward, %kandarin_hard_count, 11, %kandarin_hard_reward, %kandarin_elite_count, 7, %kandarin_elite_reward);
+    case 5 :
+        return(%desert_easy_count, 11, %desert_easy_reward, %desert_med_count, 12, %desert_medium_reward, %desert_hard_count, 10, %desert_hard_reward, %desert_elite_count, 6, %desert_elite_reward);
+    case 7 :
+        return(%morytania_easy_count, 11, %morytania_easy_reward, %morytania_med_count, 11, %morytania_medium_reward, %morytania_hard_count, 10, %morytania_hard_reward, %morytania_elite_count, 6, %morytania_elite_reward);
+    case 3 :
+        return(%fremennik_easy_count, 10, %fremennik_easy_reward, %fremennik_med_count, 9, %fremennik_medium_reward, %fremennik_hard_count, 9, %fremennik_hard_reward, %fremennik_elite_count, 6, %fremennik_elite_reward);
+    case 6 :
+        return(%lumbridge_easy_count, 12, %lumbridge_easy_reward, %lumbridge_med_count, 12, %lumbridge_medium_reward, %lumbridge_hard_count, 11, %lumbridge_hard_reward, %lumbridge_elite_count, 6, %lumbridge_elite_reward);
+    case 8 :
+        return(%varrock_easy_count, 14, %varrock_easy_reward, %varrock_med_count, 13, %varrock_medium_reward, %varrock_hard_count, 10, %varrock_hard_reward, %varrock_elite_count, 5, %varrock_elite_reward);
+    case 11 :
+        return(%kourend_easy_count, 12, %kourend_easy_reward, %kourend_med_count, 13, %kourend_medium_reward, %kourend_hard_count, 10, %kourend_hard_reward, %kourend_elite_count, 8, %kourend_elite_reward);
+}
+return(-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1);

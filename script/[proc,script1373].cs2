@@ -1,0 +1,3 @@
+// 1373
+[proc,script1373]()(int)
+return(calc(%barbassault_points_healer_extra * 512 + %barbassault_points_healer_base));

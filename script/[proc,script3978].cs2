@@ -1,0 +1,3 @@
+// 3978
+[proc,script3978]
+%option_prayertooltips = calc(1 - %option_prayertooltips);

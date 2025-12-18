@@ -1,0 +1,7 @@
+// 5188
+[proc,script5188]
+if (testbit(%option_collection_new_item, 0) = ^false) {
+    %option_collection_new_item = setbit(%option_collection_new_item, 0);
+} else {
+    %option_collection_new_item = clearbit(%option_collection_new_item, 0);
+}

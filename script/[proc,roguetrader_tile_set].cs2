@@ -1,0 +1,166 @@
+// 4175
+[proc,roguetrader_tile_set](int $int0, int $int1)
+switch_int ($int0) {
+    case 0 :
+        %roguetrader_temp1 = setbit_range_toint(%roguetrader_temp1, $int1, 0, 3);
+    case 1 :
+        %roguetrader_temp1 = setbit_range_toint(%roguetrader_temp1, $int1, 4, 7);
+    case 2 :
+        %roguetrader_temp1 = setbit_range_toint(%roguetrader_temp1, $int1, 8, 11);
+    case 3 :
+        %roguetrader_temp1 = setbit_range_toint(%roguetrader_temp1, $int1, 12, 15);
+    case 4 :
+        %roguetrader_temp1 = setbit_range_toint(%roguetrader_temp1, $int1, 16, 19);
+    case 5 :
+        %roguetrader_temp1 = setbit_range_toint(%roguetrader_temp1, $int1, 20, 23);
+    case 6 :
+        %roguetrader_temp1 = setbit_range_toint(%roguetrader_temp1, $int1, 24, 27);
+    case 7 :
+        %roguetrader_temp1 = setbit_range_toint(%roguetrader_temp1, $int1, 28, 31);
+    case 8 :
+        %roguetrader_temp2 = setbit_range_toint(%roguetrader_temp2, $int1, 0, 3);
+    case 9 :
+        %roguetrader_temp2 = setbit_range_toint(%roguetrader_temp2, $int1, 4, 7);
+    case 10 :
+        %roguetrader_temp2 = setbit_range_toint(%roguetrader_temp2, $int1, 8, 11);
+    case 11 :
+        %roguetrader_temp2 = setbit_range_toint(%roguetrader_temp2, $int1, 12, 15);
+    case 12 :
+        %roguetrader_temp2 = setbit_range_toint(%roguetrader_temp2, $int1, 16, 19);
+    case 13 :
+        %roguetrader_temp2 = setbit_range_toint(%roguetrader_temp2, $int1, 20, 23);
+    case 14 :
+        %roguetrader_temp2 = setbit_range_toint(%roguetrader_temp2, $int1, 24, 27);
+    case 15 :
+        %roguetrader_temp2 = setbit_range_toint(%roguetrader_temp2, $int1, 28, 31);
+    case 16 :
+        %roguetrader_temp3 = setbit_range_toint(%roguetrader_temp3, $int1, 0, 3);
+    case 17 :
+        %roguetrader_temp3 = setbit_range_toint(%roguetrader_temp3, $int1, 4, 7);
+    case 18 :
+        %roguetrader_temp3 = setbit_range_toint(%roguetrader_temp3, $int1, 8, 11);
+    case 19 :
+        %roguetrader_temp3 = setbit_range_toint(%roguetrader_temp3, $int1, 12, 15);
+    case 20 :
+        %roguetrader_temp3 = setbit_range_toint(%roguetrader_temp3, $int1, 16, 19);
+    case 21 :
+        %roguetrader_temp3 = setbit_range_toint(%roguetrader_temp3, $int1, 20, 23);
+    case 22 :
+        %roguetrader_temp3 = setbit_range_toint(%roguetrader_temp3, $int1, 24, 27);
+    case 23 :
+        %roguetrader_temp3 = setbit_range_toint(%roguetrader_temp3, $int1, 28, 31);
+    case 24 :
+        %roguetrader_temp4 = setbit_range_toint(%roguetrader_temp4, $int1, 0, 3);
+    case 25 :
+        %roguetrader_temp4 = setbit_range_toint(%roguetrader_temp4, $int1, 4, 7);
+    case 26 :
+        %roguetrader_temp4 = setbit_range_toint(%roguetrader_temp4, $int1, 8, 11);
+    case 27 :
+        %roguetrader_temp4 = setbit_range_toint(%roguetrader_temp4, $int1, 12, 15);
+    case 28 :
+        %roguetrader_temp4 = setbit_range_toint(%roguetrader_temp4, $int1, 16, 19);
+    case 29 :
+        %roguetrader_temp4 = setbit_range_toint(%roguetrader_temp4, $int1, 20, 23);
+    case 30 :
+        %roguetrader_temp4 = setbit_range_toint(%roguetrader_temp4, $int1, 24, 27);
+    case 31 :
+        %roguetrader_temp4 = setbit_range_toint(%roguetrader_temp4, $int1, 28, 31);
+    case 32 :
+        %roguetrader_temp5 = setbit_range_toint(%roguetrader_temp5, $int1, 0, 3);
+    case 33 :
+        %roguetrader_temp5 = setbit_range_toint(%roguetrader_temp5, $int1, 4, 7);
+    case 34 :
+        %roguetrader_temp5 = setbit_range_toint(%roguetrader_temp5, $int1, 8, 11);
+    case 35 :
+        %roguetrader_temp5 = setbit_range_toint(%roguetrader_temp5, $int1, 12, 15);
+    case 36 :
+        %roguetrader_temp5 = setbit_range_toint(%roguetrader_temp5, $int1, 16, 19);
+    case 37 :
+        %roguetrader_temp5 = setbit_range_toint(%roguetrader_temp5, $int1, 20, 23);
+    case 38 :
+        %roguetrader_temp5 = setbit_range_toint(%roguetrader_temp5, $int1, 24, 27);
+    case 39 :
+        %roguetrader_temp5 = setbit_range_toint(%roguetrader_temp5, $int1, 28, 31);
+    case 40 :
+        %roguetrader_temp6 = setbit_range_toint(%roguetrader_temp6, $int1, 0, 3);
+    case 41 :
+        %roguetrader_temp6 = setbit_range_toint(%roguetrader_temp6, $int1, 4, 7);
+    case 42 :
+        %roguetrader_temp6 = setbit_range_toint(%roguetrader_temp6, $int1, 8, 11);
+    case 43 :
+        %roguetrader_temp6 = setbit_range_toint(%roguetrader_temp6, $int1, 12, 15);
+    case 44 :
+        %roguetrader_temp6 = setbit_range_toint(%roguetrader_temp6, $int1, 16, 19);
+    case 45 :
+        %roguetrader_temp6 = setbit_range_toint(%roguetrader_temp6, $int1, 20, 23);
+    case 46 :
+        %roguetrader_temp6 = setbit_range_toint(%roguetrader_temp6, $int1, 24, 27);
+    case 47 :
+        %roguetrader_temp6 = setbit_range_toint(%roguetrader_temp6, $int1, 28, 31);
+    case 48 :
+        %roguetrader_temp7 = setbit_range_toint(%roguetrader_temp7, $int1, 0, 3);
+    case 49 :
+        %roguetrader_temp7 = setbit_range_toint(%roguetrader_temp7, $int1, 4, 7);
+    case 50 :
+        %roguetrader_temp7 = setbit_range_toint(%roguetrader_temp7, $int1, 8, 11);
+    case 51 :
+        %roguetrader_temp7 = setbit_range_toint(%roguetrader_temp7, $int1, 12, 15);
+    case 52 :
+        %roguetrader_temp7 = setbit_range_toint(%roguetrader_temp7, $int1, 16, 19);
+    case 53 :
+        %roguetrader_temp7 = setbit_range_toint(%roguetrader_temp7, $int1, 20, 23);
+    case 54 :
+        %roguetrader_temp7 = setbit_range_toint(%roguetrader_temp7, $int1, 24, 27);
+    case 55 :
+        %roguetrader_temp7 = setbit_range_toint(%roguetrader_temp7, $int1, 28, 31);
+    case 56 :
+        %roguetrader_temp8 = setbit_range_toint(%roguetrader_temp8, $int1, 0, 3);
+    case 57 :
+        %roguetrader_temp8 = setbit_range_toint(%roguetrader_temp8, $int1, 4, 7);
+    case 58 :
+        %roguetrader_temp8 = setbit_range_toint(%roguetrader_temp8, $int1, 8, 11);
+    case 59 :
+        %roguetrader_temp8 = setbit_range_toint(%roguetrader_temp8, $int1, 12, 15);
+    case 60 :
+        %roguetrader_temp8 = setbit_range_toint(%roguetrader_temp8, $int1, 16, 19);
+    case 61 :
+        %roguetrader_temp8 = setbit_range_toint(%roguetrader_temp8, $int1, 20, 23);
+    case 62 :
+        %roguetrader_temp8 = setbit_range_toint(%roguetrader_temp8, $int1, 24, 27);
+    case 63 :
+        %roguetrader_temp8 = setbit_range_toint(%roguetrader_temp8, $int1, 28, 31);
+    case 64 :
+        %roguetrader_temp9 = setbit_range_toint(%roguetrader_temp9, $int1, 0, 3);
+    case 65 :
+        %roguetrader_temp9 = setbit_range_toint(%roguetrader_temp9, $int1, 4, 7);
+    case 66 :
+        %roguetrader_temp9 = setbit_range_toint(%roguetrader_temp9, $int1, 8, 11);
+    case 67 :
+        %roguetrader_temp9 = setbit_range_toint(%roguetrader_temp9, $int1, 12, 15);
+    case 68 :
+        %roguetrader_temp9 = setbit_range_toint(%roguetrader_temp9, $int1, 16, 19);
+    case 69 :
+        %roguetrader_temp9 = setbit_range_toint(%roguetrader_temp9, $int1, 20, 23);
+    case 70 :
+        %roguetrader_temp9 = setbit_range_toint(%roguetrader_temp9, $int1, 24, 27);
+    case 71 :
+        %roguetrader_temp9 = setbit_range_toint(%roguetrader_temp9, $int1, 28, 31);
+    case 72 :
+        %roguetrader_temp10 = setbit_range_toint(%roguetrader_temp10, $int1, 0, 3);
+    case 73 :
+        %roguetrader_temp10 = setbit_range_toint(%roguetrader_temp10, $int1, 4, 7);
+    case 74 :
+        %roguetrader_temp10 = setbit_range_toint(%roguetrader_temp10, $int1, 8, 11);
+    case 75 :
+        %roguetrader_temp10 = setbit_range_toint(%roguetrader_temp10, $int1, 12, 15);
+    case 76 :
+        %roguetrader_temp10 = setbit_range_toint(%roguetrader_temp10, $int1, 16, 19);
+    case 77 :
+        %roguetrader_temp10 = setbit_range_toint(%roguetrader_temp10, $int1, 20, 23);
+    case 78 :
+        %roguetrader_temp10 = setbit_range_toint(%roguetrader_temp10, $int1, 24, 27);
+    case 79 :
+        %roguetrader_temp10 = setbit_range_toint(%roguetrader_temp10, $int1, 28, 31);
+    case 80 :
+        %roguetrader_temp11 = setbit_range_toint(%roguetrader_temp11, $int1, 0, 3);
+}

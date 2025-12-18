@@ -1,0 +1,9 @@
+// 6451
+[proc,settings_cannon_low_notification]
+if (~on_enhanced_any = false) {
+    return;
+}
+if (~on_mac = true) {
+    return;
+}
+%cannon_low_notification_enabled = calc(1 - %cannon_low_notification_enabled);

@@ -1,0 +1,76 @@
+// 2111
+[proc,ds2_fossil_map_setslot](int $int0, int $int1, int $int2)
+switch_int ($int0) {
+    case 0 :
+        %ds2_map_piece_a1, %ds2_map_angle_a1 = $int1, $int2;
+    case 1 :
+        %ds2_map_piece_a2, %ds2_map_angle_a2 = $int1, $int2;
+    case 2 :
+        %ds2_map_piece_a3, %ds2_map_angle_a3 = $int1, $int2;
+    case 3 :
+        %ds2_map_piece_a4, %ds2_map_angle_a4 = $int1, $int2;
+    case 4 :
+        return;
+    case 5 :
+        %ds2_map_piece_a6, %ds2_map_angle_a6 = $int1, $int2;
+    case 6 :
+        %ds2_map_piece_b1, %ds2_map_angle_b1 = $int1, $int2;
+    case 7 :
+        %ds2_map_piece_b2, %ds2_map_angle_b2 = $int1, $int2;
+    case 8 :
+        %ds2_map_piece_b3, %ds2_map_angle_b3 = $int1, $int2;
+    case 9 :
+        %ds2_map_piece_b4, %ds2_map_angle_b4 = $int1, $int2;
+    case 10 :
+        %ds2_map_piece_b5, %ds2_map_angle_b5 = $int1, $int2;
+    case 11 :
+        %ds2_map_piece_b6, %ds2_map_angle_b6 = $int1, $int2;
+    case 12 :
+        %ds2_map_piece_c1, %ds2_map_angle_c1 = $int1, $int2;
+    case 13 :
+        %ds2_map_piece_c2, %ds2_map_angle_c2 = $int1, $int2;
+    case 14 :
+        %ds2_map_piece_c3, %ds2_map_angle_c3 = $int1, $int2;
+    case 15 :
+        %ds2_map_piece_c4, %ds2_map_angle_c4 = $int1, $int2;
+    case 16 :
+        %ds2_map_piece_c5, %ds2_map_angle_c5 = $int1, $int2;
+    case 17 :
+        return;
+    case 18 :
+        return;
+    case 19 :
+        %ds2_map_piece_d2, %ds2_map_angle_d2 = $int1, $int2;
+    case 20 :
+        return;
+    case 21 :
+        %ds2_map_piece_d4, %ds2_map_angle_d4 = $int1, $int2;
+    case 22 :
+        %ds2_map_piece_d5, %ds2_map_angle_d5 = $int1, $int2;
+    case 23 :
+        %ds2_map_piece_d6, %ds2_map_angle_d6 = $int1, $int2;
+    case 24 :
+        %ds2_map_piece_e1, %ds2_map_angle_e1 = $int1, $int2;
+    case 25 :
+        %ds2_map_piece_e2, %ds2_map_angle_e2 = $int1, $int2;
+    case 26 :
+        %ds2_map_piece_e3, %ds2_map_angle_e3 = $int1, $int2;
+    case 27 :
+        %ds2_map_piece_e4, %ds2_map_angle_e4 = $int1, $int2;
+    case 28 :
+        %ds2_map_piece_e5, %ds2_map_angle_e5 = $int1, $int2;
+    case 29 :
+        %ds2_map_piece_e6, %ds2_map_angle_e6 = $int1, $int2;
+    case 30 :
+        return;
+    case 31 :
+        %ds2_map_piece_f2, %ds2_map_angle_f2 = $int1, $int2;
+    case 32 :
+        %ds2_map_piece_f3, %ds2_map_angle_f3 = $int1, $int2;
+    case 33 :
+        %ds2_map_piece_f4, %ds2_map_angle_f4 = $int1, $int2;
+    case 34 :
+        %ds2_map_piece_f5, %ds2_map_angle_f5 = $int1, $int2;
+    case 35 :
+        %ds2_map_piece_f6, %ds2_map_angle_f6 = $int1, $int2;
+}

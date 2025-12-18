@@ -1,0 +1,24 @@
+// 3745
+[proc,meslayer_mode1_enabled](int $chattype0)(boolean)
+if (enum(int, boolean, enum_892, $chattype0) = false) {
+    return(false);
+}
+if ($chattype0 = 108) {
+    return(false);
+}
+if ($chattype0 = ^chattype_dialogue) {
+    return(false);
+}
+if ($chattype0 = ^chattype_mesbox) {
+    return(false);
+}
+if ($chattype0 = 116) {
+    return(false);
+}
+if (~in_league_tutorial = true) {
+    return(false);
+}
+if (~in_speedrunning_intro = true) {
+    return(false);
+}
+return(true);

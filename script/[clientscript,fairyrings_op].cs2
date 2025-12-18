@@ -1,0 +1,13 @@
+// 397
+[clientscript,fairyrings_op](int $int0, int $int1, int $int2)
+if ($int0 ! 1) {
+    return;
+}
+sound_synth(synth_2871, 1, 0);
+if ($int1 = 1) {
+    %fairyring_1 = calc((%fairyring_1 + $int2) % 4);
+} else if ($int1 = 2) {
+    %fairyring_2 = calc((%fairyring_2 + $int2) % 4);
+} else if ($int1 = 3) {
+    %fairyring_3 = calc((%fairyring_3 + $int2) % 4);
+}

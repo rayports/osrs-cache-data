@@ -1,0 +1,14 @@
+// 3103
+[proc,canoe_get_state](int $int0)(int)
+switch_int ($int0) {
+    case 3 :
+        return(%canoestation_state_barbarianvillage);
+    case 2 :
+        return(%canoestation_state_championsguild);
+    case 4 :
+        return(%canoestation_state_edgeville);
+    case 1 :
+        return(%canoestation_state_lumbridge);
+    case 5 :
+        return(%canoestation_state_sanctuary);
+}

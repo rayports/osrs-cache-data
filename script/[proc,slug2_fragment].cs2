@@ -1,0 +1,36 @@
+// 3395
+[proc,slug2_fragment](int $int0, int $int1, component $component2, component $component3)
+switch_int ($int0) {
+    case 1 :
+        if ($int1 = 1) {
+            if_setmodelanim(slug2_page_north, $component2);
+            if_setmodelanim(slug2_page_north, $component3);
+        } else {
+            if_setmodelanim(slug2_page_north_fliped, $component2);
+            if_setmodelanim(slug2_page_north_fliped, $component3);
+        }
+    case 2 :
+        if ($int1 = 1) {
+            if_setmodelanim(slug2_page_east, $component2);
+            if_setmodelanim(slug2_page_east, $component3);
+        } else {
+            if_setmodelanim(slug2_page_east_fliped, $component2);
+            if_setmodelanim(slug2_page_east_fliped, $component3);
+        }
+    case 3 :
+        if ($int1 = 1) {
+            if_setmodelanim(slug2_page_south, $component2);
+            if_setmodelanim(slug2_page_south, $component3);
+        } else {
+            if_setmodelanim(slug2_page_south_fliped, $component2);
+            if_setmodelanim(slug2_page_south_fliped, $component3);
+        }
+    case default :
+        if ($int1 = 1) {
+            if_setmodelanim(slug2_page_west, $component2);
+            if_setmodelanim(slug2_page_west, $component3);
+        } else {
+            if_setmodelanim(slug2_page_west_fliped, $component2);
+            if_setmodelanim(slug2_page_west_fliped, $component3);
+        }
+}

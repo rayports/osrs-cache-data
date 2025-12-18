@@ -1,0 +1,60 @@
+// 3761
+[proc,recipe_for_disaster_getcolour](int $int0)(int)
+def_int $int1 = 1;
+switch_int ($int0) {
+    case 0 :
+        if (%hundred_dwarf_quest >= 60) {
+            $int1 = 2;
+        } else if (%hundred_dwarf_quest > 0) {
+            $int1 = 0;
+        }
+    case 1 :
+        if (%100goblin >= 40) {
+            $int1 = 2;
+        } else if (%100goblin > 0) {
+            $int1 = 0;
+        }
+    case 2 :
+        if (%100_pirate_quest_var >= 110) {
+            $int1 = 2;
+        } else if (%100_pirate_quest_var > 0) {
+            $int1 = 0;
+        }
+    case 3 :
+        if (%100guide_prog >= 5) {
+            $int1 = 2;
+        } else if (%100guide_prog > 0) {
+            $int1 = 0;
+        }
+    case 4 :
+        if (%hundred_dave_main >= 5) {
+            $int1 = 2;
+        } else if (%hundred_dave_main > 0) {
+            $int1 = 0;
+        }
+    case 5 :
+        if (%100_ogre_prog >= 170) {
+            $int1 = 2;
+        } else if (%100_ogre_prog > 0) {
+            $int1 = 0;
+        }
+    case 6 :
+        if (%chickenquest >= 20) {
+            $int1 = 2;
+        } else if (%chickenquest > 0) {
+            $int1 = 0;
+        }
+    case 7 :
+        if (%hundred_ilm_quest >= 50) {
+            $int1 = 2;
+        } else if (%hundred_ilm_quest > 0) {
+            $int1 = 0;
+        }
+}
+if ($int1 = 2) {
+    return(0x0da10d);
+}
+if ($int1 = 0) {
+    return(^yellow);
+}
+return(0xff0d0d);

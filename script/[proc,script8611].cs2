@@ -1,0 +1,29 @@
+// 8611
+[proc,script8611](int $int0, int $int1)(graphic)
+switch_int ($int1) {
+    case 3 :
+        return(graphic_6998);
+    case 2 :
+        return(graphic_6999);
+    case 1, 0 :
+        switch_int ($int0) {
+            case 0 :
+                return(graphic_7000);
+            case 1 :
+                return(graphic_7001);
+            case 2 :
+                return(graphic_7002);
+            case 3 :
+                return(graphic_7003);
+            case 4 :
+                return(graphic_7004);
+            case 5 :
+                return(graphic_7005);
+            case 6 :
+                return(graphic_7006);
+            case default :
+                return(graphic_7007);
+        }
+    case default :
+        return(null);
+}

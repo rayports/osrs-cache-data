@@ -1,0 +1,6 @@
+// 680
+[proc,meslayer_initlastnames]
+if (%meslayer_initlastnames = 1) {
+    return;
+}
+%meslayer_initlastnames, %last_namedialog, %last_friendschatjoin = 1, "", "";

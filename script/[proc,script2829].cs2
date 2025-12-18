@@ -1,0 +1,21 @@
+// 2829
+[proc,script2829](int $int0)(int)
+switch_int ($int0) {
+    case 1 :
+        return(%seed_vault_fave1);
+    case 2 :
+        return(%seed_vault_fave2);
+    case 3 :
+        return(%seed_vault_fave3);
+    case 4 :
+        return(%seed_vault_fave4);
+    case 5 :
+        return(%seed_vault_fave5);
+    case 6 :
+        return(%seed_vault_fave6);
+    case 7 :
+        return(%seed_vault_fave7);
+    case 8 :
+        return(%seed_vault_fave8);
+}
+return(-1);

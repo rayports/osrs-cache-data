@@ -1,0 +1,12 @@
+// 921
+[proc,toplevel_chatbox_maketransparent]()(boolean)
+if (~toplevel_chatbox_permittransparent = false) {
+    return(false);
+}
+if (~on_mobile = true) {
+    return(true);
+}
+if (%chatbox_transparency = 0) {
+    return(false);
+}
+return(true);

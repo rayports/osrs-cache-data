@@ -1,0 +1,635 @@
+// 3965
+[proc,settings_clicked_toggle](int $int0)
+%settings_selected_setting = $int0;
+switch_int ($int0) {
+    case 7 :
+        ~settings_toggle_roof;
+    case 33 :
+        ~settings_music_unlock_message;
+    case 5 :
+        ~settings_hitsplat_tinting;
+    case 279 :
+        ~settings_hitsplat_maxhit;
+    case 9 :
+        ~settings_wiki_lookup;
+    case 8 :
+        ~settings_data_orbs;
+    case 2 :
+        ~settings_resizable_transparent_side_panel;
+    case 3 :
+        ~script3977;
+    case 4 :
+        ~script3978;
+    case 6 :
+        ~settings_special_attack_bar_tooltip;
+    case 10 :
+        ~settings_boss_health_overlay;
+    case 111 :
+        ~settings_standard_health_overlay;
+    case 11 :
+        ~settings_resizable_opaque_chatbox;
+    case 13 :
+        ~script3982;
+    case 34 :
+        ~settings_show_chat_effects;
+    case 35 :
+        ~settings_split_private_chat;
+    case 36 :
+        ~settings_hide_private_chat;
+    case 37 :
+        ~settings_profanity_filter;
+    case 431 :
+        %clan_disable_lastseen = calc(1 - %clan_disable_lastseen);
+    case 38 :
+        ~settings_loot_drop_notification;
+    case 40 :
+        ~settings_untradeable_loot_notification;
+    case 41 :
+        ~script4017;
+    case 42 :
+        ~settings_drop_item_warnings;
+    case 278 :
+        ~settings_item_retrieval_warning;
+    case 425 :
+        %option_camera_effect_combat_disabled = calc(1 - %option_camera_effect_combat_disabled);
+    case 426 :
+        %option_camera_effect_atmospherics_disabled = calc(1 - %option_camera_effect_atmospherics_disabled);
+    case 281 :
+        %option_camera_effect_baba_yaga_disabled = calc(1 - %option_camera_effect_baba_yaga_disabled);
+    case 282 :
+        %trawler_camera_static = calc(1 - %trawler_camera_static);
+    case 283 :
+        %option_camera_effect_barrows_disabled = calc(1 - %option_camera_effect_barrows_disabled);
+    case 305 :
+        %take_ammo_toggle = calc(1 - %take_ammo_toggle);
+    case 306 :
+        %take_runes_toggle = calc(1 - %take_runes_toggle);
+    case 354 :
+        %emptyondeath_runepouch = calc(1 - %emptyondeath_runepouch);
+    case 355 :
+        %emptyondeath_tacklebox = calc(1 - %emptyondeath_tacklebox);
+    case 356 :
+        %emptyondeath_boltpouch = calc(1 - %emptyondeath_boltpouch);
+    case 357 :
+        %emptyondeath_seedbox = calc(1 - %emptyondeath_seedbox);
+    case 358 :
+        %emptyondeath_essencepouch = calc(1 - %emptyondeath_essencepouch);
+    case 359 :
+        %emptyondeath_herbsack = calc(1 - %emptyondeath_herbsack);
+    case 46 :
+        ~script3988;
+    case 313 :
+        %purgeignored_permbanned_disabled = calc(1 - %purgeignored_permbanned_disabled);
+    case 314 :
+        %purgeignored_permmuted_enabled = calc(1 - %purgeignored_permmuted_enabled);
+    case 312 :
+        %tradeoption_disabled = calc(1 - %tradeoption_disabled);
+    case 372 :
+        %rightclick_report_abuse_disabled = calc(1 - %rightclick_report_abuse_disabled);
+    case 47 :
+        ~settings_store_button_mobile;
+    case 181 :
+        ~settings_store_button_desktop;
+    case 49 :
+        ~settings_mouse_camera;
+    case 50 :
+        ~script3991;
+    case 51 :
+        ~script7449;
+    case 413 :
+        ~script7450;
+    case 48 :
+        ~script3993;
+    case 408 :
+        ~settings_hotkeys;
+    case 414 :
+        ~settings_osm_hotkeys_open_sidepanels_on_left;
+    case 415 :
+        ~settings_osm_hotkeys_show_empty_hotkeys;
+    case 54 :
+        ~script3995;
+    case 57 :
+        ~settings_escape_closes_interface;
+    case 59 :
+        ~settings_accept_aid;
+    case 60 :
+        ~settings_warning_teleport_to_target;
+    case 61 :
+        ~settings_warning_dareeyak_teleport;
+    case 62 :
+        ~settings_warning_carrallangar_teleport;
+    case 63 :
+        ~settings_warning_annakarl_teleport;
+    case 64 :
+        ~settings_warning_ghorrock_teleport;
+    case 471 :
+        %sailing_warning_teleportoffboat = calc(1 - %sailing_warning_teleportoffboat);
+    case 253 :
+        %wilderness_lever_blockwarning_standard = calc(1 - %wilderness_lever_blockwarning_standard);
+    case 254 :
+        %wilderness_lever_blockwarning_highrisk = calc(1 - %wilderness_lever_blockwarning_highrisk);
+    case 255 :
+        %wildy_hub_warning = calc(1 - %wildy_hub_warning);
+    case 308 :
+        %wildy_hub_warning_highrisk = calc(1 - %wildy_hub_warning_highrisk);
+    case 256 :
+        %wildy_canoe_warning = calc(1 - %wildy_canoe_warning);
+    case 309 :
+        %wildy_canoe_warning_highrisk = calc(1 - %wildy_canoe_warning_highrisk);
+    case 65 :
+        ~script4009;
+    case 432 :
+        %alchemy_warning_forinventory_disabled = calc(1 - %alchemy_warning_forinventory_disabled);
+    case 67 :
+        ~settings_warning_ice_plateau_tablet;
+    case 68 :
+        ~settings_warning_cemetery_tablet;
+    case 69 :
+        ~settings_warning_crabs_tablet;
+    case 70 :
+        ~settings_warning_dareeyak_tablet;
+    case 71 :
+        ~settings_warning_carrallangar_tablet;
+    case 72 :
+        ~settings_warning_annakarl_tablet;
+    case 73 :
+        ~settings_warning_ghorrock_tablet;
+    case 182 :
+        %iron_noloot_icon_disabled = calc(1 - %iron_noloot_icon_disabled);
+    case 183 :
+        %iron_noloot_message_disabled = calc(1 - %iron_noloot_message_disabled);
+    case 365 :
+        %crm_surprisepopup_blocked = calc(1 - %crm_surprisepopup_blocked);
+    case 82 :
+        ~settings_precise_timing;
+    case 83 :
+        ~settings_separate_hours;
+    case 84 :
+        ~script4036;
+    case 192 :
+        ~settings_gravestone_confirmation;
+    case 112 :
+        ~highlighting_player_tile_toggle_client;
+    case 410 :
+        ~script7585(%settings_mobile_tile_highlight_enabled);
+    case 409 :
+        ~script7589;
+    case 114 :
+        ~settings_mouseover_tooltips;
+    case 209 :
+        ~settings_mouseover_tooltips_hide_opcount;
+    case 147 :
+        ~settings_mouseover_text;
+    case 115 :
+        ~script5999;
+    case 116 :
+        ~settings_regen_indicator;
+    case 118 :
+        ~settings_helper_cox;
+    case 163 :
+        ~settings_helper_agility;
+    case 120 :
+        ~settings_fishing_spot_indicator_disabled;
+    case 121 :
+        ~settings_fishing_spot_indicator_all_fish_disabled;
+    case 122 :
+        ~settings_fishing_spot_indicator_info_disabled;
+    case 123 :
+        ~settings_attack_style;
+    case 125 :
+        ~settings_buff_home_teleport;
+    case 126 :
+        ~settings_buff_minigame_teleport;
+    case 124 :
+        ~settings_buff_bar;
+    case 127 :
+        ~script518;
+    case 418 :
+        ~script2518;
+    case 128 :
+        ~settings_buff_bar_tooltip;
+    case 129 :
+        ~settings_buff_teleblock;
+    case 130 :
+        ~settings_buff_charge_spell;
+    case 131 :
+        ~settings_buff_godwars_altar;
+    case 132 :
+        ~settings_buff_dragonfire_shield_cooldown;
+    case 133 :
+        ~settings_buff_imbued_heart_cooldown;
+    case 437 :
+        ~settings_buff_surge_potion_cooldown;
+    case 134 :
+        ~settings_buff_vengeance_cooldown;
+    case 135 :
+        ~settings_buff_vengeance_active;
+    case 136 :
+        ~settings_buff_stamina_duration;
+    case 137 :
+        ~settings_buff_prayer_enhance_duration;
+    case 138 :
+        ~settings_buff_overload_duration;
+    case 139 :
+        ~settings_buff_magic_imbue_duration;
+    case 140 :
+        ~settings_buff_sire_stun_duration;
+    case 141 :
+        ~settings_buff_freeze_duration;
+    case 142 :
+        ~settings_buff_sotd_duration;
+    case 143 :
+        ~settings_buff_divine_potion_duration;
+    case 144 :
+        ~settings_buff_antifire_duration;
+    case 145 :
+        ~settings_buff_antipoison_duration;
+    case 284 :
+        ~settings_buff_statrenewal_duration;
+    case 388 :
+        ~script500;
+    case 390 :
+        ~settings_buff_goading_potion_duration;
+    case 208 :
+        ~settings_buff_desert_damage;
+    case 285 :
+        ~settings_buff_apmekens_sight;
+    case 286 :
+        ~settings_buff_akkha_burn_duration;
+    case 287 :
+        ~settings_buff_akkha_darkness_duration;
+    case 288 :
+        ~settings_buff_akkha_freeze_duration;
+    case 289 :
+        ~settings_buff_zebak_bleed_duration;
+    case 290 :
+        ~settings_buff_toa_midraidloot_healing_duration;
+    case 291 :
+        ~settings_buff_toa_midraidloot_prayer_duration;
+    case 292 :
+        ~settings_buff_toa_midraidloot_energy_duration;
+    case 293 :
+        ~settings_buff_toa_midraidloot_stats_duration;
+    case 146 :
+        ~settings_always_on_top;
+    case 241 :
+        ~settings_full_screen;
+    case 148 :
+        ~script4612;
+    case 149 :
+        ~script4613;
+    case 151 :
+        ~script4614;
+    case 152 :
+        ~settings_buff_corruption;
+    case 153 :
+        ~settings_buff_mark_of_darkness;
+    case 154 :
+        ~settings_buff_shadow_veil;
+    case 155 :
+        ~settings_buff_death_charge;
+    case 156 :
+        ~settings_buff_ward_of_arceuus;
+    case 157 :
+        ~settings_buff_resurrection;
+    case 161 :
+        ~script2390;
+    case 159 :
+        ~script2509;
+    case 170 :
+        ~settings_buff_ammo;
+    case 164 :
+        ~settings_helper_agility_highlight_obstacles;
+    case 453 :
+        ~script6385;
+    case 172 :
+        ~highlighting_tile_mouseover_toggle_client;
+    case 175 :
+        ~highlighting_tile_current_toggle_client;
+    case 178 :
+        ~highlighting_tile_destination_toggle_client;
+    case 173 :
+        ~highlighting_tile_mouseover_alwaysontop_toggle_client;
+    case 176 :
+        ~highlighting_tile_current_alwaysontop_toggle_client;
+    case 179 :
+        ~highlighting_tile_destination_alwaysontop_toggle_client;
+    case 166 :
+        ~settings_minimap_lock;
+    case 317 :
+        %osm_minimap_toggle = calc(1 - %osm_minimap_toggle);
+    case 85 :
+        ~script5188;
+    case 171 :
+        ~script5189;
+    case 184 :
+        ~settings_helper_slayer;
+    case 185 :
+        ~settings_logout_notifier;
+    case 186 :
+        ~settings_buff_poison_damage;
+    case 189 :
+        ~settings_bird_nest_notification;
+    case 190 :
+        ~mouseover_entity_highlight_toggle_client;
+    case 212 :
+        ~interact_entity_highlight_toggle_client;
+    case 191 :
+        ~settings_popout_xptracker;
+    case 251 :
+        ~script201;
+    case 252 :
+        ~script202;
+    case 201 :
+        if (~is_group_iron = true) {
+            %option_gim_loot_broadcasts_disabled = calc(1 - %option_gim_loot_broadcasts_disabled);
+        } else {
+            %option_gim_loot_broadcasts_disabled = 0;
+        }
+    case 202 :
+        if (~is_group_iron = true) {
+            %option_gim_levelup_broadcasts_disabled = calc(1 - %option_gim_levelup_broadcasts_disabled);
+        } else {
+            %option_gim_levelup_broadcasts_disabled = 0;
+        }
+    case 203 :
+        if (~is_group_iron = true) {
+            %option_gim_quest_broadcasts_disabled = calc(1 - %option_gim_quest_broadcasts_disabled);
+        } else {
+            %option_gim_quest_broadcasts_disabled = 0;
+        }
+    case 204 :
+        if (~is_group_iron = true) {
+            %option_gim_ca_broadcasts_disabled = calc(1 - %option_gim_ca_broadcasts_disabled);
+        } else {
+            %option_gim_ca_broadcasts_disabled = 0;
+        }
+    case 210 :
+        ~script5520;
+    case 206 :
+        ~script5521;
+    case 205 :
+        ~script5522;
+    case 213 :
+        ~settings_buff_cannon_ammo;
+    case 217 :
+        ~script5973;
+    case 218 :
+        ~script5974;
+    case 219 :
+        ~settings_questlist_completed_toggle;
+    case 220 :
+        ~settings_questlist_miniquests_toggle;
+    case 221 :
+        ~settings_questlist_quests_toggle;
+    case 223 :
+        ~script5978;
+    case 229 :
+        ~script6017;
+    case 230 :
+        ~script6018;
+    case 231 :
+        ~script6019;
+    case 232 :
+        ~script6020;
+    case 234 :
+        ~script6000;
+    case 235 :
+        ~script6001;
+    case 239 :
+        ~script2177;
+    case 240 :
+        ~script2178;
+    case 257 :
+        ~script636;
+    case 242 :
+        ~settings_helper_tog;
+    case 243 :
+        ~script6447;
+    case 244 :
+        ~script6448;
+    case 245 :
+        ~settings_helper_herbiboar;
+    case 246 :
+        ~settings_buff_cannon_decay;
+    case 247 :
+        ~settings_cannon_hud;
+    case 248 :
+        ~settings_cannon_low_notification;
+    case 250 :
+        ~settings_cannon_no_ammo;
+    case 261 :
+        ~settings_npc_indicators;
+    case 260 :
+        ~settings_npc_indicators_outline;
+    case 265 :
+        ~script6463;
+    case 268 :
+        ~settings_blast_furnace_helper;
+    case 269 :
+        ~settings_blast_furnace_highlights;
+    case 270 :
+        ~settings_cluehelper_overlay;
+    case 277 :
+        ~settings_cluehelper_target_highlight;
+    case 271 :
+        ~settings_cluehelper;
+    case 272 :
+        ~settings_cluehelper_worldmap_marker;
+    case 273 :
+        ~settings_cluehelper_target_world_arrow;
+    case 274 :
+        ~settings_cluehelper_menu_highlight;
+    case 275 :
+        ~settings_cluehelper_infobox;
+    case 276 :
+        ~settings_cluehelper_infobox_show_clue_text;
+    case 294 :
+        ~settings_warning_confirmation_charter_ships;
+    case 296 :
+        ~settings_wilderness_lever_first_op;
+    case 295 :
+        ~settings_warning_confirmation_farming_protection;
+    case 347 :
+        %worldswitcher_disable_confirmation = calc(1 - %worldswitcher_disable_confirmation);
+    case 424 :
+        %bank_depositbox_oplocu_askquantity = calc(1 - %bank_depositbox_oplocu_askquantity);
+    case 370 :
+        %poison_karambwan_warning_disabled = calc(1 - %poison_karambwan_warning_disabled);
+    case 420 :
+        %dream_plankspell_plain = calc(1 - %dream_plankspell_plain);
+    case 421 :
+        %dream_plankspell_oak = calc(1 - %dream_plankspell_oak);
+    case 422 :
+        %dream_plankspell_teak = calc(1 - %dream_plankspell_teak);
+    case 423 :
+        %dream_plankspell_mahogany = calc(1 - %dream_plankspell_mahogany);
+    case 297 :
+        %option_ge_price_buy_warning_disabled = calc(1 - %option_ge_price_buy_warning_disabled);
+    case 298 :
+        %option_ge_price_sell_warning_disabled = calc(1 - %option_ge_price_sell_warning_disabled);
+    case 302 :
+        ~settings_muspah_messages;
+    case 303 :
+        ~settings_dialogue_in_chatbox;
+    case 304 :
+        ~settings_mesbox_in_chatbox;
+    case 307 :
+        ~settings_buff_wbr_exit_cave;
+    case 311 :
+        ~settings_combat_level_decimal;
+    case 315 :
+        %option_level_up_message = calc(1 - %option_level_up_message);
+    case 316 :
+        %option_fletch_dart_or_bolt_makex = calc(1 - %option_fletch_dart_or_bolt_makex);
+    case 320 :
+        ~settings_popout_loottools;
+    case 321 :
+        ~settings_ground_items;
+    case 333 :
+        ~script7113;
+    case 366 :
+        ~script1214;
+    case 346 :
+        ~settings_ground_items_show_price;
+    case 335 :
+        ~settings_ground_items_despawn_time(calc(1 - %ground_items_despawn_time_enabled_mobile));
+    case 337 :
+        ~settings_ground_items_visibility_time(calc(1 - %ground_items_visibility_time_enabled_mobile));
+    case 339 :
+        ~settings_ground_items_edit_mode(calc(1 - %ground_items_edit_mode_enabled_mobile));
+    case 343 :
+        ~settings_loottracker_disabled;
+    case 344 :
+        ~settings_loottracker_ignore_consumed_drops;
+    case 348 :
+        %music_enableloop = calc(1 - %music_enableloop);
+    case 360 :
+        %option_skill_guide = calc(1 - %option_skill_guide);
+    case 352 :
+        %lootingbag_useallitems = calc(1 - %lootingbag_useallitems);
+    case 353 :
+        %lootingbag_ignore_food = calc(1 - %lootingbag_ignore_food);
+    case 386 :
+        if (%ironman = 2) {
+            %death_waivecosmeticsprotection = calc(1 - %death_waivecosmeticsprotection);
+        }
+    case 363 :
+        ~settings_buff_group_gathering_woodcutting;
+    case 368 :
+        ~settings_quest_start_highlight_filter_requirements;
+    case 369 :
+        ~settings_buff_scurrius_food_pile;
+    case 371 :
+        ~settings_gravestone_autoequip;
+    case 373 :
+        ~settings_barbarian_potion_makex;
+    case 380 :
+        ~script5127;
+    case 381 :
+        ~script5128;
+    case 374 :
+        ~settings_trail_reminder_beginner;
+    case 375 :
+        ~settings_trail_reminder_easy;
+    case 376 :
+        ~settings_trail_reminder_medium;
+    case 377 :
+        ~settings_trail_reminder_hard;
+    case 378 :
+        ~settings_trail_reminder_elite;
+    case 379 :
+        ~settings_trail_reminder_master;
+    case 383 :
+        ~settings_hd_beta_set;
+    case 385 :
+        ~settings_buff_deadman_overload_potion;
+    case 391 :
+        ~settings_minimenu_start_index_toggle_set;
+    case 396 :
+        ~settings_minimenu_filter_set(^opkind_entityserver);
+    case 397 :
+        ~settings_minimenu_filter_set(^opkind_target);
+    case 398 :
+        ~settings_minimenu_filter_set(^opkind_entity);
+    case 399 :
+        ~settings_minimenu_filter_set(^opkind_component);
+    case 400 :
+        ~settings_minimenu_filter_set(^opkind_walk);
+    case 401 :
+        ~settings_minimenu_filter_set(^opkind_shiftop);
+    case 402 :
+        ~settings_minimenu_filter_set(^opkind_player);
+    case 403 :
+        ~settings_minimenu_filter_set(^opkind_use);
+    case 404 :
+        ~settings_minimenu_filter_set(^opkind_cancel);
+    case 405 :
+        ~settings_minimenu_filter_set(^opkind_examine);
+    case 406 :
+        ~settings_minimenu_reordering_set;
+    case 447 :
+        if (~on_mobile = true) {
+            %settings_mobile_minimenu_icon_enabled = calc(1 - %settings_mobile_minimenu_icon_enabled);
+        }
+    case 417 :
+        ~script7463;
+    case 419 :
+        ~settings_minimenu_scrollbar_toggle;
+    case 430 :
+        ~script7826;
+    case 433 :
+        %settings_didyouknow_disabled = calc(1 - %settings_didyouknow_disabled);
+    case 441 :
+        %settings_world_map_hotkey_disabled = calc(1 - %settings_world_map_hotkey_disabled);
+    case 439 :
+        ~settings_hd_new_renderer_toggle;
+    case 446 :
+        %settings_farming_dig_disable_warning = calc(1 - %settings_farming_dig_disable_warning);
+    case 442 :
+        %settings_interface_resizing = calc(1 - %settings_interface_resizing);
+    case 443 :
+        ~settings_buff_bowstring_spool;
+    case 444 :
+        ~settings_buff_ent_totems_bonus_xp;
+    case 448 :
+        %settings_birdhouse_seed_warning_enabled = calc(1 - %settings_birdhouse_seed_warning_enabled);
+    case 451 :
+        %option_hidey_holes_equipped = calc(1 - %option_hidey_holes_equipped);
+    case 452 :
+        %settings_ca_open_last_interface_disabled = calc(1 - %settings_ca_open_last_interface_disabled);
+    case 455 :
+        ~script601;
+    case 456 :
+        ~script602;
+    case 457 :
+        %sailing_port_task_cancel_warning_disabled = calc(1 - %sailing_port_task_cancel_warning_disabled);
+    case 458 :
+        %sailing_current_duck_hintarrow_disabled = calc(1 - %sailing_current_duck_hintarrow_disabled);
+    case 459 :
+        %sailing_barracuda_trials_hintarrow_disabled = calc(1 - %sailing_barracuda_trials_hintarrow_disabled);
+    case 460 :
+        %settings_colourful_fade_disabled = calc(1 - %settings_colourful_fade_disabled);
+    case 461 :
+        %keep_sailing_boat_when_leaving_helm = calc(1 - %keep_sailing_boat_when_leaving_helm);
+    case 463 :
+        %port_task_loading_bay_warning_dismissed = calc(1 - %port_task_loading_bay_warning_dismissed);
+    case 464 :
+        %sailing_show_charting_hints = calc(1 - %sailing_show_charting_hints);
+    case 465 :
+        %settings_sailing_dropitem_warning = calc(1 - %settings_sailing_dropitem_warning);
+    case 466 :
+        %sailing_show_customisation_material_messages = calc(1 - %sailing_show_customisation_material_messages);
+    case 467 :
+        %settings_cargo_in_hold_warning = calc(1 - %settings_cargo_in_hold_warning);
+    case 469 :
+        %settings_ironman_cargo_warning = calc(1 - %settings_ironman_cargo_warning);
+    case 472 :
+        %settings_new_menu_interface = calc(1 - %settings_new_menu_interface);
+    case 473 :
+        %settings_new_menu_transparent_interface_disabled = calc(1 - %settings_new_menu_transparent_interface_disabled);
+    case 474 :
+        %settings_runepouch_loadout_names_disabled = calc(1 - %settings_runepouch_loadout_names_disabled);
+    case 475 :
+        %settings_fairyring_mobile_keyboard_autoopen_disabled = calc(1 - %settings_fairyring_mobile_keyboard_autoopen_disabled);
+}

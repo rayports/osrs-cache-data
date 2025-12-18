@@ -1,0 +1,15 @@
+// 922
+[proc,toplevel_chatbox_permittransparent]()(boolean)
+if (getwindowmode = ^windowmode_small) {
+    return(false);
+}
+if (if_hassub(chatbox:chatmodal) = true | if_hassub(chatbox:chatoverlay) = true) {
+    return(false);
+}
+if (if_gethide(chatbox:mes_layer) = false) {
+    return(false);
+}
+if (testbit(%crm_overlay_active, 0) = ^true) {
+    return(false);
+}
+return(true);

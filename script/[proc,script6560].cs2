@@ -1,0 +1,4 @@
+// 6560
+[proc,script6560](int $int0, obj $obj1)
+%bank_viewcontainer = $int0;
+%bank_viewcontainer_obj = $obj1;

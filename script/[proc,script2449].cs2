@@ -1,0 +1,7 @@
+// 2449
+[proc,script2449]()(int)
+if (%league_type = 3) {
+    return(14);
+} else {
+    return(12);
+}

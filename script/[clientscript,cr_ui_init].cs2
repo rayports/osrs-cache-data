@@ -1,0 +1,21 @@
+// 6377
+[clientscript,cr_ui_init](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, int $int6)
+%cr_ui_open = 1;
+if (~script6391 = false) {
+    if_sethide(true, $component4);
+    if_setsize(calc(if_getwidth($component1) - if_getwidth($component4)), if_getheight($component1), ^setsize_abs, ^setsize_abs, $component1);
+    if_setsize(0, calc(if_getheight(if_getlayer($component5)) - if_getheight($component5)), ^setsize_minus, ^setsize_minus, $component5);
+}
+~steelborder($component2, "Activity Adviser", 3);
+~script4215($component3, "Close");
+if_setonop("opsound(event_op, 2)", $component3);
+if_setop(2, "", $component3);
+if_setopkey(2, ^key_escape, 0, $component3);
+def_int $int7 = calc((if_gety(if_getlayer($component5)) - if_getheight($component3)) / 2);
+if_setposition($int7, $int7, ^setpos_abs_right, ^setpos_abs_top, $component3);
+if (%cr_active_module = null) {
+    %cr_active_module = enum(int, dbrow, enum_4593, 0);
+}
+~cr_ui_activate_module(%cr_active_module, $component4);
+~script2482;
+~toplevel_floater_drag_init(0, $component0, $component1);

@@ -1,0 +1,12 @@
+// 6470
+[proc,settings_npc_indicators_check]
+if (%option_npc_indicators_outline_enabled ! 0) {
+    return;
+}
+if (%option_npc_indicators_tile ! 0) {
+    return;
+}
+if (%option_npc_indicators_name ! 0) {
+    return;
+}
+%option_npc_indicators_enabled = 0;

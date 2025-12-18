@@ -1,0 +1,17 @@
+// 3581
+[proc,hallowed_tools_getstored](obj $obj0)(int, obj)
+switch_obj ($obj0) {
+    case hallowed_token :
+        return(%hallowed_storage_token, hallowed_token);
+    case hallowed_grapple :
+        return(%hallowed_storage_grapple, hallowed_grapple);
+    case hallowed_focus :
+        return(%hallowed_storage_focus, hallowed_focus);
+    case hallowed_symbol :
+        return(%hallowed_storage_symbol, hallowed_symbol);
+    case hallowed_hammer :
+        return(%hallowed_storage_hammer, hallowed_hammer);
+    case hallowed_ring :
+        return(%hallowed_storage_ring, hallowed_ring);
+}
+return(0, null);

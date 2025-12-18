@@ -1,0 +1,38 @@
+// 677
+[proc,meslayer_open](int $int0)
+~meslayer_close(1, 0, 0);
+%meslayermode = $int0;
+if_sethide(false, chatbox:mes_layer);
+if (~on_mobile = true) {
+    ~mobile_chatbox_resize;
+    if_sethide(false, chatbox:mes_layer_close);
+    switch_int ($int0) {
+        case default :
+            if_sethide(false, chatbox:mes_layer_keyboard_show);
+            if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre, chatbox:mes_layer_keyboard_show);
+            if_setsize(20, 20, ^setsize_minus, ^setsize_minus, chatbox:mes_layer_keyboard_show);
+            if_setonclick("meslayer_keyboard_show", chatbox:mes_layer_keyboard_show);
+        case 8, 10, 20 :
+            if_sethide(false, chatbox:mes_layer_keyboard_show);
+            if_setposition(0, if_gety(chatbox:mes_text), ^setpos_abs_centre, ^setpos_abs_top, chatbox:mes_layer_keyboard_show);
+            if_setsize(20, if_gety(chatbox:mes_text), ^setsize_minus, ^setsize_minus, chatbox:mes_layer_keyboard_show);
+            if_setonclick("meslayer_keyboard_show", chatbox:mes_layer_keyboard_show);
+        case 14, 17 :
+            if_sethide(false, chatbox:mes_layer_keyboard_show);
+            if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_top, chatbox:mes_layer_keyboard_show);
+            if_setsize(20, 20, ^setsize_minus, ^setsize_abs, chatbox:mes_layer_keyboard_show);
+            if_setonclick("meslayer_keyboard_show", chatbox:mes_layer_keyboard_show);
+        case 1 :
+            if_sethide(true, chatbox:mes_layer_keyboard_show);
+            if_setonclick(null, chatbox:mes_layer_keyboard_show);
+    }
+    ~script2526;
+} else {
+    if_sethide(true, chatbox:mes_layer_keyboard_show);
+    if_setonclick(null, chatbox:mes_layer_keyboard_show);
+}
+%buff_bar_dodger_update = clientclock;
+if_sethide(true, chatbox:mes_layer_hide);
+~toplevel_chatbox_background;
+~rebuildpmbox(~script553);
+~chatdefault_setonkey(0);

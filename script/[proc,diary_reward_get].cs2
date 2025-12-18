@@ -1,0 +1,102 @@
+// 4134
+[proc,diary_reward_get](int $int0)(int)
+switch_int ($int0) {
+    case 1 :
+        return(%atjun_easy_reward);
+    case 2 :
+        return(%atjun_hard_reward);
+    case 3 :
+        return(%atjun_hard_reward);
+    case 4 :
+        return(%karamja_elite_reward);
+    case 5 :
+        return(%ardougne_easy_reward);
+    case 6 :
+        return(%ardougne_medium_reward);
+    case 7 :
+        return(%ardougne_hard_reward);
+    case 8 :
+        return(%ardougne_elite_reward);
+    case 9 :
+        return(%falador_easy_reward);
+    case 10 :
+        return(%falador_medium_reward);
+    case 11 :
+        return(%falador_hard_reward);
+    case 12 :
+        return(%falador_elite_reward);
+    case 13 :
+        return(%fremennik_easy_reward);
+    case 14 :
+        return(%fremennik_medium_reward);
+    case 15 :
+        return(%fremennik_hard_reward);
+    case 16 :
+        return(%fremennik_elite_reward);
+    case 17 :
+        return(%kandarin_easy_reward);
+    case 18 :
+        return(%kandarin_medium_reward);
+    case 19 :
+        return(%kandarin_hard_reward);
+    case 20 :
+        return(%kandarin_elite_reward);
+    case 21 :
+        return(%desert_easy_reward);
+    case 22 :
+        return(%desert_medium_reward);
+    case 23 :
+        return(%desert_hard_reward);
+    case 24 :
+        return(%desert_elite_reward);
+    case 25 :
+        return(%lumbridge_easy_reward);
+    case 26 :
+        return(%lumbridge_medium_reward);
+    case 27 :
+        return(%lumbridge_hard_reward);
+    case 28 :
+        return(%lumbridge_elite_reward);
+    case 29 :
+        return(%morytania_easy_reward);
+    case 30 :
+        return(%morytania_medium_reward);
+    case 31 :
+        return(%morytania_hard_reward);
+    case 32 :
+        return(%morytania_elite_reward);
+    case 33 :
+        return(%varrock_easy_reward);
+    case 34 :
+        return(%varrock_medium_reward);
+    case 35 :
+        return(%varrock_hard_reward);
+    case 36 :
+        return(%varrock_elite_reward);
+    case 37 :
+        return(%wilderness_easy_reward);
+    case 38 :
+        return(%wilderness_medium_reward);
+    case 39 :
+        return(%wilderness_hard_reward);
+    case 40 :
+        return(%wilderness_elite_reward);
+    case 41 :
+        return(%western_easy_reward);
+    case 42 :
+        return(%western_medium_reward);
+    case 43 :
+        return(%western_hard_reward);
+    case 44 :
+        return(%western_elite_reward);
+    case 45 :
+        return(%kourend_easy_reward);
+    case 46 :
+        return(%kourend_medium_reward);
+    case 47 :
+        return(%kourend_hard_reward);
+    case 48 :
+        return(%kourend_elite_reward);
+    case default :
+        return(0);
+}

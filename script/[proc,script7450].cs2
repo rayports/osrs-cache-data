@@ -1,0 +1,5 @@
+// 7450
+[proc,script7450]
+%settings_mobile_taptodrop_enabled = calc(1 - %settings_mobile_taptodrop_enabled);
+~osm_hotkeys_setup;
+~shiftclick_toggle;

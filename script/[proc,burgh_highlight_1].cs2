@@ -1,0 +1,4 @@
+// 1473
+[proc,burgh_highlight_1]
+if_sethide(false, burgh_map:route1_hi_layer);
+if_sethide(true, burgh_map:route2_hi_layer);

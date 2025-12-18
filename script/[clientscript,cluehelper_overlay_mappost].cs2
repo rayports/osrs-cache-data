@@ -1,0 +1,6 @@
+// 6495
+[clientscript,cluehelper_overlay_mappost]
+if (%option_cluehelper_enabled = 0) {
+    return;
+}
+~cluehelper_overlay(%cluehelper_infobox_clue, ~cluehelper_clue_target(%cluehelper_infobox_clue));

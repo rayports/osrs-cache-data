@@ -1,0 +1,6 @@
+// 438
+[proc,tournament_world]()(boolean)
+if (testbit(%map_flags_cached, 25) = ^true & testbit(%map_flags_cached, 23) = ^false & testbit(%map_flags_cached, 4) = ^false) {
+    return(true);
+}
+return(false);

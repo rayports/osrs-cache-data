@@ -1,0 +1,3 @@
+// 1942
+[proc,wildwars_world]()(boolean)
+return(false);

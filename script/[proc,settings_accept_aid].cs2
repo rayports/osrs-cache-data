@@ -1,0 +1,11 @@
+// 4018
+[proc,settings_accept_aid]
+if (%option_acceptaid = 0) {
+    if (%ironman ! 0) {
+        mes("Ironmen do not accept aid.");
+    } else {
+        %option_acceptaid = 1;
+    }
+} else {
+    %option_acceptaid = 0;
+}

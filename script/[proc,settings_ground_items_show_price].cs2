@@ -1,0 +1,6 @@
+// 7136
+[proc,settings_ground_items_show_price]
+if (~on_enhanced_any = false) {
+    return;
+}
+%ground_items_display_price_disabled = calc(1 - %ground_items_display_price_disabled);

@@ -1,0 +1,7 @@
+// 4015
+[proc,settings_drop_item_warnings]
+if (%option_dropwarning_on = 0 & %option_dropwarning_value <= 0) {
+    return;
+} else {
+    %option_dropwarning_on = calc(1 - %option_dropwarning_on);
+}

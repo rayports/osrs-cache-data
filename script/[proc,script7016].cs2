@@ -1,0 +1,21 @@
+// 7016
+[proc,script7016](int $int0)(int, int)
+switch_int ($int0) {
+    case 0 :
+        return(%lockpicking_input_1, %lockpicking_hint_1);
+    case 1 :
+        return(%lockpicking_input_2, %lockpicking_hint_2);
+    case 2 :
+        return(%lockpicking_input_3, %lockpicking_hint_3);
+    case 3 :
+        return(%lockpicking_input_4, %lockpicking_hint_4);
+    case 4 :
+        return(%lockpicking_input_5, %lockpicking_hint_5);
+    case 5 :
+        return(%lockpicking_input_6, %lockpicking_hint_6);
+    case 6 :
+        return(%lockpicking_input_7, %lockpicking_hint_7);
+    case 7 :
+        return(%lockpicking_input_8, %lockpicking_hint_8);
+}
+return(0, 0);

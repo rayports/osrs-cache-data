@@ -1,0 +1,3 @@
+// 5974
+[proc,script5974]
+%questlist_hide_in_progress = calc(1 - %questlist_hide_in_progress);

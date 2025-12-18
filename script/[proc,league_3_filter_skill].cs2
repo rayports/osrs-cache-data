@@ -1,0 +1,17 @@
+// 5833
+[proc,league_3_filter_skill](int $int0)(boolean)
+if (%league_task_filter_skill > 5 | %league_task_filter_skill <= 0) {
+    return(true);
+}
+def_stat $stat1 = enum(int, stat, enum_681, $int0);
+if (%league_task_filter_skill = 5) {
+    if (~script5830($stat1) = 1) {
+        return(true);
+    } else {
+        return(false);
+    }
+} else if (enum(stat, int, enum_4050, $stat1) = %league_task_filter_skill) {
+    return(true);
+} else {
+    return(false);
+}

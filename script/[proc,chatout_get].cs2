@@ -1,0 +1,45 @@
+// 79
+[proc,chatout_get](int $int0)(string)
+switch_int ($int0) {
+    case 0 :
+        return(%chatout0);
+    case 1 :
+        return(%chatout1);
+    case 2 :
+        return(%chatout2);
+    case 3 :
+        return(%chatout3);
+    case 4 :
+        return(%chatout4);
+    case 5 :
+        return(%chatout5);
+    case 6 :
+        return(%chatout6);
+    case 7 :
+        return(%chatout7);
+    case 8 :
+        return(%chatout8);
+    case 9 :
+        return(%chatout9);
+    case 10 :
+        return(%chatout10);
+    case 11 :
+        return(%chatout11);
+    case 12 :
+        return(%chatout12);
+    case 13 :
+        return(%chatout13);
+    case 14 :
+        return(%chatout14);
+    case 15 :
+        return(%chatout15);
+    case 16 :
+        return(%chatout16);
+    case 17 :
+        return(%chatout17);
+    case 18 :
+        return(%chatout18);
+    case 19 :
+        return(%chatout19);
+}
+return("");

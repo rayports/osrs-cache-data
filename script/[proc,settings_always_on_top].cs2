@@ -1,0 +1,7 @@
+// 4615
+[proc,settings_always_on_top]
+if (~on_enhanced_desktop = false) {
+    return;
+}
+%always_on_top = calc(1 - %always_on_top);
+~synch_always_on_top(%always_on_top);

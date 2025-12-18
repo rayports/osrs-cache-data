@@ -1,0 +1,10 @@
+// 5171
+[proc,helper_agility_reset_data]
+%helper_agility_laps_completed = 0;
+%helper_agility_laps_until_level = 0;
+%helper_agility_laps_per_hour = 0;
+%helper_agility_lap_xp = 0;
+%helper_agility_xp_gained = 0;
+%helper_agility_course_drawn = %helper_agility_current_course;
+%helper_agility_course_start_time = 0;
+%helper_agility_next_level = calc(stat_base(agility) + 1);

@@ -1,0 +1,77 @@
+// 2741
+[proc,lovaquest_power_grid_getslot](int $int0)(int)
+switch_int ($int0) {
+    case 0 :
+        return(%lovaquest_power_grid_a1);
+    case 1 :
+        return(%lovaquest_power_grid_a2);
+    case 2 :
+        return(%lovaquest_power_grid_a3);
+    case 3 :
+        return(%lovaquest_power_grid_a4);
+    case 4 :
+        return(%lovaquest_power_grid_a5);
+    case 5 :
+        return(%lovaquest_power_grid_a6);
+    case 6 :
+        return(%lovaquest_power_grid_b1);
+    case 7 :
+        return(%lovaquest_power_grid_b2);
+    case 8 :
+        return(%lovaquest_power_grid_b3);
+    case 9 :
+        return(%lovaquest_power_grid_b4);
+    case 10 :
+        return(%lovaquest_power_grid_b5);
+    case 11 :
+        return(%lovaquest_power_grid_b6);
+    case 12 :
+        return(%lovaquest_power_grid_c1);
+    case 13 :
+        return(%lovaquest_power_grid_c2);
+    case 14 :
+        return(%lovaquest_power_grid_c3);
+    case 15 :
+        return(%lovaquest_power_grid_c4);
+    case 16 :
+        return(%lovaquest_power_grid_c5);
+    case 17 :
+        return(%lovaquest_power_grid_c6);
+    case 18 :
+        return(%lovaquest_power_grid_d1);
+    case 19 :
+        return(%lovaquest_power_grid_d2);
+    case 20 :
+        return(%lovaquest_power_grid_d3);
+    case 21 :
+        return(%lovaquest_power_grid_d4);
+    case 22 :
+        return(%lovaquest_power_grid_d5);
+    case 23 :
+        return(%lovaquest_power_grid_d6);
+    case 24 :
+        return(%lovaquest_power_grid_e1);
+    case 25 :
+        return(%lovaquest_power_grid_e2);
+    case 26 :
+        return(%lovaquest_power_grid_e3);
+    case 27 :
+        return(%lovaquest_power_grid_e4);
+    case 28 :
+        return(%lovaquest_power_grid_e5);
+    case 29 :
+        return(%lovaquest_power_grid_e6);
+    case 30 :
+        return(%lovaquest_power_grid_f1);
+    case 31 :
+        return(%lovaquest_power_grid_f2);
+    case 32 :
+        return(%lovaquest_power_grid_f3);
+    case 33 :
+        return(%lovaquest_power_grid_f4);
+    case 34 :
+        return(%lovaquest_power_grid_f5);
+    case 35 :
+        return(%lovaquest_power_grid_f6);
+}
+return(0);

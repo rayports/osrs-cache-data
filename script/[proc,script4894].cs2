@@ -1,0 +1,19 @@
+// 4894
+[proc,script4894](int $int0, int $int1, int $int2)
+if ($int2 <= 0) {
+    $int1, $int2 = 0, 0;
+}
+switch_int ($int0) {
+    case 1 :
+        %rune_pouch_type_1, %rune_pouch_quantity_1 = $int1, $int2;
+    case 2 :
+        %rune_pouch_type_2, %rune_pouch_quantity_2 = $int1, $int2;
+    case 3 :
+        %rune_pouch_type_3, %rune_pouch_quantity_3 = $int1, $int2;
+    case 4 :
+        %rune_pouch_type_4, %rune_pouch_quantity_4 = $int1, $int2;
+    case 5 :
+        %rune_pouch_type_5, %rune_pouch_quantity_5 = $int1, $int2;
+    case 6 :
+        %rune_pouch_type_6, %rune_pouch_quantity_6 = $int1, $int2;
+}

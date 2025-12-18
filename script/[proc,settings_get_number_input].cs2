@@ -1,0 +1,40 @@
+// 3964
+[proc,settings_get_number_input](int $int0)(int)
+switch_int ($int0) {
+    case 39 :
+        return(%option_lootnotification_value);
+    case 43 :
+        return(%option_dropwarning_value);
+    case 66 :
+        return(%alchemy_warning_valuethreshold);
+    case 200 :
+        return(%option_gim_loot_broadcast_threshold);
+    case 233 :
+        return(%option_minimenu_long_press_time);
+    case 236 :
+        return(%antidrag_delay);
+    case 249 :
+        return(%cannon_low_amount);
+    case 280 :
+        return(%settings_hitsplat_threshold);
+    case 328 :
+        return(%ground_items_t5_threshold);
+    case 329 :
+        return(%ground_items_t4_threshold);
+    case 330 :
+        return(%ground_items_t3_threshold);
+    case 331 :
+        return(%ground_items_t2_threshold);
+    case 332 :
+        return(%ground_items_t1_threshold);
+    case 350 :
+        return(%ground_items_max_lines);
+    case 389 :
+        return(%runenergy_autoenable);
+    case 394 :
+        return(%settings_minimenu_spacing);
+    case 449 :
+        return(%settings_birdhouse_seed_warning_value);
+    case 450 :
+        return(%option_cannonballs_load_x);
+}

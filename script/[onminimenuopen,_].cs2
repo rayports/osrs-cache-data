@@ -1,0 +1,7 @@
+// 5960
+[onminimenuopen,_]
+if (~on_enhanced_mobile = false | %interact_entity_highlights_disabled = 1) {
+    return;
+}
+~entity_highlight_clear(4);
+~entity_highlight_minimenu(4);

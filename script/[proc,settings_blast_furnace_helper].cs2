@@ -1,0 +1,6 @@
+// 6453
+[proc,settings_blast_furnace_helper]
+if (~on_enhanced_any = false) {
+    return;
+}
+%blast_furnace_helper_disabled = calc(1 - %blast_furnace_helper_disabled);

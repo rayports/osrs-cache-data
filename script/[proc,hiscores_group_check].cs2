@@ -1,0 +1,7 @@
+// 7487
+[proc,hiscores_group_check]()(int)
+if (%hiscores_type = 7 | %hiscores_type = 8) {
+    return(1);
+} else {
+    return(0);
+}

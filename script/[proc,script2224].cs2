@@ -1,0 +1,5 @@
+// 2224
+[proc,script2224]
+if (%freecam_speed < 3 | %freecam_speed > 12) {
+    %freecam_speed = 12;
+}

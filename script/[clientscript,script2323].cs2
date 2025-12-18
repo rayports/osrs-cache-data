@@ -1,0 +1,53 @@
+// 2323
+[clientscript,script2323](int $int0, int $int1, int $int2, int $int3)
+if (if_hassub(enum(component, component, ~toplevel_getcomponents, toplevel_osrs_stretch:mainmodal)) = false) {
+    return;
+}
+cc_deleteall(tob_partydetails:top);
+cc_deleteall(tob_partydetails:middle);
+if_sethide(false, tob_partydetails:header);
+def_int $int4 = calc(%raids_count - 5);
+if ($int4 > 0) {
+    if_sethide(false, tob_partydetails:sortarea);
+    switch_int (%raids_listsort_details) {
+        case 0, 1, 2, 3, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 6, 7 :
+        case default :
+            %raids_listsort_details = 0;
+    }
+    ~tob_partydetails_setsort($int0, $int4);
+} else {
+    if_sethide(true, tob_partydetails:sortarea);
+    cc_create(tob_partydetails:middle, ^iftype_text, 0);
+    cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre);
+    cc_setsize(0, 0, ^setsize_minus, ^setsize_minus);
+    cc_setcolour(0x7f7f7f);
+    cc_settextfont(p12_full);
+    cc_settextalign(^settextalign_centre, ^settextalign_centre, 0);
+    cc_settextshadow(true);
+    cc_settext("No current applicants");
+}
+if_sethide(false, tob_partydetails:back);
+~tob_partydetails_back_button(tob_partydetails:back, "Back", tob_partydetails:universe, enum_1939, -1);
+def_string $string0 = "Refresh";
+if_sethide(false, tob_partydetails:refresh);
+~script1558(tob_partydetails:refresh, $string0, tob_partydetails:universe, enum_1939, -1);
+~script2324(tob_partydetails:size, "Preferred Size", $int1, $int0, 0);
+~script2324(tob_partydetails:level, "Preferred Level", $int2, $int0, 0);
+~script2324(tob_partydetails:mode, "Mode", $int3, $int0, 1);
+if_sethide(false, tob_partydetails:action);
+switch_int ($int0) {
+    case 2 :
+        ~script1558(tob_partydetails:action, "<col=ff0000>Disband</col>", tob_partydetails:universe, enum_1939, -1);
+        if_sethide(false, tob_partydetails:unblock);
+        ~script1558(tob_partydetails:unblock, "<col=ffff00>Unblock</col>", tob_partydetails:universe, enum_1939, -1);
+    case 1 :
+        ~script1558(tob_partydetails:action, "<col=ff0000>Leave</col>", tob_partydetails:universe, enum_1939, -1);
+    case 3 :
+        ~script1558(tob_partydetails:action, "<col=ff0000>Withdraw</col>", tob_partydetails:universe, enum_1939, -1);
+    case 4 :
+        ~script1558(tob_partydetails:action, "<col=7f7f7f><str=9f9f9f>Apply</str></col>", tob_partydetails:universe, enum_1939, -1);
+    case default :
+        ~script1558(tob_partydetails:action, "<col=00ff00>Apply</col>", tob_partydetails:universe, enum_1939, -1);
+}
+if_setsize(0, 0, ^setsize_minus, ^setsize_minus, tob_partydetails:timer);
+if_setontimer("tob_partydetails_autorefresh(event_com, tob_partydetails:timer, tob_partydetails:refresh, $string0, clientclock)", tob_partydetails:universe);

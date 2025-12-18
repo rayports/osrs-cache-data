@@ -1,0 +1,6 @@
+// 5127
+[proc,script5127]
+if (%barcrawl ! 2 & %scorpcatcher < 6) {
+    return;
+}
+%auto_smash_vials = calc(1 - %auto_smash_vials);

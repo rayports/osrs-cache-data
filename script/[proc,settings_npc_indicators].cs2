@@ -1,0 +1,15 @@
+// 6466
+[proc,settings_npc_indicators]
+if (~on_enhanced_desktop = false) {
+    return;
+}
+if (%option_npc_indicators_enabled = 0) {
+    %option_npc_indicators_enabled = 1;
+    if (%option_npc_indicators_outline_enabled = 0 & %option_npc_indicators_tile = 0 & %option_npc_indicators_name = 0) {
+        %option_npc_indicators_outline_enabled = 1;
+        %option_npc_indicators_tile = 2;
+        %option_npc_indicators_name = 1;
+    }
+} else {
+    %option_npc_indicators_enabled = 0;
+}

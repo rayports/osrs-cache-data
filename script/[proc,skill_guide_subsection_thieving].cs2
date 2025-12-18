@@ -1,0 +1,15 @@
+// 176
+[proc,skill_guide_subsection_thieving](int $int0)(string, boolean)
+switch_int ($int0) {
+    case 0 :
+        return("Thieving", true);
+    case 1 :
+        return("Pickpocket", true);
+    case 2 :
+        return("Stalls", true);
+    case 3 :
+        return("Chests", true);
+    case 4 :
+        return("Other", true);
+}
+return("", null);

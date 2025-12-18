@@ -1,0 +1,73 @@
+// 1064
+[proc,farming_tools_getcarried](obj $obj0)(int, obj)
+def_int $int1 = 0;
+def_int $int2 = 0;
+def_obj $obj3 = null;
+def_int $int4 = 0;
+def_obj $obj5 = null;
+def_obj $obj6 = null;
+switch_obj ($obj0) {
+    case rake :
+        return(~farming_tools_countcarried(rake), rake);
+    case dibber :
+        return(~farming_tools_countcarried(dibber), dibber);
+    case spade :
+        return(~farming_tools_countcarried(spade), spade);
+    case secateurs :
+        $int1 = ~farming_tools_countcarried(fairy_enchanted_secateurs);
+        if ($int1 > 0) {
+            $int4 = ~farming_tools_countcarried(secateurs);
+            if (calc(^max_32bit_int - $int4) < $int1) {
+                return(^max_32bit_int, fairy_enchanted_secateurs);
+            }
+            return(calc($int1 + $int4), fairy_enchanted_secateurs);
+        }
+        return(~farming_tools_countcarried(secateurs), secateurs);
+    case watering_can_dummy :
+        $int2 = enum_getoutputcount(enum_136);
+        while ($int2 >= 0) {
+            $obj3 = enum(int, namedobj, enum_136, $int2);
+            if ($obj3 ! null) {
+                $int1 = ~farming_tools_countcarried($obj3);
+                if ($int1 > 0) {
+                    if (calc(^max_32bit_int - $int4) < $int1) {
+                        $int4 = ^max_32bit_int;
+                    } else {
+                        $int4 = calc($int4 + $int1);
+                    }
+                    if ($obj5 = null) {
+                        $obj5 = $obj3;
+                    }
+                }
+            }
+            $int2 = calc($int2 - 1);
+        }
+        return($int4, $obj5);
+    case gardening_trowel :
+        return(~farming_tools_countcarried(gardening_trowel), gardening_trowel);
+    case plant_cure :
+        return(~farming_tools_countcarried(plant_cure), plant_cure);
+    case bottomless_compost_bucket :
+        $int1 = ~farming_tools_countcarried(bottomless_compost_bucket_filled);
+        if ($int1 > 0) {
+            $obj6 = bottomless_compost_bucket_filled;
+        } else {
+            $obj6 = bottomless_compost_bucket;
+        }
+        $int4 = ~farming_tools_countcarried(bottomless_compost_bucket);
+        if (calc(^max_32bit_int - $int4) < $int1) {
+            $int4 = ^max_32bit_int;
+        } else {
+            $int4 = calc($int4 + $int1);
+        }
+        return($int4, $obj6);
+    case bucket_empty :
+        return(~farming_tools_countcarried(bucket_empty), bucket_empty);
+    case bucket_compost :
+        return(~farming_tools_countcarried(bucket_compost), bucket_compost);
+    case bucket_supercompost :
+        return(~farming_tools_countcarried(bucket_supercompost), bucket_supercompost);
+    case bucket_ultracompost :
+        return(~farming_tools_countcarried(bucket_ultracompost), bucket_ultracompost);
+}
+return(0, null);

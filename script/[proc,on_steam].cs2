@@ -1,0 +1,7 @@
+// 3769
+[proc,on_steam]()(int)
+if (platformtype ! ^platformtype_steam) {
+    return(0);
+} else {
+    return(1);
+}

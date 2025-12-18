@@ -1,0 +1,7 @@
+// 5460
+[proc,xptracker_current_id]()(int)
+if (%xptracker_current_id <= 0) {
+    %xptracker_current_id = 1;
+}
+%xptracker_current_id = calc(%xptracker_current_id + 1);
+return(calc(%xptracker_current_id - 1));

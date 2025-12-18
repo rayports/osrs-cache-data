@@ -1,0 +1,18 @@
+// 1358
+[clientscript,macro_sandwich_lady_init](component $component0)
+%sandwich_lady_model_0_y = random(2048);
+%sandwich_lady_model_1_y = random(2048);
+%sandwich_lady_model_2_y = random(2048);
+%sandwich_lady_model_3_y = random(2048);
+%sandwich_lady_model_4_y = random(2048);
+%sandwich_lady_model_5_y = random(2048);
+%sandwich_lady_model_6_y = random(2048);
+%sandwich_lady_model_0_z = calc(800 - randominc(50));
+%sandwich_lady_model_1_z = calc(700 - randominc(50));
+%sandwich_lady_model_2_z = calc(600 - randominc(50));
+%sandwich_lady_model_3_z = calc(500 - randominc(50));
+%sandwich_lady_model_4_z = calc(400 - randominc(50));
+%sandwich_lady_model_5_z = calc(300 - randominc(50));
+%sandwich_lady_model_6_z = calc(200 - randominc(50));
+~macro_sandwich_lady_setcomponent;
+if_setontimer("macro_sandwich_lady_timer(0, $component0)", $component0);

@@ -1,0 +1,13 @@
+// 4618
+[proc,script4618]
+~script3647;
+if (~on_enhanced_any = false) {
+    return;
+}
+gameoption_set(^gameoption_haptic_on_op, calc(1 - %option_haptic_on_op_disabled));
+gameoption_set(^gameoption_haptic_on_drag, calc(1 - %option_haptic_on_drag_disabled));
+gameoption_set(^gameoption_haptic_on_minimenu_open, calc(1 - %option_haptic_on_minimenu_open_disabled));
+gameoption_set(^gameoption_haptic_on_minimenu_entry_hover, %option_haptic_on_minimenu_entry_hover_enabled);
+gameoption_set(^gameoption_minimenu_long_press_time, %option_minimenu_long_press_time);
+~settings_chat_timestamps;
+deviceoption_set(^deviceoption_is_sfx_8_bit, 0);

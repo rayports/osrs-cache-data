@@ -1,0 +1,4 @@
+// 1186
+[clientscript,script1186]
+~script1205;
+%crm_overlay_active = 0;

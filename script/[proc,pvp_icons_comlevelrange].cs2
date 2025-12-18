@@ -1,0 +1,29 @@
+// 387
+[proc,pvp_icons_comlevelrange](int $int0)
+def_int $int1 = $int0;
+def_int $int2 = 3;
+def_int $int3 = 126;
+def_int $int4 = ~deadman_world;
+if ($int4 ! 0) {
+    if (%deadman_protection_left > 0) {
+        if_sethide(true, pvp_icons:comlevelrange);
+        return;
+    }
+    if (%deadman_insidesafezone = 2 | %spectator_toplevel_enabled = 1) {
+        if_settext("", pvp_icons:comlevelrange);
+        return;
+    }
+    if ($int4 = 3 & ~private_event_world = 0) {
+        $int2, $int3 = ~deadman_bracketbounds;
+    } else if ($int4 = 1 & ~private_event_world = 0) {
+        $int2, $int3 = ~script7863;
+    }
+} else {
+    if (~pvp_world = true) {
+        $int1 = calc(15 + $int0);
+    }
+    $int2 = calc(%combatlevel_transmit - $int1);
+    $int3 = calc(%combatlevel_transmit + $int1);
+    $int2, $int3 = ~max(3, $int2), ~min(126, $int3);
+}
+if_settext("<tostring($int2)>-<tostring($int3)>", pvp_icons:comlevelrange);

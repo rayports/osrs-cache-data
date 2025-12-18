@@ -1,0 +1,6 @@
+// 4802
+[proc,ca_boss_enable_search]
+if (%ca_bosses_is_searching = 0) {
+    ~chatdefault_stopinput;
+    %ca_bosses_is_searching = 1;
+}

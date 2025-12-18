@@ -1,0 +1,11 @@
+// 4454
+[clientscript,script4454]
+switch_int (%option_loottracker_display_group_mode) {
+    case 0 :
+        %option_loottracker_display_group_mode = 1;
+    case 1 :
+        %option_loottracker_display_group_mode = 0;
+    case default :
+        %option_loottracker_display_group_mode = 0;
+}
+~script4850;

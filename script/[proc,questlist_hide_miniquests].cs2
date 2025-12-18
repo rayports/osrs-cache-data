@@ -1,0 +1,9 @@
+// 4025
+[proc,questlist_hide_miniquests](boolean $boolean0)(boolean)
+if ($boolean0 = true) {
+    return(true);
+}
+if (%questlist_hide_miniquests = 1) {
+    return(true);
+}
+return(false);

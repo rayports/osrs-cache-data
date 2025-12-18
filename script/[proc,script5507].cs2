@@ -1,0 +1,6 @@
+// 5507
+[proc,script5507]()(string)
+if (%clan_transmit_loadasguest = 1) {
+    return(~script2357(%clan_guest_affinitystatus));
+}
+return(~script2357(%gim_affinitystatus));

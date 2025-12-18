@@ -1,0 +1,11 @@
+// 7589
+[proc,script7589]
+if (~on_enhanced_mobile = false) {
+    return;
+}
+%settings_mobile_tile_highlights_hidden = calc(1 - %settings_mobile_tile_highlights_hidden);
+if (%settings_mobile_tile_highlights_hidden = 1 & %settings_mobile_tile_highlight_enabled = 1) {
+    ~script7586(0);
+}
+~osm_hotkeys_setup;
+~script7591;

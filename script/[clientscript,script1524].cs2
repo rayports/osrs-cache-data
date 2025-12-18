@@ -1,0 +1,53 @@
+// 1524
+[clientscript,script1524](string $string0, int $int0, boolean $boolean1, int $int2)
+if (if_hassub(enum(component, component, ~toplevel_getcomponents, toplevel_osrs_stretch:mainmodal)) = false) {
+    return;
+}
+if_sethide(false, raids_lobby_partydetails:list);
+def_int $int3 = calc(%raids_count * 14);
+if ($int3 > if_getheight(raids_lobby_partydetails:list)) {
+    if_setscrollsize(0, $int3, raids_lobby_partydetails:list);
+    ~scrollbar_resize(raids_lobby_partydetails:scrollbar, raids_lobby_partydetails:list, %raids_scroll);
+} else {
+    if_setscrollsize(0, 0, raids_lobby_partydetails:list);
+    %raids_scroll = 0;
+    ~scrollbar_resize(raids_lobby_partydetails:scrollbar, raids_lobby_partydetails:list, 0);
+}
+if (%raids_listsort_details ! 0 & %raids_listsort_details ! 1 & %raids_listsort_details ! 2 & %raids_listsort_details ! 3 & %raids_listsort_details ! 4 & %raids_listsort_details ! 5 & %raids_listsort_details ! 6 & %raids_listsort_details ! 7) {
+    %raids_listsort_details = 0;
+}
+~raids_partydetails_setsort(-1);
+~raids_partydetails_closestats;
+~script1537;
+if_setonvartransmit("script1536{raids_temp_transmit1}", raids_lobby_partydetails:list);
+~steelborder(raids_lobby_partydetails:frame, $string0, 0);
+def_string $string1 = "";
+if ($int0 = 2) {
+    if ($boolean1 = true) {
+        $string1 = "De-list";
+    } else if ($int2 > 0) {
+        $string1 = "Advertise (<tostring($int2)>)";
+    } else {
+        $string1 = "<col=7f7f7f>Advertise (0)</col>";
+    }
+    ~script1558(raids_lobby_partydetails:advertise, $string1, raids_lobby_partydetails:contents, enum_1539, -1);
+    if_sethide(false, raids_lobby_partydetails:advertise);
+    ~script1558(raids_lobby_partydetails:disband, "<col=ff0000>Disband</col>", raids_lobby_partydetails:contents, enum_1539, -1);
+    if_sethide(false, raids_lobby_partydetails:disband);
+} else if ($int0 = 1) {
+    ~script1558(raids_lobby_partydetails:join, "<col=ff0000>Leave</col>", raids_lobby_partydetails:contents, enum_1539, -1);
+    if_sethide(false, raids_lobby_partydetails:join);
+} else {
+    ~script1558(raids_lobby_partydetails:join, "<col=00ff00>Join</col>", raids_lobby_partydetails:contents, enum_1539, -1);
+    if_sethide(false, raids_lobby_partydetails:join);
+}
+~script1558(raids_lobby_partydetails:back, "Back", raids_lobby_partydetails:contents, enum_1539, -1);
+if_sethide(false, raids_lobby_partydetails:back);
+~script1558(raids_lobby_partydetails:refresh, "Refresh", raids_lobby_partydetails:contents, enum_1539, -1);
+if_sethide(false, raids_lobby_partydetails:refresh);
+~script1530(raids_lobby_partydetails:preferred_size, "Preferred party size", $int0);
+~script1530(raids_lobby_partydetails:preferred_comlevel, "Preferred combat level", $int0);
+~script1530(raids_lobby_partydetails:preferred_skilltotal, "Preferred skill total", $int0);
+~script1530(raids_lobby_partydetails:scaling_layer, "Scaling", $int0);
+~script1530(raids_lobby_partydetails:challenge_layer, "Challenge mode", $int0);
+~script1530(raids_lobby_partydetails:mappool_layer, "Map Layout", $int0);

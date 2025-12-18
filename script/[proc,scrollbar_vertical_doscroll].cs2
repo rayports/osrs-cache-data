@@ -1,0 +1,86 @@
+// 37
+[proc,scrollbar_vertical_doscroll](component $component0, component $component1, int $int2, boolean $boolean3)
+def_int $int4 = ~max(calc(if_getscrollheight($component1) - if_getheight($component1)), 1);
+$int2 = ~max(~min($int2, $int4), 0);
+if_setscrollpos(if_getscrollx($component1), $int2, $component1);
+switch_component ($component1) {
+    case chatbox:scrollarea :
+        %chat_lastscrollpos = if_getscrolly($component1);
+    case questlist:text_container :
+        %qj_lastscrollpos = if_getscrolly($component1);
+    case speedrunning_panel:list_text_container :
+        %speedrun_qj_lastscrollpos = if_getscrolly($component1);
+    case music:scrollable :
+        %camera_zoom_mouse_enabled = if_getscrolly($component1);
+    case friends:list :
+        %friends_lastscrollpos = if_getscrolly($component1);
+    case bankmain:items :
+        %bank_scrollpos = if_getscrolly($component1);
+    case fairyrings_log:contents :
+        %fairyrings_scrollpos = if_getscrolly($component1);
+    case worldswitcher:scrollarea :
+        %worldswitcher_scrollpos = if_getscrolly($component1);
+    case poh_costumes:items, poh_furniture_creation:list :
+        %poh_costume_room_scroll = if_getscrolly($component1);
+    case clans_info:editable, clans_permissions:list_contents, pvp_arena_board:list, clans_board:list, clans_ranktitles:titles_list, ge_itemsink_monitor:list, gim_options:list_contents, worldswitcher_options:scrollarea, bond_main:redeem_options, ironman_setup:scrolling, patchy:list :
+        %poll_scroll = if_getscrolly($component1);
+    case clans_permissions:index_contents :
+        %poll_ypos = if_getscrolly($component1);
+    case gim_options:index_contents :
+        %poll_ypos = if_getscrolly($component1);
+    case clanwars_confirm:display :
+        %has_displayname = if_getscrolly($component1);
+    case reportabuse:rules :
+        %bondif_convert_count_cs = if_getscrolly($component1);
+    case farming_view:patches :
+        %farming_view_scrollpos = if_getscrolly($component1);
+    case lunar_contact_npc:contents :
+        %lunar_contactnpc_scrollpos = if_getscrolly($component1);
+    case nzone_lists:list :
+        %nzone_listscroll = if_getscrolly($component1);
+    case raids_lobby_partylist:list, raids_lobby_partydetails:list, raids_sidepanel:list, pvp_arena_board:filters, clans_board:filters, clans_applicants:list, clans_ranktitles:tiers_list, shared_bank:items :
+        %raids_scroll = if_getscrolly($component1);
+    case worldmap:key_entries :
+        %osb4_roofsetting = if_getscrolly($component1);
+    case seed_vault:list :
+        %seed_vault_scrollpos = if_getscrolly($component1);
+    case fletching_table:list :
+        %fletching_table_scrollpos = if_getscrolly($component1);
+    case poh_board:scroll_bar :
+        %poh_board_scroll = if_getscrolly($component1);
+    case ca_bosses:bosses_list :
+        %ca_boss_scrollpos = if_getscrolly($component1);
+    case toa_partylist:list :
+        %toa_partylist_scrollpos = if_getscrolly($component1);
+    case toa_partydetails:invocations_content :
+        %toa_invocations_scrollpos = if_getscrolly($component1);
+    case toa_partydetails:summary_content :
+        %toa_summary_scrollpos = if_getscrolly($component1);
+    case makeover:item_area :
+        %makeover_scroll_pos = if_getscrolly($component1);
+    case league_tasks:tasks_list :
+        %league_tasks_scroll_pos = if_getscrolly($component1);
+    case teletabs_craft_if:tablets_inner :
+        %teletab_scroll_pos = if_getscrolly($component1);
+    case omnishop_main:list :
+        %omnishop_scroll_pos = if_getscrolly($component1);
+    case hiscores:hiscores_container :
+        %osm_popout_scrollpos_hiscores = if_getscrolly($component1);
+    case loottools:ground_items_content_scroll_area_outer :
+        %osm_popout_scrollpos_grounditems = if_getscrolly($component1);
+    case loottools:loottracker_content_scroll_area_outer :
+        %osm_popout_scrollpos_loottracker = if_getscrolly($component1);
+    case xptracker:tracker_container :
+        %osm_popout_scrollpos_xptracker = if_getscrolly($component1);
+    case sailing_log:list :
+        %sailing_charting_scroll_pos = if_getscrolly($component1);
+    case sailing_sidepanel:facilities_scrollable :
+        %sailing_sidepanel_facilities_scrollpos = if_getscrolly($component1);
+    case sailing_boat_selection:boats_container :
+        %sailing_boat_selection_scroll_pos = if_getscrolly($component1);
+    case sailing_customisation:facility_content :
+        %sailing_boat_customisation_scroll_pos = if_getscrolly($component1);
+}
+if ($boolean3 = true) {
+    ~scrollbar_vertical_setdragger($component0, $component1);
+}

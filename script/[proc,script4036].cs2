@@ -1,0 +1,3 @@
+// 4036
+[proc,script4036]
+%gravestone_supplypiles_disabled = calc(1 - %gravestone_supplypiles_disabled);

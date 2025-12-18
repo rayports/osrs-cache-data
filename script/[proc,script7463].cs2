@@ -1,0 +1,8 @@
+// 7463
+[proc,script7463]
+if (~on_enhanced_any = false) {
+    return;
+}
+%popout_hiscores_globalclick_enabled = calc(1 - %popout_hiscores_globalclick_enabled);
+~script7541;
+~hiscores_lookup_toggle_update;

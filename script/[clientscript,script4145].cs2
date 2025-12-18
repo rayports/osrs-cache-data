@@ -1,0 +1,3 @@
+// 4145
+[clientscript,script4145]
+%displayname_input, %displayname_input_last = "", "";

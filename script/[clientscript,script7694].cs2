@@ -1,0 +1,24 @@
+// 7694
+[clientscript,script7694](int $int0, int $int1)
+def_int $int2 = 0;
+while ($int2 < $int0) {
+    switch_int ($int2) {
+        case 0 :
+            %league_relic_repick_0 = $int1;
+        case 1 :
+            %league_relic_repick_1 = $int1;
+        case 2 :
+            %league_relic_repick_2 = $int1;
+        case 3 :
+            %league_relic_repick_3 = $int1;
+        case 4 :
+            %league_relic_repick_4 = $int1;
+        case 5 :
+            %league_relic_repick_5 = $int1;
+        case 6 :
+            %league_relic_repick_6 = $int1;
+        case 7 :
+            %league_relic_repick_7 = $int1;
+    }
+    $int2 = calc($int2 + 1);
+}

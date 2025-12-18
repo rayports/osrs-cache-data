@@ -1,0 +1,20 @@
+// 6732
+[clientscript,script6732](int $int0, component $component1, string $string0, component $component2, string $string1, int $int3, int $int4, int $int5, int $int6)
+sound_synth(synth_2266, 1, 0);
+if (%toa_invocations_layout_rewards_hidden = 0) {
+    %toa_invocations_layout_rewards_hidden = 2;
+} else {
+    %toa_invocations_layout_rewards_hidden = 0;
+}
+if (%toa_invocations_layout_rewards_hidden = 0) {
+    ~toa_invocations_layout_setup(1, 0);
+} else if (%toa_invocations_layout_rewards_hidden = 1) {
+    ~toa_invocations_layout_setup(1, 0);
+} else {
+    ~toa_invocations_layout_setup(0, 0);
+}
+~script6749(toa_partydetails:invocations_content, toa_partydetails:invocations_scrollbar, $int3, $int4, $int5, $int6, toa_partydetails:tooltip);
+~script6731($component1, $string0, $component2, $string1, $int3, $int4, $int5, $int6);
+if ($component2 ! null) {
+    ~script350($component2, $string1, $component1, $string0, $int3, $int4, $int5, $int6);
+}

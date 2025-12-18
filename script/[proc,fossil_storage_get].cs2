@@ -1,0 +1,66 @@
+// 2009
+[proc,fossil_storage_get](obj $obj0)(int)
+switch_obj ($obj0) {
+    case fossil_small_1 :
+        return(%fossil_storage_small_1);
+    case fossil_small_2 :
+        return(%fossil_storage_small_2);
+    case fossil_small_3 :
+        return(%fossil_storage_small_3);
+    case fossil_small_4 :
+        return(%fossil_storage_small_4);
+    case fossil_small_5 :
+        return(%fossil_storage_small_5);
+    case fossil_medium_1 :
+        return(%fossil_storage_medium_1);
+    case fossil_medium_2 :
+        return(%fossil_storage_medium_2);
+    case fossil_medium_3 :
+        return(%fossil_storage_medium_3);
+    case fossil_medium_4 :
+        return(%fossil_storage_medium_4);
+    case fossil_medium_5 :
+        return(%fossil_storage_medium_5);
+    case fossil_large_1 :
+        return(%fossil_storage_large_1);
+    case fossil_large_2 :
+        return(%fossil_storage_large_2);
+    case fossil_large_3 :
+        return(%fossil_storage_large_3);
+    case fossil_large_4 :
+        return(%fossil_storage_large_4);
+    case fossil_large_5 :
+        return(%fossil_storage_large_5);
+    case fossil_plant_1 :
+        return(%fossil_storage_plant_1);
+    case fossil_plant_2 :
+        return(%fossil_storage_plant_2);
+    case fossil_plant_3 :
+        return(%fossil_storage_plant_3);
+    case fossil_plant_4 :
+        return(%fossil_storage_plant_4);
+    case fossil_plant_5 :
+        return(%fossil_storage_plant_5);
+    case fossil_rare_1 :
+        return(%fossil_storage_rare_1);
+    case fossil_rare_2 :
+        return(%fossil_storage_rare_2);
+    case fossil_rare_3 :
+        return(%fossil_storage_rare_3);
+    case fossil_rare_4 :
+        return(%fossil_storage_rare_4);
+    case fossil_rare_5 :
+        return(%fossil_storage_rare_5);
+    case fossil_rare_6 :
+        return(%fossil_storage_rare_6);
+    case fossil_small_unid :
+        return(%fossil_storage_small_unid);
+    case fossil_medium_unid :
+        return(%fossil_storage_medium_unid);
+    case fossil_large_unid :
+        return(%fossil_storage_large_unid);
+    case fossil_rare_unid :
+        return(%fossil_storage_rare_unid);
+    case default :
+        return(-1);
+}

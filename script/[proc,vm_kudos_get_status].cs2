@@ -1,0 +1,253 @@
+// 1968
+[proc,vm_kudos_get_status](int $int0)(boolean)
+def_int $int1 = enum(int, int, enum_1789, $int0);
+if ($int0 = 0 & %vm_digsite_coin_sara = 1) {
+    return(true);
+}
+if ($int0 = 1 & %vm_digsite_coin_senn = 1) {
+    return(true);
+}
+if ($int0 = 2 & %vm_digsite_symbol_anc = 1) {
+    return(true);
+}
+if ($int0 = 3 & %vm_digsite_symbol_old = 1) {
+    return(true);
+}
+if ($int0 = 4 & %vm_digsite_pottery = 1) {
+    return(true);
+}
+if ($int0 = 5 & %vm_nathis_dragon_display = 3) {
+    return(true);
+}
+if ($int0 = 6 & %vm_nathis_wyvern_display = 3) {
+    return(true);
+}
+if ($int0 = 7 & %vm_nathis_tortoise_display = 3) {
+    return(true);
+}
+if ($int0 = 8 & %vm_nathis_lizard_display = 3) {
+    return(true);
+}
+if ($int0 = 9 & %vm_nathis_leech_display = 3) {
+    return(true);
+}
+if ($int0 = 10 & %vm_nathis_camel_display = 3) {
+    return(true);
+}
+if ($int0 = 11 & %vm_nathis_mole_display = 3) {
+    return(true);
+}
+if ($int0 = 12 & %vm_nathis_penguin_display = 3) {
+    return(true);
+}
+if ($int0 = 13 & %vm_nathis_terrorbird_display = 3) {
+    return(true);
+}
+if ($int0 = 14 & %vm_nathis_kalphite_display = 3) {
+    return(true);
+}
+if ($int0 = 15 & %vm_nathis_monkey_display = 3) {
+    return(true);
+}
+if ($int0 = 16 & %vm_nathis_seaslug_display = 3) {
+    return(true);
+}
+if ($int0 = 17 & %vm_nathis_snake_display = 3) {
+    return(true);
+}
+if ($int0 = 18 & %vm_nathis_snail_display = 3) {
+    return(true);
+}
+if ($int0 = 19 & %vm_staff_of_armadyl > 0) {
+    return(true);
+}
+if ($int0 = 20 & %vm_staff_of_armadyl = 2) {
+    return(true);
+}
+if ($int0 = 21 & %vm_soa = 1) {
+    return(true);
+}
+if ($int0 = 22 & %vm_observatory = 1) {
+    return(true);
+}
+if ($int0 = 23 & %vm_excalibur = 1) {
+    return(true);
+}
+if ($int0 = 24 & %vm_silverlight = 1) {
+    return(true);
+}
+if ($int0 = 25 & %vm_glider = 1) {
+    return(true);
+}
+if ($int0 = 26 & %vm_robert = 1) {
+    return(true);
+}
+if ($int0 = 27 & %vm_lathas = 1) {
+    return(true);
+}
+if ($int0 = 28 & %vm_salveknights > 0) {
+    return(true);
+}
+if ($int0 = 29 & %vm_salveknights = 2) {
+    return(true);
+}
+if ($int0 = 30 & %vm_ardy = 1) {
+    return(true);
+}
+if ($int0 = 31 & %vm_surok = 1) {
+    return(true);
+}
+if ($int0 = 32 & %vm_runes = 1) {
+    return(true);
+}
+if ($int0 = 34 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 35 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 36 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 37 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 38 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 39 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 40 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 41 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 42 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 43 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 44 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 45 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 46 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 47 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 48 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 49 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 50 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 51 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 52 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 53 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 54 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 55 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 56 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 57 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 58 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 59 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 60 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 61 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 62 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 63 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 64 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 65 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 66 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 67 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 68 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 69 & ~script2030($int1) = 1) {
+    return(true);
+}
+if ($int0 = 70 & %camdozaal_museum_relic_1 = 1) {
+    return(true);
+}
+if ($int0 = 71 & %camdozaal_museum_relic_2 = 1) {
+    return(true);
+}
+if ($int0 = 72 & %camdozaal_museum_relic_3 = 1) {
+    return(true);
+}
+if ($int0 = 73 & %camdozaal_museum_relic_4 = 1) {
+    return(true);
+}
+if ($int0 = 74 & %camdozaal_museum_relic_5 = 1) {
+    return(true);
+}
+if ($int0 = 33 & %vm_dov = 1) {
+    return(true);
+}
+if ($int0 = 75 & %salvaging_rare_rusty_locket_claimed = 1) {
+    return(true);
+}
+if ($int0 = 76 & %salvaging_rare_mouldy_block_claimed = 1) {
+    return(true);
+}
+if ($int0 = 77 & %salvaging_rare_dull_knife_claimed = 1) {
+    return(true);
+}
+if ($int0 = 78 & %salvaging_rare_broken_compass_claimed = 1) {
+    return(true);
+}
+if ($int0 = 79 & %salvaging_rare_rusty_coin_claimed = 1) {
+    return(true);
+}
+if ($int0 = 80 & %salvaging_rare_broken_sextant_claimed = 1) {
+    return(true);
+}
+if ($int0 = 81 & %salvaging_rare_smashed_mirror_claimed = 1) {
+    return(true);
+}
+if ($int0 = 82 & %salvaging_rare_mouldy_doll_claimed = 1) {
+    return(true);
+}
+return(false);

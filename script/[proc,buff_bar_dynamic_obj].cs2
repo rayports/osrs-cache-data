@@ -1,0 +1,13 @@
+// 5928
+[proc,buff_bar_dynamic_obj](int $rgb0)(obj)
+switch_int ($rgb0) {
+    case 0x000029 :
+        if (%buff_bar_ammo_type ! null) {
+            return(%buff_bar_ammo_type);
+        } else {
+            return(%buff_bar_weapon);
+        }
+    case 0x000028 :
+        return(%buff_bar_ammo_type);
+}
+return(null);

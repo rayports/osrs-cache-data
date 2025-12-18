@@ -1,0 +1,6 @@
+// 4614
+[proc,script4614]
+if (~on_enhanced_any = false) {
+    return;
+}
+%stat_boosts_hud_display_relative = calc(1 - %stat_boosts_hud_display_relative);

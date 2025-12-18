@@ -1,0 +1,111 @@
+// 56
+[proc,area_task_complete](int $int0)(int)
+if ($int0 = 0) {
+    if (%atjun_easy_done = 2 & %atjun_med_done = 2 & %atjun_hard_done = 2 & %karamja_diary_elite_complete = 1) {
+        return(2);
+    } else if (%atjun_started = 0) {
+        return(0);
+    } else {
+        return(1);
+    }
+}
+if ($int0 = 1) {
+    if (calc(%ardougne_diary_easy_complete + %ardougne_diary_medium_complete + %ardougne_diary_hard_complete + %ardougne_diary_elite_complete) = 4) {
+        return(2);
+    } else if (%started_ardougne_diary = 0) {
+        return(0);
+    } else {
+        return(1);
+    }
+}
+if ($int0 = 2) {
+    if (calc(%falador_diary_easy_complete + %falador_diary_medium_complete + %falador_diary_hard_complete + %falador_diary_elite_complete) = 4) {
+        return(2);
+    } else if (%started_falador_diary = 0) {
+        return(0);
+    } else {
+        return(1);
+    }
+}
+if ($int0 = 9) {
+    if (calc(%wilderness_diary_easy_complete + %wilderness_diary_medium_complete + %wilderness_diary_hard_complete + %wilderness_diary_elite_complete) = 4) {
+        return(2);
+    } else if (%started_wilderness_diary = 0) {
+        return(0);
+    } else {
+        return(1);
+    }
+}
+if ($int0 = 10) {
+    if (calc(%western_diary_easy_complete + %western_diary_medium_complete + %western_diary_hard_complete + %western_diary_elite_complete) = 4) {
+        return(2);
+    } else if (%started_western_diary = 0) {
+        return(0);
+    } else {
+        return(1);
+    }
+}
+if ($int0 = 4) {
+    if (calc(%kandarin_diary_easy_complete + %kandarin_diary_medium_complete + %kandarin_diary_hard_complete + %kandarin_diary_elite_complete) = 4) {
+        return(2);
+    } else if (%started_kandarin_diary = 0) {
+        return(0);
+    } else {
+        return(1);
+    }
+}
+if ($int0 = 5) {
+    if (calc(%desert_diary_easy_complete + %desert_diary_medium_complete + %desert_diary_hard_complete + %desert_diary_elite_complete) = 4) {
+        return(2);
+    } else if (%started_desert_diary = 0) {
+        return(0);
+    } else {
+        return(1);
+    }
+}
+if ($int0 = 7) {
+    if (calc(%morytania_diary_easy_complete + %morytania_diary_medium_complete + %morytania_diary_hard_complete + %morytania_diary_elite_complete) = 4) {
+        return(2);
+    } else if (%started_morytania_diary = 0) {
+        return(0);
+    } else {
+        return(1);
+    }
+}
+if ($int0 = 3) {
+    if (calc(%fremennik_diary_easy_complete + %fremennik_diary_medium_complete + %fremennik_diary_hard_complete + %fremennik_diary_elite_complete) = 4) {
+        return(2);
+    } else if (%started_fremennik_diary = 0) {
+        return(0);
+    } else {
+        return(1);
+    }
+}
+if ($int0 = 6) {
+    if (calc(%lumbridge_diary_easy_complete + %lumbridge_diary_medium_complete + %lumbridge_diary_hard_complete + %lumbridge_diary_elite_complete) = 4) {
+        return(2);
+    } else if (%started_lumbridge_diary = 0) {
+        return(0);
+    } else {
+        return(1);
+    }
+}
+if ($int0 = 8) {
+    if (calc(%varrock_diary_easy_complete + %varrock_diary_medium_complete + %varrock_diary_hard_complete + %varrock_diary_elite_complete) = 4) {
+        return(2);
+    } else if (%started_varrock_diary = 0) {
+        return(0);
+    } else {
+        return(1);
+    }
+}
+if ($int0 = 11) {
+    if (calc(%kourend_diary_easy_complete + %kourend_diary_medium_complete + %kourend_diary_hard_complete + %kourend_diary_elite_complete) = 4) {
+        return(2);
+    } else if (%started_kourend_diary = 0) {
+        return(0);
+    } else {
+        return(1);
+    }
+}
+return(0);

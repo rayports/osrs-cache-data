@@ -1,0 +1,6 @@
+// 5305
+[proc,script5305]()(boolean)
+if (%ironman = 0) {
+    return(false);
+}
+return(true);

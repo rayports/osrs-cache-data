@@ -1,0 +1,9 @@
+// 7807
+[clientscript,collection_overview_drag_end](int $int0, int $int1, int $int2)
+if (clientclock < $int0) {
+    return;
+}
+%collection_overview_x, %collection_overview_y = $int1, $int2;
+def_component $component3 = collection_overview:infinity;
+if_callonresize($component3);
+%collection_overview_has_been_moved = 1;

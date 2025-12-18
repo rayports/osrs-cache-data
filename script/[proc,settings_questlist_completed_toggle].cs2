@@ -1,0 +1,3 @@
+// 5975
+[proc,settings_questlist_completed_toggle]
+%questlist_hide_completed = calc(1 - %questlist_hide_completed);

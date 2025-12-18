@@ -1,0 +1,20 @@
+// 7017
+[proc,script7017](int $int0, int $int1, int $int2)
+switch_int ($int0) {
+    case 0 :
+        %lockpicking_input_1, %lockpicking_hint_1 = $int1, $int2;
+    case 1 :
+        %lockpicking_input_2, %lockpicking_hint_2 = $int1, $int2;
+    case 2 :
+        %lockpicking_input_3, %lockpicking_hint_3 = $int1, $int2;
+    case 3 :
+        %lockpicking_input_4, %lockpicking_hint_4 = $int1, $int2;
+    case 4 :
+        %lockpicking_input_5, %lockpicking_hint_5 = $int1, $int2;
+    case 5 :
+        %lockpicking_input_6, %lockpicking_hint_6 = $int1, $int2;
+    case 6 :
+        %lockpicking_input_7, %lockpicking_hint_7 = $int1, $int2;
+    case 7 :
+        %lockpicking_input_8, %lockpicking_hint_8 = $int1, $int2;
+}

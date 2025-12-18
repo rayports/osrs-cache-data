@@ -1,0 +1,65 @@
+// 6099
+[proc,giants_foundry_mould_is_unlocked](struct $struct0)(boolean)
+switch_struct ($struct0) {
+    case struct_4297 :
+        if (%giants_foundry_unlocked_mould_ricasso_7 = 0) {
+            return(false);
+        }
+    case struct_4298 :
+        if (%giants_foundry_unlocked_mould_ricasso_8 = 0) {
+            return(false);
+        }
+    case struct_4299 :
+        if (%giants_foundry_unlocked_mould_ricasso_9 = 0) {
+            return(false);
+        }
+    case struct_4300 :
+        if (%giants_foundry_unlocked_mould_ricasso_10 = 0) {
+            return(false);
+        }
+    case struct_4301 :
+        if (%giants_foundry_unlocked_mould_ricasso_11 = 0) {
+            return(false);
+        }
+    case struct_4308 :
+        if (%giants_foundry_unlocked_mould_blade_7 = 0) {
+            return(false);
+        }
+    case struct_4309 :
+        if (%giants_foundry_unlocked_mould_blade_8 = 0) {
+            return(false);
+        }
+    case struct_4310 :
+        if (%giants_foundry_unlocked_mould_blade_9 = 0) {
+            return(false);
+        }
+    case struct_4311 :
+        if (%giants_foundry_unlocked_mould_blade_10 = 0) {
+            return(false);
+        }
+    case struct_4312 :
+        if (%giants_foundry_unlocked_mould_blade_11 = 0) {
+            return(false);
+        }
+    case struct_4319 :
+        if (%giants_foundry_unlocked_mould_tip_7 = 0) {
+            return(false);
+        }
+    case struct_4320 :
+        if (%giants_foundry_unlocked_mould_tip_8 = 0) {
+            return(false);
+        }
+    case struct_4321 :
+        if (%giants_foundry_unlocked_mould_tip_9 = 0) {
+            return(false);
+        }
+    case struct_4322 :
+        if (%giants_foundry_unlocked_mould_tip_10 = 0) {
+            return(false);
+        }
+    case struct_4323 :
+        if (%giants_foundry_unlocked_mould_tip_11 = 0) {
+            return(false);
+        }
+}
+return(true);

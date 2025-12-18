@@ -1,0 +1,24 @@
+// 7043
+[proc,script7043]()(int)
+if (testbit(%map_flags_cached, 25) = ^true) {
+    return(-1);
+}
+if (testbit(%map_flags_cached, 26) = ^true) {
+    return(2);
+}
+if (testbit(%map_flags_cached, 30) = ^true) {
+    return(3);
+}
+if (testbit(%map_flags_cached, 29) = ^true) {
+    return(1);
+}
+if (testbit(%map_flags_cached, 27) = ^true) {
+    return(6);
+}
+if (testbit(%map_flags_cached, 8) = ^true) {
+    return(5);
+}
+if (testbit(%map_flags_cached, 6) = ^true) {
+    return(4);
+}
+return(0);

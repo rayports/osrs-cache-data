@@ -1,0 +1,4 @@
+// 3345
+[clientscript,notification_store_data]
+%notification_width = if_getwidth(notification_display:container);
+%notification_height = if_getheight(notification_display:container);

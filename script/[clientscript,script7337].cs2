@@ -1,0 +1,17 @@
+// 7337
+[clientscript,script7337](component $component0, int $int1, component $component2, int $int3, int $int4)
+if ($int4 = 1) {
+    if (cc_find($component0, $int1) = true) {
+        cc_setgraphic(graphic_6917);
+    }
+    if (cc_find($component2, $int3) = true) {
+        cc_setcolour(^white);
+    }
+} else {
+    if (cc_find($component0, $int1) = true) {
+        cc_setgraphic(graphic_6916);
+    }
+    if (cc_find($component2, $int3) = true) {
+        cc_setcolour(0xff981f);
+    }
+}

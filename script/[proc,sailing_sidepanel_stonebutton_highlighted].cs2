@@ -1,0 +1,32 @@
+// 8756
+[proc,sailing_sidepanel_stonebutton_highlighted](component $component0, int $int1, int $rgb2)(int)
+if (cc_find($component0, calc($int1 + 0)) = true) {
+    cc_setgraphic(tradebacking);
+}
+if (cc_find($component0, calc($int1 + 1)) = true) {
+    cc_setgraphic(graphic_6804);
+}
+if (cc_find($component0, calc($int1 + 2)) = true) {
+    cc_setgraphic(graphic_6805);
+}
+if (cc_find($component0, calc($int1 + 3)) = true) {
+    cc_setgraphic(graphic_6806);
+}
+if (cc_find($component0, calc($int1 + 4)) = true) {
+    cc_setgraphic(graphic_6807);
+}
+if (cc_find($component0, calc($int1 + 5)) = true) {
+    cc_setgraphic(graphic_6808);
+}
+if (cc_find($component0, calc($int1 + 6)) = true) {
+    cc_setgraphic(graphic_6809);
+}
+if (cc_find($component0, calc($int1 + 7)) = true) {
+    cc_setgraphic(graphic_6810);
+}
+if (cc_find($component0, calc($int1 + 8)) = true) {
+    cc_setgraphic(graphic_6811);
+}
+if (cc_find($component0, calc($int1 + 10)) = true) {
+    cc_setcolour($rgb2);
+}

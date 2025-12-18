@@ -1,0 +1,5 @@
+// 1644
+[clientscript,ge_history_init]
+cc_deleteall(ge_history:list);
+cc_deleteall(ge_history:scrollbar);
+%poll_id = 0;

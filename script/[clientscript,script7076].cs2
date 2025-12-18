@@ -1,0 +1,8 @@
+// 7076
+[clientscript,script7076]
+%makeover_model_spin_pause = calc(1 - %makeover_model_spin_pause);
+if (%makeover_model_spin_pause = 1) {
+    if_sethide(false, makeover:pause_icon);
+} else {
+    if_sethide(true, makeover:pause_icon);
+}

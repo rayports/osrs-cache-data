@@ -1,0 +1,6 @@
+// 514
+[proc,bankmain_searching]()(boolean)
+if (%meslayermode = 11 | %meslayermode <= 0 & string_length(%meslayerinput) > 0) {
+    return(true);
+}
+return(false);

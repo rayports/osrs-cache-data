@@ -1,0 +1,17 @@
+// 3205
+[proc,account_setup_tabs]
+if_setop(1, "Account", account:account_tab);
+if_setop(1, "Community", account:community_tab);
+if_setop(1, "Useful Links", account:links_tab);
+if_setonop("account_switch_tab(0)", account:account_tab);
+if_setonop("account_switch_tab(1)", account:community_tab);
+if_setonop("account_switch_tab(2)", account:links_tab);
+if (~on_mobile = true) {
+    return;
+}
+if_setonmouserepeat("account_tab_highlight(account:tab_1_1, account:tab_1_2, account:tab_1_3, account:tab_1_1_backing, account:tab_1_2_backing, account:tab_1_3_backing, 0)", account:account_tab);
+if_setonmouserepeat("account_tab_highlight(account:tab_2_1, account:tab_2_2, account:tab_2_3, account:tab_2_1_backing, account:tab_2_2_backing, account:tab_2_3_backing, 1)", account:community_tab);
+if_setonmouserepeat("account_tab_highlight(account:tab_3_1, account:tab_3_2, account:tab_3_3, account:tab_3_1_backing, account:tab_3_2_backing, account:tab_3_3_backing, 2)", account:links_tab);
+if_setonmouseleave("account_tab_highlight_reset(account:tab_1_1, account:tab_1_2, account:tab_1_3, account:tab_1_1_backing, account:tab_1_2_backing, account:tab_1_3_backing, 0)", account:account_tab);
+if_setonmouseleave("account_tab_highlight_reset(account:tab_2_1, account:tab_2_2, account:tab_2_3, account:tab_2_1_backing, account:tab_2_2_backing, account:tab_2_3_backing, 1)", account:community_tab);
+if_setonmouseleave("account_tab_highlight_reset(account:tab_3_1, account:tab_3_2, account:tab_3_3, account:tab_3_1_backing, account:tab_3_2_backing, account:tab_3_3_backing, 2)", account:links_tab);

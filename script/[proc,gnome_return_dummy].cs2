@@ -1,0 +1,44 @@
+// 3789
+[proc,gnome_return_dummy](obj $obj0)(obj)
+switch_obj ($obj0) {
+    case orange :
+        return(aluft_orange_dummy);
+    case lime :
+        return(aluft_lime_dummy);
+    case pineapple :
+        return(aluft_pineapple_dummy);
+    case lemon :
+        return(aluft_lemon_dummy);
+    case dwellberries :
+        return(aluft_dwellberries_dummy);
+    case equa_leaves :
+        return(aluft_equa_leaves_dummy);
+    case bucket_milk :
+        return(aluft_milk_dummy);
+    case chocolate_bar :
+        return(aluft_chocolate_bar_dummy);
+    case brandy :
+        return(aluft_bottle_brandy_dummy);
+    case vodka :
+        return(aluft_bottle_vodka_dummy);
+    case default :
+        return(aluft_bottle_dummy);
+    case lime_chunks, orange_chunks, pineapple_chunks :
+        return(aluft_fruit_chunks_dummy);
+    case toads_legs :
+        return(aluft_toads_legs_dummy);
+    case gnome_spice :
+        return(aluft_gnome_spice_dummy);
+    case cheese :
+        return(aluft_cheese_dummy);
+    case king_worm :
+        return(aluft_king_worm_dummy);
+    case tomato :
+        return(aluft_tomato_dummy);
+    case onion :
+        return(aluft_onion_dummy);
+    case cabbage :
+        return(aluft_cabbage_dummy);
+    case potato :
+        return(aluft_potato_dummy);
+}

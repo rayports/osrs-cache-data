@@ -1,0 +1,12 @@
+// 2251
+[clientscript,chatbox_open_input]
+if (if_hassub(chatbox:chatmodal) = true | if_hassub(chatbox:chatoverlay) = true | if_gethide(chatbox:mes_layer) = false) {
+    return;
+}
+if (%osm_chat_keyboard = 0) {
+    %osm_chat_keyboard = 1;
+    ~keyboard_show_string(0, 80, %chatinput);
+} else {
+    %osm_chat_keyboard = 0;
+    ~keyboard_hide;
+}

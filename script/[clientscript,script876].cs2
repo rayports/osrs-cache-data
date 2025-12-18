@@ -1,0 +1,34 @@
+// 876
+[clientscript,script876](int $int0, int $int1, string $string0, string $string1)
+~script4618;
+~script6061;
+renderself(true);
+def_boolean $boolean2 = ~on_mobile;
+if ($boolean2 = true) {
+    ~script5965;
+}
+if (~on_enhanced_any = false) {
+    return;
+}
+~highlighting_channel_setup;
+~fishing_spot_indicator_tile_setup;
+~script4687($int0);
+~synch_always_on_top(%always_on_top);
+~helper_agility_highlight_setup;
+minimap_setzoomable(~int_to_bool(calc(1 - %minimap_zoom_lock_disabled)));
+~xptracker_login($int1, $string0, $string1);
+chat_settimestamps(%settings_chat_timestamps);
+~rebuildchatbox(~script553);
+~script6465;
+minimenu_setblockmode(^opkind_shiftop, ^opmode_noshift);
+~loottracker_login;
+~settings_minimenu_login;
+~script7431;
+~script7581;
+~script7578;
+~script7541;
+~script7587;
+if (deviceoption_get(^deviceoption_fps_limit) = 0) {
+    deviceoption_set(^deviceoption_fps_limit, 999);
+}
+deviceoption_set(^deviceoption_background_fps_limit, deviceoption_get(^deviceoption_fps_limit));

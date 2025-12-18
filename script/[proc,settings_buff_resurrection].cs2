@@ -1,0 +1,7 @@
+// 1349
+[proc,settings_buff_resurrection]
+if (~on_enhanced_any = false) {
+    return;
+}
+%buff_resurrection_disabled = calc(1 - %buff_resurrection_disabled);
+~buff_bar_layout_redraw;

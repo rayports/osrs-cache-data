@@ -1,0 +1,3 @@
+// 3983
+[proc,settings_show_chat_effects]
+%option_chat = calc(1 - %option_chat);

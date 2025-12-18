@@ -1,0 +1,7 @@
+// 4601
+[proc,settings_buff_vengeance_active]
+if (~on_enhanced_any = false) {
+    return;
+}
+%buff_vengeance_active_disabled = calc(1 - %buff_vengeance_active_disabled);
+~buff_bar_layout_redraw;

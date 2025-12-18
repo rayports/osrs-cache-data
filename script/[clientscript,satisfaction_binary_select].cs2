@@ -1,0 +1,12 @@
+// 2167
+[clientscript,satisfaction_binary_select](int $int0, int $int1, component $component2, component $component3)
+if ($int0 ! 1) {
+    return;
+}
+sound_synth(synth_2266, 1, 0);
+if (%csat_vote_temp = $int1) {
+    %csat_vote_temp = 0;
+} else {
+    %csat_vote_temp = $int1;
+}
+~satisfaction_binary_update($component2, $component3);

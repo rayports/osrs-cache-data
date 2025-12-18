@@ -1,0 +1,9 @@
+// 6806
+[proc,script6806]()(boolean)
+if (%speedrunning_beta_tester = 1) {
+    return(true);
+}
+if (staffmodlevel >= 2) {
+    return(true);
+}
+return(false);

@@ -1,0 +1,7 @@
+// 4595
+[proc,settings_buff_teleblock]
+if (~on_enhanced_any = false) {
+    return;
+}
+%buff_teleblock_disabled = calc(1 - %buff_teleblock_disabled);
+~buff_bar_layout_redraw;

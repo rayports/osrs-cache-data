@@ -1,0 +1,27 @@
+// 3197
+[proc,script3197](int $int0, int $int1, int $int2)(boolean)
+if ($int0 = $int1) {
+    return(false);
+}
+if ($int0 = 0) {
+    return(true);
+}
+switch_int ($int2) {
+    case 4 :
+        if (inv_total(inv, gotr_guardian_essence) > 0) {
+            return(true);
+        }
+    case 3 :
+        if (inv_total(inv, blankrune_daeyalt) > 0) {
+            return(true);
+        }
+    case 2 :
+        if (inv_total(inv, blankrune_high) > 0) {
+            return(true);
+        }
+    case 1 :
+        if (inv_total(inv, blankrune) > 0) {
+            return(true);
+        }
+}
+return(false);

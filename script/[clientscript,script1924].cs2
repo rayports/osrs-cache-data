@@ -1,0 +1,17 @@
+// 1924
+[clientscript,script1924]
+if (if_hassub(enum(component, component, ~toplevel_getcomponents, toplevel_osrs_stretch:mainmodal)) = false) {
+    return;
+}
+if_setscrollpos(0, 0, bond_main:redeem_options);
+%poll_scroll = 0;
+if (%raids_scroll > 0) {
+    %raids_scroll = calc(%raids_scroll + 1);
+}
+if (%raids_scroll > if_getheight(bond_main:redeem_options)) {
+    if_setscrollsize(0, %raids_scroll, bond_main:redeem_options);
+} else {
+    if_setscrollsize(0, 0, bond_main:redeem_options);
+}
+cc_deleteall(bond_main:redeem_scrollbar);
+~scrollbar_vertical(bond_main:redeem_scrollbar, bond_main:redeem_options, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1");

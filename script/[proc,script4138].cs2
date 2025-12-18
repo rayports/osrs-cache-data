@@ -1,0 +1,9 @@
+// 4138
+[proc,script4138]()(boolean)
+if (%cutscene_status = 0) {
+    return(false);
+}
+if (%cutscene_force_sidepanel = 1) {
+    return(false);
+}
+return(true);

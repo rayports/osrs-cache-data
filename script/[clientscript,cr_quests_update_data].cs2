@@ -1,0 +1,11 @@
+// 2493
+[clientscript,cr_quests_update_data](string $string0)
+%cr_quests_client_cached_recommendations = $string0;
+~script6368(0);
+if (%cr_quests_ui_awaiting_data = 1) {
+    ~cr_quests_ui_init;
+} else if (%cr_quests_ui_recommendations_list_built = 1) {
+    ~cr_quests_ui_update_tabs;
+    %cr_quests_ui_expanded_states = null;
+    ~cr_quests_ui_create_list;
+}
